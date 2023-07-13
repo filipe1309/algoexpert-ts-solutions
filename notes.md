@@ -10,4 +10,9 @@ npm i eslint -D
 npm init @eslint/config
 ```
 
+## Jest
+
 ```sh
+npm i jest ts-jest @types/jest -D
+```
+
