@@ -1,1 +1,0 @@
-.shub/deploy.sh

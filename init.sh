@@ -1,1 +1,0 @@
-.shub/init.sh
