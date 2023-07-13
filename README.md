@@ -28,19 +28,13 @@ git clone git@github.com:filipe1309/algoexpert-solutions.git
 cd algoexpert-solutions
 ```
 
-## :runner: Running
+## :white_check_mark: Tests
 
 ```sh
-make run
+make test
 ```
 
-<!-- ## :white_check_mark: Tests
-
-After up the container:
-
-```sh
-docker-compose exec -t {{ CONTAINER_SERVICE_NAME }} ./vendor/bin/phpunit
-```
+<!-- 
 
 ## Contributing
 
