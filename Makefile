@@ -16,3 +16,4 @@ new:
 	mkdir src/${l}/${c}
 	touch src/${l}/${c}/solution.ts
 	touch src/${l}/${c}/solution.spec.ts
+	touch src/${l}/${c}/cases.ts

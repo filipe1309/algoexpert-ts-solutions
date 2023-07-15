@@ -22,4 +22,8 @@ npm i jest ts-jest @types/jest -D
 npx ts-jest config:init
 ```
 
+## ...
 
+```sh
+make new l=easy c=valid-subsequence 
+```
