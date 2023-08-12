@@ -1,5 +1,5 @@
 
-# <p align="center">AlgoExpert Solutions</p>
+# <p align="center">AlgoExpert TS Solutions</p>
 
 ![github action deploy badge](https://github.com/filipe1309/algoexpert-solutions/actions/workflows/tests.yaml/badge.svg?event=push)
 <img src="https://img.shields.io/badge/Code-TypeScript-informational?style=flat-square&logo=typescript&color=3178C6" alt="TypeScript" />
