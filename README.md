@@ -13,6 +13,7 @@ This project was developed following AlgoExpert's "[AlgoExpert](https://www.algo
 ## :computer: Technologies
 
 - [Node.js](https://nodejs.org/en/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## :scroll: Requirements
 
