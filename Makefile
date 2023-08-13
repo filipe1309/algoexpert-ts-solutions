@@ -17,7 +17,7 @@ new:
 	@$(eval CAMEL := $(shell echo ${c} | perl -pe 's/(^|-)(\w)/\U$$2/g' | perl -nE 'say lcfirst'))
 	@echo "Creating ${c} directory..."
 	@mkdir src/${l}/${c}
-	@echo "Creating ${CAMEL} solution file..."
+	@echo "Creating ${c} solution file..."
 	@touch src/${l}/${c}/solution.ts
 	@echo "// https://www.algoexpert.io/questions/${c}\
 	\n\
@@ -28,7 +28,7 @@ new:
 	@echo "function mySolution1() {\
 	\n  \
 	\n}" >> src/${l}/${c}/solution.ts
-	@echo "Creating ${CAMEL} test files..."
+	@echo "Creating ${c} test files..."
 	@touch src/${l}/${c}/solution.spec.ts
 	@echo "import {describe, expect, test} from '@jest/globals';" >> src/${l}/${c}/solution.spec.ts 
 	@echo "import solution from './solution';" >> src/${l}/${c}/solution.spec.ts
@@ -43,8 +43,8 @@ new:
 	@touch src/${l}/${c}/cases.ts
 	@echo "export default [\
 	\n  {\
-	\n    input:\
-	\n    expected:\
+	\n    input: []\
+	\n    expected: []\
 	\n  },\
 	\n];" >> src/${l}/${c}/cases.ts
 	@echo "✅ Done!"
@@ -64,5 +64,3 @@ help:
 
 # %:
 # 	@echo ""
-
-SNACKECASE_TO_CAMELCASE = $(shell echo $(1) | perl -pe 's/(^|-)(\w)/\U$2/g')
