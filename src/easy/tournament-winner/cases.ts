@@ -19,7 +19,7 @@ export default [
     ],
     [0, 1, 1]
     ],
-    expected: ""
+    expected: "Java"
   },
   {
     input: [
@@ -33,7 +33,7 @@ export default [
       ],
       [0, 1, 1, 1, 0, 1]
     ],
-    expected: ""
+    expected: "C#"
   },
   {
     input: [
@@ -51,7 +51,7 @@ export default [
       ],
       [0, 1, 1, 1, 0, 1, 0, 1, 1, 0]
     ],
-    expected: ""
+    expected: "C#"
   },
   {
     input: [
@@ -60,7 +60,7 @@ export default [
       ],
       [1]
     ],
-    expected: ""
+    expected: "Bulls"
   },
   {
     input: [
@@ -71,7 +71,7 @@ export default [
       ],
       [0, 0, 0]
     ],
-    expected: ""
+    expected: "Eagles"
   },
 
   {
@@ -86,7 +86,7 @@ export default [
       ],
       [1, 1, 1, 1, 1, 1]
     ],
-    expected: ""
+    expected: "Bulls"
   },
   {
     input: [
@@ -109,7 +109,7 @@ export default [
       ],
       [1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0]
     ],
-    expected: ""
+    expected: "AlgoMasters"
   },
   {
     input: [
@@ -127,7 +127,7 @@ export default [
       ],
       [0, 0, 0, 0, 0, 0, 1, 0, 1, 1]
     ],
-    expected: ""
+    expected: "SQL"
   },
   {
     input: [
@@ -136,6 +136,6 @@ export default [
       ],
       [0]
     ],
-    expected: ""
+    expected: "B"
   },
 ]
