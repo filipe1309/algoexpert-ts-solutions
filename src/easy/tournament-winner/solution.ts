@@ -46,8 +46,8 @@ export default function tournamentWinner(competitions: string[][], results: numb
 
 // time O(n), space O(k) k=#teams
 function mySolution1(competitions: string[][], results: number[]) {
-  const points = {};
-  let winner = { "k": "", "v": 0};
+  const points = {} as { [key: string]: number };
+  let finalWinner = { "k": "", "v": 0};
   for (let i = 0; i < results.length; i++) {
     let winnerIdx = (results[i] === 1) ? 0 : 1;
     let winnerKey = competitions[i][winnerIdx];
@@ -55,10 +55,10 @@ function mySolution1(competitions: string[][], results: number[]) {
     if (!points[winnerKey]) points[winnerKey] = 0;
     points[winnerKey] += 3;
 
-    winner = points[winnerKey] > winner["v"] 
+    finalWinner = points[winnerKey] > finalWinner["v"] 
       ? { k:  winnerKey, v  : points[winnerKey]} 
-      : winner;
+      : finalWinner;
   }
 
-  return winner["k"];
+  return finalWinner["k"];
 }
