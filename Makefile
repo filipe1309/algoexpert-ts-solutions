@@ -49,7 +49,7 @@ new:
 	@touch src/${l}/${c}/cases.ts
 	@echo "export default [\
 	\n  {\
-	\n    input: []\
+	\n    input: [],\
 	\n    expected: []\
 	\n  },\
 	\n];" >> src/${l}/${c}/cases.ts
