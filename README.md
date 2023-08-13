@@ -4,6 +4,7 @@
 ![github action deploy badge](https://github.com/filipe1309/algoexpert-solutions/actions/workflows/tests.yaml/badge.svg?event=push)
 <img src="https://img.shields.io/badge/Code-TypeScript-informational?style=flat-square&logo=typescript&color=3178C6" alt="TypeScript" />
 <img src="https://img.shields.io/badge/Code-NodeJS-informational?style=flat-square&logo=node.js&color=339933" alt="NodeJS" />
+<img src="https://img.shields.io/badge/Code-Jest-informational?style=flat-square&logo=jest&color=C21325" alt="Jest" />
 
 
 ## 💬 About
@@ -14,6 +15,7 @@ This project was developed following AlgoExpert's "[AlgoExpert](https://www.algo
 
 - [Node.js](https://nodejs.org/en/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/)
 
 ## :scroll: Requirements
 
