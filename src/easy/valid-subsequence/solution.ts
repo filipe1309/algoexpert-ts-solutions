@@ -37,3 +37,29 @@ function mySolution1(array: number[], sequence: number[]) {
 
   return sequence.indexOf(-1) == -1 ? true : false;
 }
+
+// array = [5, 1, 22, 25, 6, -1, 8, 10]
+// sequence = [1, 6, -1, 10]
+// -------------------------------
+// loop i = 0
+// position = 1
+// sequence = [1, 6, -1, 10] // sequence[0] = 1
+// array = [5, NaN, 22, 25, 6, -1, 8, 10] // array[1] = NaN
+// -------------------------------
+// loop i = 1
+// position = 4
+// sequence = [1, 4, -1, 10] // sequence[1] = 4
+// array = [5, NaN, 22, 25, NaN, -1, 8, 10] // array[4] = NaN
+// -------------------------------
+// loop i = 2
+// position = 5
+// sequence = [1, 4, 5, 10] // sequence[2] = 5
+// array = [5, NaN, 22, 25, NaN, NaN, 8, 10] // array[5] = NaN
+// -------------------------------
+// loop i = 3
+// position = 7
+// sequence = [1, 4, 5, 7] // sequence[3] = 7
+// array = [5, NaN, 22, 25, NaN, NaN, 8, NaN] // array[7] = NaN
+// -------------------------------
+// sequence.indexOf(-1) == -1 ? true : false;
+// true
