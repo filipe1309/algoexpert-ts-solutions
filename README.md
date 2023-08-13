@@ -33,9 +33,16 @@ cd algoexpert-solutions
 
 ## :white_check_mark: Tests
 
+Run all tests:
 ```sh
 make test
 ```
+
+Run a specific test:
+```sh
+make test-one t=CHALLENGE_NAME
+```
+> Example: `make test-one t=two-number-sum`
 
 <!-- 
 

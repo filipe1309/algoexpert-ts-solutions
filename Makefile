@@ -3,6 +3,12 @@ test:
 	@echo "🟢 Running tests..."
 	npm run test
 
+# run specific test
+# example: make test-one t=two-number-sum
+test-one:
+	@echo "🟢 Running tests..."
+	npm run test -- -t "${t}"
+
 # run node
 run:
 	@echo "🏁 Running code..."
