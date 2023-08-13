@@ -21,7 +21,20 @@ Hint 1
 */
 
 export default function isValidSubsequence(array: number[], sequence: number[]) {
-  return mySolution1(array, sequence);
+  return solution(array, sequence);
+}
+
+// O(n) time, O(1) space
+function solution(array: number[], sequence: number[]) {
+  let arrIdx = 0;
+  let seqIdx = 0;
+
+  while (arrIdx < array.length && seqIdx < sequence.length) {
+    if (array[arrIdx] === sequence[seqIdx]) seqIdx++;
+    arrIdx++;
+  }
+
+  return seqIdx === sequence.length;
 }
 
 //  My ideia: convert sequence to array of indexes, 
