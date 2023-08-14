@@ -41,7 +41,7 @@ new:
 	@echo "import cases from './cases';" >> src/${l}/${c}/solution.spec.ts
 	@echo "" >> src/${l}/${c}/solution.spec.ts
 	@echo "describe('${c}', () => {" >> src/${l}/${c}/solution.spec.ts
-	@echo "  test.each(cases)('Test %#', ({ input, expected }) => { \
+	@echo "  test.each(cases)('%# (%j)', ({ input, expected }) => { \
   \n    const result = solution(input); \
   \n    expect(result).toEqual(expected); \
   \n  });" >> src/${l}/${c}/solution.spec.ts
