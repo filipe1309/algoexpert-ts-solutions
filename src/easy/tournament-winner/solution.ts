@@ -47,10 +47,11 @@ export default function tournamentWinner(competitions: string[][], results: numb
 // time O(n), space O(k) k=#teams
 function mySolution1(competitions: string[][], results: number[]) {
   let finalWinner = ""
+  const homeTeamWon = 1;
   const points = {"": 0} as { [key: string]: number };
   for (let i = 0; i < results.length; i++) {
-    let currWinnerIdx = (results[i] === 1) ? 0 : 1;
-    let currWinnerKey = competitions[i][currWinnerIdx];
+    let [homeTeam, awayTeam] = competitions[i]
+    let currWinnerKey = (results[i] === homeTeamWon) ? homeTeam : awayTeam;
 
     updateScore(points, currWinnerKey);
 
