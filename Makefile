@@ -27,13 +27,13 @@ new:
 	@touch src/${l}/${c}/solution.ts
 	@echo "// https://www.algoexpert.io/questions/${c}\
 	\n\
-	\nfunction $(CAMEL)() {\
+	\nfunction $(CAMEL)(input) {\
 	\n  return mySolution1();\
 	\n}" >> src/${l}/${c}/solution.ts
 	@echo "" >> src/${l}/${c}/solution.ts
 	@echo "function mySolution1() {\
 	\n  \
-	\n}\
+	\n}\n\
 	\nexport default $(CAMEL);\n" >> src/${l}/${c}/solution.ts
 	@echo "Creating ${c} test files..."
 	@touch src/${l}/${c}/solution.spec.ts
