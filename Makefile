@@ -27,13 +27,14 @@ new:
 	@touch src/${l}/${c}/solution.ts
 	@echo "// https://www.algoexpert.io/questions/${c}\
 	\n\
-	\nexport default function $(CAMEL)() {\
+	\nfunction $(CAMEL)() {\
 	\n  return mySolution1();\
 	\n}" >> src/${l}/${c}/solution.ts
 	@echo "" >> src/${l}/${c}/solution.ts
 	@echo "function mySolution1() {\
 	\n  \
-	\n}" >> src/${l}/${c}/solution.ts
+	\n}\
+	\nexport default $(CAMEL);\n" >> src/${l}/${c}/solution.ts
 	@echo "Creating ${c} test files..."
 	@touch src/${l}/${c}/solution.spec.ts
 	@echo "import {describe, expect, test} from '@jest/globals';" >> src/${l}/${c}/solution.spec.ts 
@@ -41,9 +42,9 @@ new:
 	@echo "import cases from './cases';" >> src/${l}/${c}/solution.spec.ts
 	@echo "" >> src/${l}/${c}/solution.spec.ts
 	@echo "describe('${c}', () => {" >> src/${l}/${c}/solution.spec.ts
-	@echo "  test.each(cases)('%# (%j)', ({ input, expected }) => { \
-  \n    const result = solution(input); \
-  \n    expect(result).toEqual(expected); \
+	@echo "  test.each(cases)('%# (%j)', ({ input, expected }) => {\
+  \n    const result = solution(input);\
+  \n    expect(result).toEqual(expected);\
   \n  });" >> src/${l}/${c}/solution.spec.ts
 	@echo "});" >> src/${l}/${c}/solution.spec.ts
 	@touch src/${l}/${c}/cases.ts
