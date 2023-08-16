@@ -12,6 +12,54 @@ This project was developed following AlgoExpert's "[AlgoExpert](https://www.algo
 
 All challenges and tests are in [src](./src)/level-name/challenge-name.
 
+## :rocket: Challenge List
+
+### Easy (31)
+
+- [x] [Two Number Sum](./src/easy/two-number-sum)
+- [x] [Validate Subsequence](./src/easy/validate-subsequence)
+- [x] [Sorted Squared Array](./src/easy/sorted-squared-array)
+- [x] [Tournament Winner](./src/easy/tournament-winner)
+- [x] [Non-Constructible Change](./src/easy/non-constructible-change)
+- [x] [Transpose Matrix](./src/easy/transpose-matrix)
+- [ ] [Find Closest Value In BST](./src/easy/find-closest-value-in-bst)
+- [ ] [Branch Sums](./src/easy/branch-sums)
+- [ ] [Node Depths](./src/easy/node-depths)
+- [ ] [Evaluate Expression Tree](./src/easy/evaluate-expression-tree)
+- [ ] [Depth-first Search](./src/easy/depth-first-search)
+- [ ] [Minimum Waiting Time](./src/easy/minimum-waiting-time)
+- [ ] [Class Photos](./src/easy/class-photos)
+- [ ] [Tandem Bicycle](./src/easy/tandem-bicycle)
+- [ ] [Optimal Freelancing](./src/easy/optimal-freelancing)
+- [ ] [Remove Duplicate From Linked List](./src/easy/remove-duplicate-from-linked-list)
+- [ ] [Middle Node](./src/easy/middle-node)
+- [ ] [Nth Fibonacci](./src/easy/nth-fibonacci)
+- [ ] [Product Sum](./src/easy/product-sum)
+- [ ] [Binary Search](./src/easy/binary-search)
+- [ ] [Find Three Largest Numbers](./src/easy/find-three-largest-numbers)
+- [ ] [Bubble Sort](./src/easy/bubble-sort)
+- [ ] [Insertion Sort](./src/easy/insertion-sort)
+- [ ] [Selection Sort](./src/easy/selection-sort)
+- [ ] [Palindrome Check](./src/easy/palindrome-check)
+- [ ] [Caesar Cipher Encryptor](./src/easy/caesar-cipher-encryptor)
+- [ ] [Run-Length Encoding](./src/easy/run-length-encoding)
+- [ ] [Common Characters](./src/easy/common-characters)
+- [ ] [Generate Document](./src/easy/generate-document)
+- [ ] [First Non-Repeating Character](./src/easy/first-non-repeating-character)
+- [ ] [Semordnilap](./src/easy/semordnilap)
+
+### Medium (73)
+
+TBD
+
+### Hard (54)
+
+TBD
+
+### Very Hard (37)
+
+TBD
+
 ## :computer: Technologies
 
 - [Node.js](https://nodejs.org/en/)
