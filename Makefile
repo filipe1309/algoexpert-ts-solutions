@@ -32,10 +32,10 @@ new:
 	\n}\
 	\n\
 	\n// time O() | O() space\
-	@echo "function mySolution1() {\
+	\nfunction mySolution1() {\
 	\n  \
 	\n}\n\
-	\nexport default $(CAMEL);\n" >> src/${l}/${c}/solution.ts
+	\nexport default $(CAMEL);" >> src/${l}/${c}/solution.ts
 	@echo "Creating ${c} test files..."
 	@touch src/${l}/${c}/solution.spec.ts
 	@echo "import {describe, expect, test} from '@jest/globals';\
