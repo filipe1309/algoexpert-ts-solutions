@@ -29,24 +29,25 @@ new:
 	\n\
 	\nfunction $(CAMEL)(input) {\
 	\n  return mySolution1();\
-	\n}" >> src/${l}/${c}/solution.ts
-	@echo "" >> src/${l}/${c}/solution.ts
+	\n}\
+	\n\
+	\n// time O() | O() space\
 	@echo "function mySolution1() {\
 	\n  \
 	\n}\n\
 	\nexport default $(CAMEL);\n" >> src/${l}/${c}/solution.ts
 	@echo "Creating ${c} test files..."
 	@touch src/${l}/${c}/solution.spec.ts
-	@echo "import {describe, expect, test} from '@jest/globals';" >> src/${l}/${c}/solution.spec.ts 
-	@echo "import solution from './solution';" >> src/${l}/${c}/solution.spec.ts
-	@echo "import cases from './cases';" >> src/${l}/${c}/solution.spec.ts
-	@echo "" >> src/${l}/${c}/solution.spec.ts
-	@echo "describe('${c}', () => {" >> src/${l}/${c}/solution.spec.ts
-	@echo "  test.each(cases)('%# (%j)', ({ input, expected }) => {\
+	@echo "import {describe, expect, test} from '@jest/globals';\
+	\nimport solution from './solution';\
+	\nimport cases from './cases';\
+	\n\
+	\ndescribe('${c}', () => {\
+	\n  test.each(cases)('%# (%j)', ({ input, expected }) => {\
   \n    const result = solution(input);\
   \n    expect(result).toEqual(expected);\
-  \n  });" >> src/${l}/${c}/solution.spec.ts
-	@echo "});" >> src/${l}/${c}/solution.spec.ts
+  \n  });\
+	\n});" >> src/${l}/${c}/solution.spec.ts
 	@touch src/${l}/${c}/cases.ts
 	@echo "export default [\
 	\n  {\
