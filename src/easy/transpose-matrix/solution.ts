@@ -53,6 +53,7 @@ function transposeMatrix(matrix: number[][]) {
   return mySolution1(matrix);
 }
 
+// time O(n*m) | space O(n*m), where n=matrix.length, m=matrix[0].length
 function mySolution1(matrix: number[][]) {
   let result = new Array(matrix[0].length)
     .fill([])
