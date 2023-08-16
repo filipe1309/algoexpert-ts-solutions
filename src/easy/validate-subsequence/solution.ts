@@ -1,4 +1,8 @@
+// https://www.algoexpert.io/questions/validate-subsequence
+
 /*
+  Validate Subsequence
+
   Given two non-empty arrays of integers, write a function that determines
   whether the second array is a subsequence of the first one.
 
@@ -15,16 +19,13 @@ sequence = [1, 6, -1, 10]
 
 Sample Output
 true
-
-Hints
-Hint 1
 */
 
 export default function isValidSubsequence(array: number[], sequence: number[]) {
   return solution(array, sequence);
 }
 
-// O(n) time, O(1) space
+// time O(n) | O(1) space
 function solution(array: number[], sequence: number[]) {
   let arrIdx = 0;
   let seqIdx = 0;
@@ -37,7 +38,7 @@ function solution(array: number[], sequence: number[]) {
   return seqIdx === sequence.length;
 }
 
-//  My ideia: convert sequence to array of indexes, 
+// My ideia: convert sequence to array of indexes, 
 // while doing that, check if the previous index is 
 // smaller than the current one (sorted)
 function mySolution1(array: number[], sequence: number[]) {

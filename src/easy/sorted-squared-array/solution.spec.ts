@@ -3,7 +3,7 @@ import solution from './solution';
 import cases from './cases';
 
 describe('sorted-squared-array', () => {
-  test.each(cases)('Test %#', ({ array, expected }) => {
+  test.each(cases)('%# (%j)', ({ array, expected }) => {
     const result = solution(array);
     expect(result).toEqual(expected);
   });

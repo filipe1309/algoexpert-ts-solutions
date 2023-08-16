@@ -1,6 +1,6 @@
+// https://www.algoexpert.io/questions/two-number-sum
+
 /*
-  https://www.algoexpert.io/questions/two-number-sum
-  
   Two Number Sum
 
   Write a function that takes in a non-empty array of distinct integers and an 
@@ -44,7 +44,7 @@ export default function twoNumberSum(array: number[], targetSum: number) {
   return mySolution1(array, targetSum);
 }
 
-  // O(nˆ2) time, O(1) space
+  // time O(nˆ2) | O(1) space
   function mySolution1(array: number[], targetSum: number) {
   for (let i = 0; i < array.length; i++) {
     for (let i2 = i + 1; i2 < array.length; i2++) {
