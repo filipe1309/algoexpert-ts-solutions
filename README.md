@@ -22,7 +22,7 @@ All challenges and tests are in [src](./src)/level-name/challenge-name.
 - [x] [Tournament Winner](./src/easy/tournament-winner)
 - [x] [Non-Constructible Change](./src/easy/non-constructible-change)
 - [x] [Transpose Matrix](./src/easy/transpose-matrix)
-- [ ] [Find Closest Value In BST](./src/easy/find-closest-value-in-bst)
+- [x] [Find Closest Value In BST](./src/easy/find-closest-value-in-bst)
 - [ ] [Branch Sums](./src/easy/branch-sums)
 - [ ] [Node Depths](./src/easy/node-depths)
 - [ ] [Evaluate Expression Tree](./src/easy/evaluate-expression-tree)
