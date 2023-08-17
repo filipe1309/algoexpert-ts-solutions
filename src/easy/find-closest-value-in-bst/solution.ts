@@ -57,19 +57,5 @@ function mySolution1(tree: BST, target: number) {
   return walk(tree, target, tree.value);
 }
 
-let tree = {
-  value: 10,
-  left: { value: 5,
-    left: { value: 2, left: { value: 1 } },
-    right: {value: 5 },
-  },
-  right: { value: 15,
-    left: { value: 13 },
-    right: { value: 22 },
-  },
-};
-
-findClosestValueInBst(tree as BST, 12)
-
 export default findClosestValueInBst;
 export { BST };
