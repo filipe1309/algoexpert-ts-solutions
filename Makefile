@@ -31,7 +31,7 @@ new:
 	\n  return mySolution1();\
 	\n}\
 	\n\
-	\n// Complexity: time O() | space O()\
+	\n// Complexity (worst-case): time O() | space O()\
 	\nfunction mySolution1() {\
 	\n  \
 	\n}\n\
