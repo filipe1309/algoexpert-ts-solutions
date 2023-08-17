@@ -50,9 +50,9 @@ function branchSums(root: BinaryTree): number[] {
 
 function walk(node: BinaryTree, acc: number, sums: number[]): number[] {
   acc += node.value;
-  if (!node.left && !node.right) { sums.push(acc); return sums; }
   if (node.left) walk(node.left, acc, sums);
   if (node.right) walk(node.right, acc, sums);
+  if (!node.left && !node.right) { sums.push(acc); }
   return sums;
 }
 
@@ -60,8 +60,5 @@ function walk(node: BinaryTree, acc: number, sums: number[]): number[] {
 function mySolution1(root: BinaryTree): number[] {
   return walk(root, 0, []);
 }
-
-let node = {value:1,left:null,right:null}
-mySolution1(node)
 
 export default branchSums;
