@@ -40,6 +40,10 @@ class BST {
   }
 }
 
+function findClosestValueInBst(tree: BST, target: number) {
+  return mySolution1(tree, target);
+}
+
 function walk(tree: BST | null, target: number, min: number): number {
   if (!tree) return min;
   if (Math.abs(tree.value - target) < Math.abs(min - target)) min = tree.value;
@@ -49,13 +53,23 @@ function walk(tree: BST | null, target: number, min: number): number {
   return walk(tree.right, target, min);
 }
 
-function findClosestValueInBst(tree: BST, target: number) {
-  return mySolution1(tree, target);
-}
-
+// Recursive
 // Complexity (worst-case): time O(n) | space O(n)
 function mySolution1(tree: BST, target: number) {
   return walk(tree, target, tree.value);
+}
+
+// Iterative
+// Complexity (worst-case): time O(n) | space O(1)
+function solution2(tree: BST, target: number) {
+  let min = tree.value;
+  while (tree) {
+    if (Math.abs(tree.value - target) < Math.abs(min - target)) min = tree.value;
+    if (min === target) break;
+    tree = (target < tree.value) ? tree.left : tree.right;
+  }
+
+  return min;
 }
 
 export default findClosestValueInBst;
