@@ -1,3 +1,8 @@
+# install dependencies
+install:
+	@echo "📦 Installing dependencies..."
+	npm install
+
 # run tests
 test:
 	@echo "🟢 Running tests..."
@@ -59,6 +64,7 @@ new:
 
 help:
 	@echo "📖 Available commands:"
+	@echo "  make install"
 	@echo "  make test"
 	@echo "  make run"
 	@echo "  make new l=<level (easy, medium, hard, very-hard)> c=<challenge name>"

@@ -80,6 +80,10 @@ git clone git@github.com:filipe1309/algoexpert-solutions.git
 cd algoexpert-solutions
 ```
 
+```sh
+make install
+```
+
 ## :white_check_mark: Tests
 
 Run all tests:
