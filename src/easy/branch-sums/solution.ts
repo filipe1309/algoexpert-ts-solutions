@@ -52,7 +52,7 @@ function walk(node: BinaryTree, acc: number, sums: number[]): number[] {
   acc += node.value;
   if (node.left) walk(node.left, acc, sums);
   if (node.right) walk(node.right, acc, sums);
-  if (!node.left && !node.right) { sums.push(acc); }
+  if (!node.left && !node.right) sums.push(acc);
   return sums;
 }
 
