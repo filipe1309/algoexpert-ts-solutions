@@ -47,6 +47,7 @@ new:
 	\nimport solution from './solution';\
 	\nimport cases from './cases';\
 	\n\
+	\n// make test-one t=${c}\
 	\ndescribe('${c}', () => {\
 	\n  test.each(cases)('%# (%j)', ({ input, expected }) => {\
   \n    const result = solution(input);\
