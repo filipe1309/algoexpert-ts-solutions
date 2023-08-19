@@ -43,7 +43,7 @@ new:
 	\nexport default $(CAMEL);" >> src/${l}/${c}/solution.ts
 	@echo "Creating ${c} test files..."
 	@touch src/${l}/${c}/solution.spec.ts
-	@echo "import {describe, expect, test} from '@jest/globals';\
+	@echo "import { describe, expect, test } from '@jest/globals';\
 	\nimport solution from './solution';\
 	\nimport cases from './cases';\
 	\n\

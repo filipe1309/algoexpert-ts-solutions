@@ -1,5 +1,3 @@
-import Node from './solution';
-
 export default [
   {
     input: {name:"A",children:[{name:"B",children:[{name:"E",children:[]},{name:"F",children:[{name:"I",children:[]},{name:"J",children:[]}]}]},{name:"C",children:[]},{name:"D",children:[{name:"G",children:[{name:"K",children:[]}]},{name:"H",children:[]}]}]},
