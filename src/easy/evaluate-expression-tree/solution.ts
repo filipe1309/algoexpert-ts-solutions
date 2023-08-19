@@ -52,7 +52,7 @@ function evaluateExpressionTree(tree: BinaryTree) {
 // Recursive
 // Complexity (worst-case): time O(n) | space O(h) h=heigth
 function mySolution1(node: BinaryTree) {
-  if (!node.left && !node.right) return node.value;
+  if (!node.left || !node.right) return node.value;
 
   const left = mySolution1(node.left);
   const right = mySolution1(node.right);
