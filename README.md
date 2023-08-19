@@ -134,16 +134,68 @@ All challenges and tests are in [src](./src)/level-name/challenge-name.
 - [ ] [One Edit](./src/medium/one-edit)
 - [ ] [Suffix Trie Construction](./src/medium/suffix-trie-construction)
 
-TBD
-
 </details>
 
 ### 😰 Hard (54)
 
-TBD
+- [ ] [Four Number Sum](./src/hard/four-number-sum)
+- [ ] [Subarray Sort](./src/hard/subarray-sort)
+- [ ] [Largest Range](./src/hard/largest-range)
+- [ ] [Min Rewards](./src/hard/min-rewards)
+- [ ] [Zigzag Traverse](./src/hard/zigzag-traverse)
 <details>
   <summary>More...</summary>
-  TBD
+
+- [ ] [Longest Subarray With Sum](./src/hard/longest-subarray-with-sum)
+- [ ] [Knight Connection](./src/hard/knight-connection)
+- [ ] [Count Squares](./src/hard/count-squares)
+- [ ] [Same BSTs](./src/hard/same-bsts)
+- [ ] [Validate Three Nodes](./src/hard/validate-three-nodes)
+- [ ] [Repair BST](./src/hard/repair-bst)
+- [ ] [Max Path Sum In Binary Tree](./src/hard/max-path-sum-in-binary-tree)
+- [ ] [Find Nodes Distance K](./src/hard/find-nodes-distance-k)
+- [ ] [Max Sum Increasing Subsequence](./src/hard/max-sum-increasing-subsequence)
+- [ ] [Longest Common Subsequence](./src/hard/longest-common-subsequence)
+- [ ] [Min Number Of Jumps](./src/hard/min-number-of-jumps)
+- [ ] [Water Area](./src/hard/water-area)
+- [ ] [Knapsack Problem](./src/hard/knapsack-problem)
+- [ ] [Disk Stacking](./src/hard/disk-stacking)
+- [ ] [Numbers In Pi](./src/hard/numbers-in-pi)
+- [ ] [Maximum Sum Submatrix](./src/hard/maximum-sum-submatrix)
+- [ ] [Maximize Expression](./src/hard/maximize-expression)
+- [ ] [Dice Throws](./src/hard/dice-throws)
+- [ ] [Juice Bottling](./src/hard/juice-bottling)
+- [ ] [Dijkstra's Algorithm](./src/hard/dijkstras-algorithm)
+- [ ] [Topological Sort](./src/hard/topological-sort)
+- [ ] [Kruskal's Algorithm](./src/hard/kruskals-algorithm)
+- [ ] [Boggle Board](./src/hard/boggle-board)
+- [ ] [Largest Island](./src/hard/largest-island)
+- [ ] [Continuous Median](./src/hard/continuous-median)
+- [ ] [Sort K-Sorted Array](./src/hard/sort-k-sorted-array)
+- [ ] [Laptop Rentals](./src/hard/laptop-rentals)
+- [ ] [Find Loop](./src/hard/find-loop)
+- [ ] [Reverse Linked List](./src/hard/reverse-linked-list)
+- [ ] [Merge Linked Lists](./src/hard/merge-linked-lists)
+- [ ] [Shift Linked List](./src/hard/shift-linked-list)
+- [ ] [Lowest Common Manager](./src/hard/lowest-common-manager)
+- [ ] [Interweaving Strings](./src/hard/interweaving-strings)
+- [ ] [Solve Sudoku](./src/hard/solve-sudoku)
+- [ ] [Generate Div Tags](./src/hard/generate-div-tags)
+- [ ] [Ambiguous Measurements](./src/hard/ambiguous-measurements)
+- [ ] [Shifted Binary Search](./src/hard/shifted-binary-search)
+- [ ] [Search For Range](./src/hard/search-for-range)
+- [ ] [Quickselect](./src/hard/quickselect)
+- [ ] [Index Equals Value](./src/hard/index-equals-value)
+- [ ] [Quick Sort](./src/hard/quick-sort)
+- [ ] [Heap Sort](./src/hard/heap-sort)
+- [ ] [Radix Sort](./src/hard/radix-sort)
+- [ ] [Shorten Path](./src/hard/shorten-path)
+- [ ] [Largest Rectangle Under Skyline](./src/hard/largest-rectangle-under-skyline)
+- [ ] [Longest Substring Without Duplication](./src/hard/longest-substring-without-duplication)
+- [ ] [Underscorify Substring](./src/hard/underscorify-substring)
+- [ ] [Pattern Matcher](./src/hard/pattern-matcher)
+- [ ] [Multi String Search](./src/hard/multi-string-search)
+
 </details>
 
 ### 😱 Very Hard (37)
