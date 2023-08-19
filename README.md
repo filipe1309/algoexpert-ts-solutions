@@ -12,15 +12,20 @@ This project was developed following AlgoExpert's "[AlgoExpert](https://www.algo
 
 All challenges and tests are in [src](./src)/level-name/challenge-name.
 
+
 ## :rocket: Challenge List
 
-### Easy (31)
+### 😎 Easy (31)
 
 - [x] [Two Number Sum](./src/easy/two-number-sum)
 - [x] [Validate Subsequence](./src/easy/validate-subsequence)
 - [x] [Sorted Squared Array](./src/easy/sorted-squared-array)
 - [x] [Tournament Winner](./src/easy/tournament-winner)
 - [x] [Non-Constructible Change](./src/easy/non-constructible-change)
+
+<details>
+  <summary>More...</summary>
+
 - [x] [Transpose Matrix](./src/easy/transpose-matrix)
 - [x] [Find Closest Value In BST](./src/easy/find-closest-value-in-bst)
 - [x] [Branch Sums](./src/easy/branch-sums)
@@ -48,15 +53,25 @@ All challenges and tests are in [src](./src)/level-name/challenge-name.
 - [ ] [First Non-Repeating Character](./src/easy/first-non-repeating-character)
 - [ ] [Semordnilap](./src/easy/semordnilap)
 
-### Medium (73)
+</details>
+
+### 😅 Medium (73)
 
 TBD
+<details>
+  <summary>More...</summary>
+  TBD
+</details>
 
-### Hard (54)
+### 😰 Hard (19)
 
 TBD
+<details>
+  <summary>More...</summary>
+  TBD
+</details>
 
-### Very Hard (37)
+### 😱 Very Hard (7)
 
 TBD
 
@@ -101,8 +116,9 @@ Create a new test:
 ```sh
 make new l=CHALLENGE_LEVEL n=CHALLENGE_NAME
 ```
-> Example: `make new l=easy n=two-number-sum`  
-> This will create a folder (`src/easy/two-number-sum`) with a new solution file and a new test file for the challenge `two-number-sum` in the `easy` level.  
+> Example: `make new l=easy n=two-number-sum`
+>
+> This will create a folder (`src/easy/two-number-sum`) with a new solution file and a new test file for the challenge `two-number-sum` in the `easy` level.
 >
 > Levels: `easy`, `medium`, `hard`, `very-hard`  
 
