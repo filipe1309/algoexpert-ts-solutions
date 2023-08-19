@@ -57,23 +57,72 @@ All challenges and tests are in [src](./src)/level-name/challenge-name.
 
 ### 😅 Medium (73)
 
+- [ ] [Three Number Sum](./src/medium/three-number-sum)
+- [ ] [Smallest Difference](./src/medium/smallest-difference)
+- [ ] [Move Element To End](./src/medium/move-element-to-end)
+- [ ] [Monotonic Array](./src/medium/monotonic-array)
+- [ ] [Spiral Traverse](./src/medium/spiral-traverse)
+<details>
+  <summary>More...</summary>
+
+- [ ] [Longest Peak](./src/medium/longest-peak)
+- [ ] [Array Of Products](./src/medium/array-of-products)
+- [ ] [First Duplicate Value](./src/medium/first-duplicate-value)
+- [ ] [Merge Overlapping Intervals](./src/medium/merge-overlapping-intervals)
+- [ ] [Best Seat](./src/medium/best-seat)
+- [ ] [Zero Sum Subarray](./src/medium/zero-sum-subarray)
+- [ ] [Missing Numbers](./src/medium/missing-numbers)
+- [ ] [Majority Element](./src/medium/majority-element)
+- [ ] [Sweet And Savory](./src/medium/sweet-and-savory)
+- [ ] [BST Construction](./src/medium/bst-construction)
+- [ ] [Validate BST](./src/medium/validate-bst)
+- [ ] [BST Traversal](./src/medium/bst-traversal)
+- [ ] [Min Height BST](./src/medium/min-height-bst)
+- [ ] [Find Kth Largest Value In BST](./src/medium/find-kth-largest-value-in-bst)
+- [ ] [Reconstruct BST](./src/medium/reconstruct-bst)
+- [ ] [Invert Binary Tree](./src/medium/invert-binary-tree)
+- [ ] [Binary Tree Diameter](./src/medium/binary-tree-diameter)
+- [ ] [Find Successor](./src/medium/find-successor)
+- [ ] [Height Balanced Binary Tree](./src/medium/height-balanced-binary-tree)
+- [ ] [Merge Binary Trees](./src/medium/merge-binary-trees)
+- [ ] [Symmetrical Tree](./src/medium/symmetrical-tree)
+- [ ] [Split Binary Tree](./src/medium/split-binary-tree)
+- [ ] [Max Subset Sum No Adjacent](./src/medium/max-subset-sum-no-adjacent)
+- [ ] [Number Of Ways To Make Change](./src/medium/number-of-ways-to-make-change)
+- [ ] [Min Number Of Coins For Change](./src/medium/min-number-of-coins-for-change)
+- [ ] [Levenshtein Distance](./src/medium/levenshtein-distance)
+- [ ] [Number Of Ways To Traverse Graph](./src/medium/number-of-ways-to-traverse-graph)
+- [ ] [Kadane's Algorithm](./src/medium/kadanes-algorithm)
+- [ ] [Stable internships](./src/medium/stable-internships)
+- [ ] [Union Find](./src/medium/union-find)
+- [ ] [Single Cycle Check](./src/medium/single-cycle-check)
+- [ ] [Breadth-first Search](./src/medium/breadth-first-search)
+- [ ] [River Sizes](./src/medium/river-sizes)
+- [ ] [Youngest Common Ancestor](./src/medium/youngest-common-ancestor)
+- [ ] [Remove Islands](./src/medium/remove-islands)
+- [ ] [Cycle In Graph](./src/medium/cycle-in-graph)
+- [ ] [Minimum Passes Of Matrix](./src/medium/minimum-passes-of-matrix)
+- [ ] [Two-Colorable](./src/medium/two-colorable)
+- [ ] [Task Assignment](./src/medium/task-assignment)
+TBD
+
+</details>
+
+### 😰 Hard (54)
+
 TBD
 <details>
   <summary>More...</summary>
   TBD
 </details>
 
-### 😰 Hard (19)
+### 😱 Very Hard (37)
 
 TBD
 <details>
   <summary>More...</summary>
   TBD
 </details>
-
-### 😱 Very Hard (7)
-
-TBD
 
 ## :computer: Technologies
 
