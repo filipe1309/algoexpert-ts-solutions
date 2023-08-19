@@ -200,10 +200,48 @@ All challenges and tests are in [src](./src)/level-name/challenge-name.
 
 ### 😱 Very Hard (37)
 
-TBD
+- [ ] [Apartment Hunting](./src/very-hard/apartment-hunting)
+- [ ] [Calendar Matching](./src/very-hard/calendar-matching)
+- [ ] [Waterfall Streams](./src/very-hard/waterfall-streams)
+- [ ] [Minimum Area Rectangle](./src/very-hard/minimum-area-rectangle)
+- [ ] [Line Through Points](./src/very-hard/line-through-points)
+
 <details>
   <summary>More...</summary>
-  TBD
+
+- [ ] [Right Smaller Than](./src/very-hard/right-smaller-than)
+- [ ] [Iterative In-order Traversal](./src/very-hard/iterative-in-order-traversal)
+- [ ] [Flatten Binary Tree](./src/very-hard/flatten-binary-tree)
+- [ ] [Right Sibling Tree](./src/very-hard/right-sibling-tree)
+- [ ] [All Kinds Of Node Depths](./src/very-hard/all-kinds-of-node-depths)
+- [ ] [Compare Leaf Traversal](./src/very-hard/compare-leaf-traversal)
+- [ ] [Max Profit With K Transactions](./src/very-hard/max-profit-with-k-transactions)
+- [ ] [Palindrome Partitioning Min Cuts](./src/very-hard/palindrome-partitioning-min-cuts)
+- [ ] [Longest Increasing Subsequence](./src/very-hard/longest-increasing-subsequence)
+- [ ] [Longest String Chain](./src/very-hard/longest-string-chain)
+- [ ] [Square Of Zeroes](./src/very-hard/square-of-zeroes)
+- [ ] [Knut Morris Pratt Algorithm](./src/very-hard/knut-morris-pratt-algorithm)
+- [ ] [A* Algorithm](./src/very-hard/a-star-algorithm)
+- [ ] [Rectangle Mania](./src/very-hard/rectangle-mania)
+- [ ] [Detect Arbitrage](./src/very-hard/detect-arbitrage)
+- [ ] [Two Edge Connected Graph](./src/very-hard/two-edge-connected-graph)
+- [ ] [Airport Connections](./src/very-hard/airport-connections)
+- [ ] [Merge Sorted Arrays](./src/very-hard/merge-sorted-arrays)
+- [ ] [LRU Cache](./src/very-hard/lru-cache)
+- [ ] [Rearrange Linked List](./src/very-hard/rearrange-linked-list)
+- [ ] [Linked List Palindrome](./src/very-hard/linked-list-palindrome)
+- [ ] [Zip Linked List](./src/very-hard/zip-linked-list)
+- [ ] [Node Swap](./src/very-hard/node-swap)
+- [ ] [Number Of Binary Tree Topologies](./src/very-hard/number-of-binary-tree-topologies)
+- [ ] [Non-Attacking Queens](./src/very-hard/non-attacking-queens)
+- [ ] [Median Of Two Sorted Arrays](./src/very-hard/median-of-two-sorted-arrays)
+- [ ] [Optimal Assembly Line](./src/very-hard/optimal-assembly-line)
+- [ ] [Merge Sort](./src/very-hard/merge-sort)
+- [ ] [Count Inversions](./src/very-hard/count-inversions)
+- [ ] [Largest Park](./src/very-hard/largest-park)
+- [ ] [Smallest Substring Containing](./src/very-hard/smallest-substring-containing)
+- [ ] [Longest Balanced Substring](./src/very-hard/longest-balanced-substring)
+
 </details>
 
 ## :computer: Technologies
