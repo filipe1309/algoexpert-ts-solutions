@@ -51,10 +51,11 @@ class Node {
   }
 
   depthFirstSearch(array: string[]) {
-    return this.mySolution1(array);
+    return this.solution1(array);
   }
 
-  // Complexity (worst-case): time O() | space O()
+  // Iterative
+  // Complexity (worst-case): time O(v+e) | space O(v) v=vertices,e=edges
   mySolution1(array: string[]) {
     let stack = [this as Node];
 
@@ -68,6 +69,17 @@ class Node {
 
     return array;
   }
+
+  // Recursive
+  // Complexity (worst-case): time O(v+e) | space O(v) v=vertices,e=edges
+  solution1(array: string[]) {
+    array.push(this.name);
+    for (const child of this.children) {
+      child.depthFirstSearch(array);
+    }
+    return array;
+  }
 }
+
 
 export default Node;
