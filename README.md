@@ -33,7 +33,7 @@ All challenges and tests are in [src](./src)/level-name/challenge-name.
 - [x] [Evaluate Expression Tree](./src/easy/evaluate-expression-tree)
 - [x] [Depth-first Search](./src/easy/depth-first-search)
 - [x] [Minimum Waiting Time](./src/easy/minimum-waiting-time)
-- [ ] [Class Photos](./src/easy/class-photos)
+- [x] [Class Photos](./src/easy/class-photos)
 - [ ] [Tandem Bicycle](./src/easy/tandem-bicycle)
 - [ ] [Optimal Freelancing](./src/easy/optimal-freelancing)
 - [ ] [Remove Duplicate From Linked List](./src/easy/remove-duplicate-from-linked-list)
