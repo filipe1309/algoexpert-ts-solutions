@@ -39,9 +39,9 @@ function classPhotos(redShirtHeights: number[], blueShirtHeights: number[]) {
 function mySolution1(redHeights: number[], blueHeights: number[]) {
   redHeights.sort((a, b) => a - b);
   blueHeights.sort((a, b) => a - b);
-  const redIsFirst = redHeights[0] > blueHeights[0]
+  const isRedInBack = redHeights[0] > blueHeights[0]
   return redHeights.every((num, idx) => {
-    if (redIsFirst) return num > blueHeights[idx];
+    if (isRedInBack) return num > blueHeights[idx];
     return num < blueHeights[idx];
   });
 }
