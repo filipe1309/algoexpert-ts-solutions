@@ -63,12 +63,30 @@ new:
 	\n];" >> src/${l}/${c}/cases.ts
 	@echo "✅ Done!"
 
+commit:
+	@git add .
+# get challenge name and level from git status
+	@$(eval CHALLENGE_PATH := $(shell git status -s | grep -oE 'src\/.*\/.*\/' | sed 's/src\///g'))
+	@$(eval LEVEL := $(shell echo ${CHALLENGE_PATH} | cut -d'/' -f1))
+	@$(eval NAME_SNAKE_CASE := $(shell echo ${CHALLENGE_PATH} | cut -d'/' -f2))
+# replace - with empty space
+	@$(eval NAME := $(shell echo ${NAME_SNAKE_CASE} | sed 's/-/ /g'))
+	@echo "📝 Committing changes to ${NAME} in ${LEVEL} level..."
+	@git commit -m "feat(${LEVEL}): add my solution to ${NAME}"
+# update readme checkbox
+	@$(eval CHECKBOX_LINE := $(shell grep -n "${NAME_SNAKE_CASE}" README.md | cut -d':' -f1))
+	@echo "Updating README checkbox at line ${CHECKBOX_LINE}..."
+# replace empty space (4th character) with x
+	@sed -i '' "${CHECKBOX_LINE}s/./x/4" README.md
+	@echo "✅ Done!"
+
 help:
 	@echo "📖 Available commands:"
 	@echo "  make install"
 	@echo "  make test"
 	@echo "  make run"
 	@echo "  make new l=<level (easy, medium, hard, very-hard)> c=<challenge name>"
+	@echo "  make commit"
 	@echo "  make help"
 
 # run:
