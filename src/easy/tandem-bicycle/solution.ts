@@ -9,7 +9,7 @@ function tandemBicycle(
   return mySolution1(redShirtSpeeds, blueShirtSpeeds, fastest);
 }
 
-// Complexity (worst-case): time O() | space O()
+// Complexity (worst-case): time O(n*logn) | space O(1)
 function mySolution1(
   redShirtSpeeds: number[],
   blueShirtSpeeds: number[],
