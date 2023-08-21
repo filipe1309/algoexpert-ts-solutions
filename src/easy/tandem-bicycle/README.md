@@ -17,5 +17,6 @@ fastest = true
 
 ## Sample Output
 ```javascript
-32
+32 // since there are 5 tandem bicycles, and the 5 tandem bicycles that can be formed by combining every rider are `[5, 2], [5, 3], [3, 7], [9, 2], [2, 1]`. The total speed of these tandem bicycles is `5 + 5 + 7 + 9 + 2 = 32`.
+
 ```

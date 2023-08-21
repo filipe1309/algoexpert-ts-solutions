@@ -5,7 +5,7 @@ import cases from './cases';
 // make test-one t=tandem-bicycle
 describe('tandem-bicycle', () => {
   test.each(cases)('%# (%j)', ({ input, expected }) => {  
-    const result = solution(input);  
+    const result = solution(input.redShirtSpeeds, input.blueShirtSpeeds, input.fastest);  
     expect(result).toEqual(expected);  
   });
 });
