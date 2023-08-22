@@ -1,5 +1,4 @@
 // https://www.algoexpert.io/questions/tandem-bicycle
-// Description: challenge.md
 
 function tandemBicycle(
   redShirtSpeeds: number[],
