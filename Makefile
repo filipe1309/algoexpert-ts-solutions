@@ -104,8 +104,8 @@ commit:
 	@echo "📝 Pushing changes to ${NAME} in ${LEVEL} level in README..."
 # update readme checkbox
 	@$(eval FULL_LINE := $(shell grep -n "${NAME_SNAKE_CASE}" README.md))
-	@$(eval CHECKBOX_LINE := $(shell ${FULL_LINE} | cut -d':' -f1))
-	@echo "Item to update: ${FULL_LINE}"
+	@$(eval CHECKBOX_LINE := $(shell echo "${FULL_LINE}" | cut -d':' -f1))
+	@echo "Item to update: ${FULL_LINE}, at line ${CHECKBOX_LINE}"
 # request confirm before update README, y as default with enter
 	@read -p "Are you sure you want to update README? [Y/n] " -n 1 -r; \
 	echo ""; \
