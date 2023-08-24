@@ -118,7 +118,7 @@ commit:
 # replace empty space (4th character) with x
 	@sed -i '' "${CHECKBOX_LINE}s/./x/4" README.md
 	@git add README.md
-	@git commit -m "docs(`README.md`): check ${NAME} in ${LEVEL} level"
+	@git commit -m "docs(README.md): check ${NAME} in ${LEVEL} level"
 	@echo "✅ Done!"
 
 help:
