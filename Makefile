@@ -36,15 +36,15 @@ new:
 	@$(eval NAME := $(shell echo ${c} | sed 's/-/ /g'))
 # capitalize first letter of each word of NAME, ex: valid subsequence => Valid Subsequence
 	@$(eval NAME := $(shell echo ${NAME} | perl -pe 's/(\w+)/\u$$1/g'))
-	@echo "# ${NAME}\n\n\
-	\n> Difficulty: ${l}\n\
+	@echo "# ${NAME}\n\
+	\n> Source: https://www.algoexpert.io/questions/${c}  \
+	\n> Difficulty: ${l}  \
 	\n> Category: \n\
 	\n---\n" >> src/${l}/${c}/README.md
 # Create solution file
 	@echo "Creating ${c} solution file..."
 	@touch src/${l}/${c}/solution.ts
-	@echo "// https://www.algoexpert.io/questions/${c}\
-	\n\
+	@echo "// Test: make test-one t=${c}\
 	\nfunction $(CAMEL)(input) {\
 	\n  return mySolution1();\
 	\n}\
@@ -61,7 +61,6 @@ new:
 	\nimport solution from './solution';\
 	\nimport cases from './cases';\
 	\n\
-	\n// make test-one t=${c}\
 	\ndescribe('${c}', () => {\
 	\n  test.each(cases)('%# (%j)', ({ input, expected }) => {\
   \n    const result = solution(input);\
