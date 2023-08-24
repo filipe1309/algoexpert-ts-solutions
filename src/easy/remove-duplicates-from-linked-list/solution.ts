@@ -12,7 +12,7 @@ function removeDuplicatesFromLinkedList(linkedList: LinkedList) {
   return mySolution1(linkedList);
 }
 
-// Complexity (worst-case): time O() | space O()
+// Complexity (worst-case): time O(n) | space O(1)
 function mySolution1(linkedList: LinkedList) {
   let node = linkedList;
   while (node.next) {
