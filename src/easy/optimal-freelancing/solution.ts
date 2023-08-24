@@ -1,7 +1,7 @@
 // https://www.algoexpert.io/questions/optimal-freelancing
 
 function optimalFreelancing(jobs: Record<string, number>[]) {
-  return mySolution1(jobs);
+  return solution(jobs);
 }
 
 // Complexity (worst-case): time O(n*logn) | space O(n)
@@ -35,6 +35,21 @@ function mySolution1(jobs: Record<string, number>[]) {
   }
 
   return total;
+}
+
+// Complexity (worst-case): time O(n*logn) | space O(n)
+function solution(jobs: Record<string, number>[]) {
+  const lengthOfWeek = 7;
+  let result = new Array(lengthOfWeek).fill(0);
+  jobs.sort((jobA, jobB) => jobB.payment - jobA.payment)
+  for (const job in jobs) {
+    let position = Math.min(jobs[job].deadline, lengthOfWeek) - 1;
+    for (let i = position; i >= 0; i--) {
+      if (!result[i]) { result[i] = jobs[job].payment; break; }
+    }
+  }
+
+  return result.reduce((prev, curr) => prev + curr);
 }
 
 export default optimalFreelancing;
