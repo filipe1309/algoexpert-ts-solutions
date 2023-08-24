@@ -22,6 +22,8 @@ function mySolution1(linkedList: LinkedList) {
     }
     node = node.next;
   }
+
+  return linkedList;
 }
 
 export default removeDuplicatesFromLinkedList;
