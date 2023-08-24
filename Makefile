@@ -97,7 +97,7 @@ commit:
 		echo "❌ Commit aborted"; \
 		exit 1; \
 	fi
-	@git commit -m "feat(${LEVEL}): add my solution to ${NAME}"
+  @git commit -m "feat(${LEVEL}): add my solution to ${NAME}"
 	@echo "✅ Done!"
 	@echo ""
 	@echo "📝 Pushing changes to ${NAME} in ${LEVEL} level in README..."
@@ -117,6 +117,8 @@ commit:
 	@echo "Updating README checkbox at line ${CHECKBOX_LINE} of ${NAME_SNAKE_CASE}..."
 # replace empty space (4th character) with x
 	@sed -i '' "${CHECKBOX_LINE}s/./x/4" README.md
+	@git add README.md
+	@git commit -m "docs(`README.md`): check ${NAME} in ${LEVEL} level"
 	@echo "✅ Done!"
 
 help:
