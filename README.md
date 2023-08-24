@@ -36,7 +36,7 @@ All challenges and tests are in [src](./src)/level-name/challenge-name.
 - [x] [Class Photos](./src/easy/class-photos)
 - [x] [Tandem Bicycle](./src/easy/tandem-bicycle)
 - [x] [Optimal Freelancing](./src/easy/optimal-freelancing)
-- [ ] [Remove Duplicate From Linked List](./src/easy/remove-duplicate-from-linked-list)
+- [ ] [Remove Duplicates From Linked List](./src/easy/remove-duplicates-from-linked-list)
 - [ ] [Middle Node](./src/easy/middle-node)
 - [ ] [Nth Fibonacci](./src/easy/nth-fibonacci)
 - [ ] [Product Sum](./src/easy/product-sum)
