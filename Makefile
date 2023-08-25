@@ -1,3 +1,6 @@
+.ONESHELL:
+SHELL := /bin/bash
+
 # install dependencies
 install:
 	@echo "📦 Installing dependencies..."
@@ -22,60 +25,7 @@ run:
 # create new challenge
 # example: make new l=easy c=valid-subsequence
 new:
-	@if [ -z ${c} ]; then echo "❌ Please provide a challenge name"; exit 1; fi
-	@if [ -z ${l} ]; then echo "❌ Please provide a level (easy, medium, hard, very-hard)"; exit 1; fi
-	@echo "📝 Creating new challenge ${c} in ${l} level..."
-# Create directory
-	@$(eval CAMEL := $(shell echo ${c} | perl -pe 's/(^|-)(\w)/\U$$2/g' | perl -nE 'say lcfirst'))
-	@echo "Creating ${c} directory..."
-	@mkdir src/${l}/${c}
-# Create README file
-	@echo "Creating ${c} README file..."
-	@touch src/${l}/${c}/README.md
-# replace - with empty space
-	@$(eval NAME := $(shell echo ${c} | sed 's/-/ /g'))
-# capitalize first letter of each word of NAME, ex: valid subsequence => Valid Subsequence
-	@$(eval NAME := $(shell echo ${NAME} | perl -pe 's/(\w+)/\u$$1/g'))
-	@echo "# ${NAME}\n\
-	\n> Source: https://www.algoexpert.io/questions/${c}  \
-	\n> Difficulty: ${l}  \
-	\n> Category: \n\
-	\n---\n" >> src/${l}/${c}/README.md
-# Create solution file
-	@echo "Creating ${c} solution file..."
-	@touch src/${l}/${c}/solution.ts
-	@echo "// Test: make test-one t=${c}\
-	\nfunction $(CAMEL)(input) {\
-	\n  return mySolution1();\
-	\n}\
-	\n\
-	\n// Complexity (worst-case): time O() | space O()\
-	\nfunction mySolution1() {\
-	\n  \
-	\n}\n\
-	\nexport default $(CAMEL);" >> src/${l}/${c}/solution.ts
-# Create test file
-	@echo "Creating ${c} test files..."
-	@touch src/${l}/${c}/solution.spec.ts
-	@echo "import { describe, expect, test } from '@jest/globals';\
-	\nimport solution from './solution';\
-	\nimport cases from './cases';\
-	\n\
-	\ndescribe('${c}', () => {\
-	\n  test.each(cases)('%# (%j)', ({ input, expected }) => {\
-  \n    const result = solution(input);\
-  \n    expect(result).toEqual(expected);\
-  \n  });\
-	\n});" >> src/${l}/${c}/solution.spec.ts
-# Create test cases file
-	@touch src/${l}/${c}/cases.ts
-	@echo "export default [\
-	\n  {\
-	\n    input: [],\
-	\n    expected: []\
-	\n  },\
-	\n];" >> src/${l}/${c}/cases.ts
-	@echo "✅ Done!"
+	./scripts/new.sh ${l} ${c}
 
 commit:
 	@git add .
@@ -97,7 +47,7 @@ commit:
 		echo "❌ Commit aborted"; \
 		exit 1; \
 	fi
-  @git commit -m "feat(${LEVEL}): add my solution to ${NAME}"
+	@git commit -m "feat(${LEVEL}): add my solution to ${NAME}"
 	@echo "✅ Done!"
 	@echo ""
 	@echo "📝 Pushing changes to ${NAME} in ${LEVEL} level in README..."
@@ -129,6 +79,17 @@ help:
 	@echo "  make new l=<level (easy, medium, hard, very-hard)> c=<challenge name>"
 	@echo "  make commit"
 	@echo "  make help"
+
+xyz:
+# read x from user input if not provided
+	@$(eval x := $(shell echo ${x}))
+	@if [ -z ${x} ]; then \
+		echo "x:"; \
+		read x; \
+	fi;
+	@echo "x:" $$x;
+# if $$x is not empty copy to make var ${x}
+	
 
 # run:
 # 	@$(eval ARG := $(filter-out $@,$(MAKECMDGOALS)))
