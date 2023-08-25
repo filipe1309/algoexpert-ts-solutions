@@ -11,19 +11,38 @@ export class LinkedList {
 // Test: make test-one t=middle-node
 function middleNode(linkedList: LinkedList) {
   return mySolution1(linkedList);
+  // return solution1(linkedList);
 }
 
 // Complexity (worst-case): time O(n), space O(1)
-function mySolution1(linkedList: LinkedList): LinkedList | null | undefined {
-  let p1: LinkedList | null | undefined = linkedList;
-  let p2: LinkedList | null = linkedList;
+function mySolution1(linkedList: LinkedList): LinkedList | null {
+  let slowNode: LinkedList | null | undefined = linkedList;
+  let fastNode: LinkedList | null = linkedList;
 
-  while (p2 && p2.next) {
-    p1 = p1?.next;
-    p2 = p2?.next?.next;
+  while (fastNode && fastNode.next) {
+    slowNode = slowNode?.next;
+    fastNode = fastNode?.next?.next;
   }
 
-  return p1;
+  return slowNode;
+}
+
+// Complexity (worst-case): time O(n), space O(1)
+function solution1(linkedList: LinkedList): LinkedList | null {
+  let count = 0;
+  let currentNode: LinkedList | null = linkedList;
+  while (currentNode) {
+    count++;
+    currentNode = currentNode.next;
+  }
+
+  const middle = Math.floor(count / 2);
+  currentNode = linkedList;
+  for (let i = 0; i < middle; i++) {
+    currentNode = currentNode?.next || null;
+  }
+
+  return currentNode;
 }
 
 export default middleNode;
