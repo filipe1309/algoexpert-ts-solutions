@@ -23,7 +23,7 @@ run:
 	make test
 
 # create new challenge
-# example: make new l=easy c=valid-subsequence
+# example: make new [l=easy] [c=valid-subsequence]
 new:
 	./scripts/new.sh ${l} ${c}
 
@@ -35,7 +35,7 @@ help:
 	@echo "  make install"
 	@echo "  make test"
 	@echo "  make run"
-	@echo "  make new l=<level (easy, medium, hard, very-hard)> c=<challenge name>"
+	@echo "  make new [l=<level (easy, medium, hard, very-hard)>] [c=<challenge name>]"
 	@echo "  make commit"
 	@echo "  make help"
 	
