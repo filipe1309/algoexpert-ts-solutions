@@ -79,16 +79,6 @@ help:
 	@echo "  make new l=<level (easy, medium, hard, very-hard)> c=<challenge name>"
 	@echo "  make commit"
 	@echo "  make help"
-
-xyz:
-# read x from user input if not provided
-	@$(eval x := $(shell echo ${x}))
-	@if [ -z ${x} ]; then \
-		echo "x:"; \
-		read x; \
-	fi;
-	@echo "x:" $$x;
-# if $$x is not empty copy to make var ${x}
 	
 
 # run:
