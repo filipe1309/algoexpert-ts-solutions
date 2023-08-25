@@ -14,6 +14,7 @@ class BST {
 
 function findClosestValueInBst(tree: BST, target: number) {
   return mySolution1(tree, target);
+  // return solution2(tree, target);
 }
 
 function walk(tree: BST | null, target: number, min: number): number {
@@ -33,7 +34,8 @@ function mySolution1(tree: BST, target: number) {
 
 // Iterative
 // Complexity (worst-case): time O(n) | space O(1)
-function solution2(tree: BST, target: number) {
+function solution2(tree: BST | null, target: number) {
+  if (!tree) return 0;
   let min = tree.value;
   while (tree) {
     if (Math.abs(tree.value - target) < Math.abs(min - target)) min = tree.value;

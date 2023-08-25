@@ -14,13 +14,13 @@ function middleNode(linkedList: LinkedList) {
 }
 
 // Complexity (worst-case): time O(n), space O(1)
-function mySolution1(linkedList: LinkedList) {
-  let p1 = linkedList;
-  let p2 = linkedList;
+function mySolution1(linkedList: LinkedList): LinkedList | null | undefined {
+  let p1: LinkedList | null | undefined = linkedList;
+  let p2: LinkedList | null = linkedList;
 
   while (p2 && p2.next) {
-    p1 = p1.next;
-    p2 = p2.next.next;
+    p1 = p1?.next;
+    p2 = p2?.next?.next;
   }
 
   return p1;

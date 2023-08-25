@@ -28,16 +28,18 @@ function mySolution1(root: BinaryTree) {
 
 // Iterative | Stack
 // Complexity (worst-case): time O(n) | space O(h) h=height
-function solution1(root: BinaryTree) {
+function solution1(root: BinaryTree | null) {
+  if (!root) return 0;
   let acc = 0;
   let stack = [{node: root, depth: 0}];
   while (stack.length) {
     let nodeInfo = stack.pop();
+    if (!nodeInfo) continue;
     const {node, depth} = nodeInfo;
     if (!node) continue;
     acc += depth;
-    stack.push({node: node.left, depth: depth+1});
-    stack.push({node: node.right, depth: depth+1});
+    if (node.left) stack.push({node: node.left, depth: depth+1});
+    if (node.right) stack.push({node: node.right, depth: depth+1});
   }
 
   return acc;

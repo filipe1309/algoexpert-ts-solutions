@@ -6,7 +6,7 @@ import cases from './cases';
 describe('depth-first-search', () => {
   test.each(cases)('%# (%j)', ({ input, expected }) => {
     const node = new Node(input.name);
-    node.initializeRecursive(input as Node);
+    node.initializeRecursive(input as unknown as Node);
     let result = node.depthFirstSearch([]);
     expect(result).toEqual(expected);
   });

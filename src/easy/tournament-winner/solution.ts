@@ -21,7 +21,7 @@ function mySolution1(competitions: string[][], results: number[]) {
   return finalWinner;
 }
 
-function updateScore(points, currWinnerKey): void {
+function updateScore(points: { [key: string]: number }, currWinnerKey: string) {
   if (!points[currWinnerKey]) points[currWinnerKey] = 0;
   points[currWinnerKey] += 3;
 }

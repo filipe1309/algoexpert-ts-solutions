@@ -28,9 +28,9 @@ function mySolution1(linkedList: LinkedList) {
 
 // Complexity (worst-case): time O(n) | space O(1)
 function solution(linkedList: LinkedList) {
-  let currentNode = linkedList;
+  let currentNode: LinkedList | null = linkedList;
   while (currentNode) {
-    let nextDistinctNode = currentNode.next;
+    let nextDistinctNode: LinkedList | null = currentNode.next;
     while (nextDistinctNode && nextDistinctNode.value === currentNode.value) {
       nextDistinctNode = nextDistinctNode.next;
     }

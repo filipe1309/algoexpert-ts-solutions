@@ -18,6 +18,7 @@ class Node {
     this.name = node.name;
     while (node.children.length) {
       let child = node.children.shift();
+      if (!child) continue;
       this.children.push(new Node(child.name));
       this.children[this.children.length - 1].initializeRecursive(child);
     }
