@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "module": "commonjs",
+    "strict": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
     "outDir": "out",
     "sourceMap": true
-  }
+  },
+  "exclude": ["node_modules"]
 }
