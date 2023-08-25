@@ -2,12 +2,25 @@
 
 # This script creates a new challenge directory with README, solution, test and test cases files
 
+# read arguments from command line
+for argument in "$@"
+do
+  key=$(echo $argument | cut -f1 -d=)
+  value=$(echo $argument | cut -f2 -d=)
+
+  case "$key" in
+    "c")        c="$value" ;;
+    "l")        l="$value" ;;
+    *)
+  esac
+done
+
 # read challenge name if not provided $1
-if [ -z $1 ]; then echo "Challenge name:"; read c; else c=$1; fi
+if [ -z ${c} ]; then echo "Challenge name:"; read c; fi
 # if challenge name is empty, exit
 if [ -z ${c} ]; then echo "❌ Please provide a challenge name"; exit 1; fi
 # read challenge level if not provided $2
-if [ -z $2 ]; then read -p "Challenge level (easy, medium, hard, very-hard): " l; else l=$2; fi
+if [ -z ${l} ]; then read -p "Challenge level (easy, medium, hard, very-hard): " l; fi
 # if challenge level is empty, exit
 if [ -z ${l} ]; then echo "❌ Please provide a level (easy, medium, hard, very-hard)"; exit 1; fi
 echo "📝 Creating new challenge ${c} in ${l} level..."

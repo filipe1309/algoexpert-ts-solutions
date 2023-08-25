@@ -25,7 +25,7 @@ run:
 # create new challenge
 # example: make new [l=easy] [c=valid-subsequence]
 new:
-	./scripts/new.sh ${l} ${c}
+	./scripts/new.sh l=${l} c=${c}
 
 commit:
 	./scripts/commit.sh
