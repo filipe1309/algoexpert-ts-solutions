@@ -1,8 +1,8 @@
 // Test: make test-one t=nth-fibonacci
 function nthFibonacci(n: number): number {
-  // return mySolution1(n); // Complexity (worst-case): time O(2^n) | space O(n)
-  // return solution2(n); // Complexity (worst-case): time O(n) | space O(n)
-  return solution3(n); // Complexity (worst-case): time O(n) | space O(1)
+  // return mySolution1(n); // time O(2^n) | space O(n)
+  // return solution2(n); // time O(n) | space O(n)
+  return solution3(n); // time O(n) | space O(1)
 }
 
 // Complexity (worst-case): time O(2^n) | space O(n)
