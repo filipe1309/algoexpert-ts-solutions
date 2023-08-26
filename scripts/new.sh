@@ -2,8 +2,7 @@
 
 # This script creates a new challenge directory with README, solution, test and test cases files
 
-## Read arguments
-
+# Read arguments
 # read arguments from command line
 for argument in "$@"
 do
@@ -29,11 +28,11 @@ if [ -z ${l} ]; then echo "❌ Please provide a level (easy, medium, hard, very-
 echo "📝 Creating new challenge ${c} in ${l} level..."
 
 # Create directory
-echo "Creating ${c} directory..."
+echo " 👉 Creating ${c} directory..."
 mkdir src/${l}/${c}
 
 # Create README file
-echo "Creating ${c} README file..."
+echo " 👉 Creating ${c} README file..."
 touch src/${l}/${c}/README.md
 # replace - with empty space
 NAME=$(echo ${c} | sed 's/-/ /g')
@@ -44,11 +43,10 @@ echo "# ${NAME}
 > Difficulty: ${l}  
 > Category: 
 ---
-
 " >> src/${l}/${c}/README.md
 
 # Create solution file
-echo "Creating ${c} solution file..."
+echo " 👉 Creating ${c} solution file..."
 touch src/${l}/${c}/solution.ts
 CAMEL=$(echo ${c} | perl -pe 's/(^|-)(\w)/\u$2/g' | perl -nE 'say lcfirst')
 echo -e "// Test: make test-one t=${c}
@@ -64,7 +62,7 @@ function mySolution1() {
 export default ${CAMEL};" >> src/${l}/${c}/solution.ts
 
 # Create test file
-echo "Creating ${c} test files..."
+echo " 👉 Creating ${c} test files..."
 touch src/${l}/${c}/solution.spec.ts
 echo "import { describe, expect, test } from '@jest/globals';
 import solution from './solution';
@@ -78,6 +76,7 @@ describe('${c}', () => {
 });" >> src/${l}/${c}/solution.spec.ts
 
 # Create test cases file
+echo " 👉 Creating ${c} test cases file..."
 touch src/${l}/${c}/cases.ts
 echo "export default [
   {
