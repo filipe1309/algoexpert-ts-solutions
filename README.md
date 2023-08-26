@@ -8,7 +8,7 @@
 
 ## 💬 About
 
-This project was developed following AlgoExpert's "[AlgoExpert](https://www.algoexpert.io/questions)" course.
+This repository contains my solutions for the challenges from [AlgoExpert](https://www.algoexpert.io/).
 
 All challenges and tests are in [src](./src)/level-name/challenge-name.
 
