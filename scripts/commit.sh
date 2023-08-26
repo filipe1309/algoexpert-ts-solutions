@@ -10,7 +10,7 @@ NAME_SNAKE_CASE=$(echo ${CHALLENGE_PATH} | cut -d'/' -f2)
 # replace - with empty space
 NAME=$(echo ${NAME_SNAKE_CASE} | sed 's/-/ /g')
 echo "📝 Committing changes to ${NAME} in ${LEVEL} level..."
-echo "✅ COMMIT MSG: \"feat(${LEVEL}): add my solution to ${NAME}\"";
+echo "✅ COMMIT MSG: \"feat(${NAME_SNAKE_CASE}): add my solution\"";
 git status -s
 # request confirm before commit, y as default with enter
 read -p "Are you sure you want to commit? [Y/n] " -n 1 -r;
@@ -21,7 +21,7 @@ else
   echo "❌ Commit aborted";
   exit 1;
 fi
-git commit -m "feat(${LEVEL}): add my solution to ${NAME}"
+git commit -m "feat(${NAME_SNAKE_CASE}): add my solution"
 echo "✅ Done!"
 echo ""
 echo "📝 Pushing changes to ${NAME} in ${LEVEL} level in README..."
