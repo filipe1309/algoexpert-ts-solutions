@@ -1,7 +1,8 @@
 // Test: make test-one t=nth-fibonacci
 function nthFibonacci(n: number): number {
   // return mySolution1(n); // Complexity (worst-case): time O(2^n) | space O(n)
-  return solution2(n); // Complexity (worst-case): time O(n) | space O(n)
+  // return solution2(n); // Complexity (worst-case): time O(n) | space O(n)
+  return solution3(n); // Complexity (worst-case): time O(n) | space O(1)
 }
 
 // Complexity (worst-case): time O(2^n) | space O(n)
@@ -23,5 +24,20 @@ function solution2(n: number, memoize: {[key: number]: number} = {1: 0, 2: 1}): 
   return memoize[n];
 }
 
+// Iterative
+// Complexity (worst-case): time O(n) | space O(1)
+function solution3(n: number): number { 
+  const lastTwo = [0, 1];
+  let counter = 3;
+
+  while (counter <= n) {
+    const nextFib = lastTwo[0] + lastTwo[1];
+    lastTwo[0] = lastTwo[1];
+    lastTwo[1] = nextFib;
+    counter++;
+  }
+
+  return n > 1 ? lastTwo[1] : lastTwo[0];
+}
 
 export default nthFibonacci;
