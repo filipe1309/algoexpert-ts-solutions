@@ -3,7 +3,7 @@ function nthFibonacci(n: number): number {
   return mySolution1(n);
 }
 
-// Complexity (worst-case): time O(n) | space O(1)
+// Complexity (worst-case): time O(2^n) | space O(n)
 function mySolution1(n: number): number {
   if (n === 1) return 0;
   if (n === 2) return 1;
