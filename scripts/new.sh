@@ -20,10 +20,19 @@ if [ -z ${c} ]; then echo "Challenge name:"; read c; fi
 # if challenge name is empty, exit
 if [ -z ${c} ]; then echo "❌ Please provide a challenge name"; exit 1; fi
 # read challenge level if not provided $2
-if [ -z ${l} ]; then read -p "Challenge level (easy, medium, hard, very-hard): " l; fi
+if [ -z ${l} ]; then 
+  # load menu.sh
+  source scripts/menu.sh
+  echo "Challenge level:"
+  case `select_opt "easy" "medium" "hard" "very-hard"` in
+      0) l="easy";;
+      1) l="medium";;
+      2) l="hard";;
+      3) l="very-hard";;
+  esac
+fi
 # if challenge level is empty, exit
 if [ -z ${l} ]; then echo "❌ Please provide a level (easy, medium, hard, very-hard)"; exit 1; fi
-
 
 echo "📝 Creating new challenge ${c} in ${l} level..."
 
