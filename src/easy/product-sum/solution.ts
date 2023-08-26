@@ -8,10 +8,10 @@ function productSum(array: SpecialArray) {
 // Complexity (worst-case): time O(n) | space O(d), d=depth of the array
 function mySolution1(array: SpecialArray, level: number = 1): number {
   let total = 0;
-  for (let i = 0; i < array.length; i++) {
-    if (Array.isArray(array[i])) {
-      total += mySolution1(array[i] as SpecialArray, level + 1);
-    } else total += array[i] as number;
+  for (const element of array) {
+    if (Array.isArray(element)) {
+      total += mySolution1(element as SpecialArray, level + 1);
+    } else total += element as number;
   }
   return total * level;
 }
