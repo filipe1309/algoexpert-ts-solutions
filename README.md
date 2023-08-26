@@ -38,7 +38,7 @@ All challenges and tests are in [src](./src)/level-name/challenge-name.
 - [x] [Optimal Freelancing](./src/easy/optimal-freelancing)
 - [x] [Remove Duplicates From Linked List](./src/easy/remove-duplicates-from-linked-list)
 - [x] [Middle Node](./src/easy/middle-node)
-- [ ] [Nth Fibonacci](./src/easy/nth-fibonacci)
+- [x] [Nth Fibonacci](./src/easy/nth-fibonacci)
 - [ ] [Product Sum](./src/easy/product-sum)
 - [ ] [Binary Search](./src/easy/binary-search)
 - [ ] [Find Three Largest Numbers](./src/easy/find-three-largest-numbers)
