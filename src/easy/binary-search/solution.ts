@@ -13,17 +13,16 @@ function mySolution1(array: number[], target: number) {
 // Recursive
 // Complexity (worst-case): time O(logn) | space O(logn)
 function mySolution2(array: number[], target: number): number {
-  return myBS(array, target, 0, array.length-1);
+  return myBSHelper(array, target, 0, array.length - 1);
 }
 
-function myBS(array: number[], target: number, begin: number, end: number): number {
-  const middle = Math.floor((begin+end)/2);
+function myBSHelper(array: number[], target: number, begin: number, end: number): number {
+  if (end <= begin) return -1;
+  const middle = Math.floor((begin+end) / 2);
 
   if (target === array[middle]) return middle;
-  if (end <= begin) return -1;
-
-  if (target < array[middle]) return myBS(array, target, begin, middle-1);
-  return myBS(array, target, middle+1, end);
+  if (target < array[middle]) return myBSHelper(array, target, begin, middle - 1);
+  return myBSHelper(array, target, middle + 1, end);
 }
 
 // Iterative
@@ -33,9 +32,9 @@ function mySolution3(array: number[], target: number): number {
   let end = array.length - 1;
   
   while (end >= begin) {
-    const middle = Math.floor((begin+end)/2);
+    const middle = Math.floor((begin+end) / 2);
     if (target === array[middle]) return middle;
-    if (target < array[middle]) end = middle-1; else begin = middle + 1;
+    if (target < array[middle]) end = middle - 1; else begin = middle + 1;
   }
 
   return -1;
