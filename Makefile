@@ -7,7 +7,7 @@ install:
 	npm install
 
 # run all tests: make test
-# run specific test: make test t=two-number-sumtest:
+# run specific test: make test t=two-number-sumtest
 test:
 	@echo "🟢 Running tests..."
 	npm run test -- -t "${t}"
