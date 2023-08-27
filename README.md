@@ -41,7 +41,7 @@ All challenges and tests are in [src](./src)/level-name/challenge-name.
 - [x] [Nth Fibonacci](./src/easy/nth-fibonacci)
 - [x] [Product Sum](./src/easy/product-sum)
 - [x] [Binary Search](./src/easy/binary-search)
-- [ ] [Find Three Largest Numbers](./src/easy/find-three-largest-numbers)
+- [x] [Find Three Largest Numbers](./src/easy/find-three-largest-numbers)
 - [ ] [Bubble Sort](./src/easy/bubble-sort)
 - [ ] [Insertion Sort](./src/easy/insertion-sort)
 - [ ] [Selection Sort](./src/easy/selection-sort)
