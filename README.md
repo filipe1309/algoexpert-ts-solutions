@@ -277,9 +277,9 @@ make test
 
 Run a specific test:
 ```sh
-make test-one t=CHALLENGE_NAME
+make test t=CHALLENGE_NAME
 ```
-> Example: `make test-one t=two-number-sum`
+> Example: `make test t=two-number-sum`
 
 Create a new test:
 ```sh

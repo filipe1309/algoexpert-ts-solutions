@@ -8,7 +8,7 @@ export class LinkedList {
   }
 }
 
-// Test: make test-one t=middle-node
+// Test: make test t=middle-node
 function middleNode(linkedList: LinkedList) {
   return mySolution1(linkedList);
   // return solution1(linkedList);

@@ -1,6 +1,6 @@
 type SpecialArray = Array<number | SpecialArray>;
 
-// Test: make test-one t=product-sum
+// Test: make test t=product-sum
 function productSum(array: SpecialArray) {
   return mySolution1(array); // time O(n) | space O(d), d=depth of the array
 }

@@ -58,7 +58,7 @@ echo "# ${NAME}
 echo " 👉 Creating ${c} solution file..."
 touch src/${l}/${c}/solution.ts
 CAMEL=$(echo ${c} | perl -pe 's/(^|-)(\w)/\u$2/g' | perl -nE 'say lcfirst')
-echo -e "// Test: make test-one t=${c}
+echo -e "// Test: make test t=${c}
 function ${CAMEL}(input) {
   return mySolution1(); // time O() | space O()
 }

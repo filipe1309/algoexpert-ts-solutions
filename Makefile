@@ -6,14 +6,9 @@ install:
 	@echo "📦 Installing dependencies..."
 	npm install
 
-# run tests
+# run all tests: make test
+# run specific test: make test t=two-number-sumtest:
 test:
-	@echo "🟢 Running tests..."
-	npm run test
-
-# run specific test
-# example: make test-one t=two-number-sum
-test-one:
 	@echo "🟢 Running tests..."
 	npm run test -- -t "${t}"
 

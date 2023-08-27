@@ -1,4 +1,4 @@
-// Test: make test-one t=binary-search
+// Test: make test t=binary-search
 function binarySearch(array: number[], target: number): number {
   // return mySolution1(array, target); // time O(n) | space O(1)
   // return mySolution2(array, target); // time O(logn) | space O(logn)

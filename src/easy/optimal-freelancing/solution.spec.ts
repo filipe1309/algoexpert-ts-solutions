@@ -2,7 +2,7 @@ import { describe, expect, test } from '@jest/globals';
 import solution from './solution';
 import cases from './cases';
 
-// make test-one t=optimal-freelancing
+// make test t=optimal-freelancing
 describe('optimal-freelancing', () => {
   test.each(cases)('%# (%j)', ({ input, expected }) => {  
     const result = solution(input);  

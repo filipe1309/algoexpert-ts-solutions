@@ -1,4 +1,4 @@
-// Test: make test-one t=nth-fibonacci
+// Test: make test t=nth-fibonacci
 function nthFibonacci(n: number): number {
   // return mySolution1(n); // time O(2^n) | space O(n)
   // return solution2(n); // time O(n) | space O(n)
