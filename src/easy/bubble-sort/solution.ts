@@ -5,16 +5,22 @@ function bubbleSort(array: number[]) {
 
 // Complexity (worst-case): time O(n^2) | space O(1)
 function mySolution1(array: number[]) {
+  let isSorted = false;
   for (let i = 0; i < array.length; i++) {
+    if (isSorted) break;
+    isSorted = true;
     for (let j = 0; j < array.length - i; j++) {
       if (array[j] > array[j+1]) {
-        const tmp = array[j];
-        array[j] = array[j+1];
-        array[j+1] = tmp;
+        swap(array, j, j + 1);
+        isSorted = false;
       }
     }
   }
   return array;
+
+  function swap (array: number[], i: number, j: number) {
+    [array[i], array[j]] = [array[j], array[i]];
+  }
 }
 
 export default bubbleSort;
