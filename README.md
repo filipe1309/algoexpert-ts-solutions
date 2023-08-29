@@ -43,7 +43,7 @@ All challenges and tests are in [src](./src)/level-name/challenge-name.
 - [x] [Binary Search](./src/easy/binary-search)
 - [x] [Find Three Largest Numbers](./src/easy/find-three-largest-numbers)
 - [x] [Bubble Sort](./src/easy/bubble-sort)
-- [ ] [Insertion Sort](./src/easy/insertion-sort)
+- [x] [Insertion Sort](./src/easy/insertion-sort)
 - [ ] [Selection Sort](./src/easy/selection-sort)
 - [ ] [Palindrome Check](./src/easy/palindrome-check)
 - [ ] [Caesar Cipher Encryptor](./src/easy/caesar-cipher-encryptor)
