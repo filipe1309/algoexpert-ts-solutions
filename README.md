@@ -46,7 +46,7 @@ All challenges and tests are in [src](./src)/level-name/challenge-name.
 - [x] [Insertion Sort](./src/easy/insertion-sort)
 - [x] [Selection Sort](./src/easy/selection-sort)
 - [x] [Palindrome Check](./src/easy/palindrome-check)
-- [ ] [Caesar Cipher Encryptor](./src/easy/caesar-cipher-encryptor)
+- [x] [Caesar Cipher Encryptor](./src/easy/caesar-cipher-encryptor)
 - [ ] [Run-Length Encoding](./src/easy/run-length-encoding)
 - [ ] [Common Characters](./src/easy/common-characters)
 - [ ] [Generate Document](./src/easy/generate-document)
