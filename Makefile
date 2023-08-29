@@ -27,11 +27,10 @@ commit:
 
 help:
 	@echo "📖 Available commands:"
-	@echo "  make install"
-	@echo "  make test"
-	@echo "  make run"
-	@echo "  make new [l=<level (easy, medium, hard, very-hard)>] [c=<challenge name>]"
-	@echo "  make commit"
+	@echo "  make install (installs dependencies)"
+	@echo "  make test [t=<test name>] (runs all tests or specific test)"
+	@echo "  make new [n=<challenge name>] [l=<level (easy, medium, hard, very-hard)>] [c=<category>] (creates new challenge)"
+	@echo "  make commit (commits changes and updates README.md)"
 	@echo "  make help"
 	
 
