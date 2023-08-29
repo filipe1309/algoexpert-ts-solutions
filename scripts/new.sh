@@ -4,6 +4,8 @@
 
 clear
 
+source scripts/menu.sh
+
 # Read arguments
 # read arguments from command line
 for argument in "$@"
@@ -12,55 +14,79 @@ do
   value=$(echo $argument | cut -f2 -d=)
 
   case "$key" in
-    "c")        c="$value" ;;
-    "l")        l="$value" ;;
+    "name")        name="$value" ;;
+    "level")       level="$value" ;;
+    "category")    category="$value" ;;
     *)
   esac
 done
-# read challenge name if not provided $1
-if [ -z ${c} ]; then echo "Challenge name:"; read c; fi
+# read challenge name if not provided ${name}
+if [ -z ${name} ]; then echo "Challenge name:"; read name; fi
 # if challenge name is empty, exit
-if [ -z ${c} ]; then echo "❌ Please provide a challenge name"; exit 1; fi
-# read challenge level if not provided $2
-if [ -z ${l} ]; then 
-  # load menu.sh
-  source scripts/menu.sh
+if [ -z ${name} ]; then echo "❌ Please provide a challenge name"; exit 1; fi
+# read challenge level if not provided ${level}
+if [ -z ${level} ]; then 
   echo "Challenge level:"
   case `select_opt "easy" "medium" "hard" "very-hard"` in
-      0) l="easy";;
-      1) l="medium";;
-      2) l="hard";;
-      3) l="very-hard";;
+      0) level="easy";;
+      1) level="medium";;
+      2) level="hard";;
+      3) level="very-hard";;
   esac
 fi
 # if challenge level is empty, exit
-if [ -z ${l} ]; then echo "❌ Please provide a level (easy, medium, hard, very-hard)"; exit 1; fi
+if [ -z ${level} ]; then echo "❌ Please provide a level (easy, medium, hard, very-hard)"; exit 1; fi
 
-echo "📝 Creating new challenge ${c} in ${l} level..."
+echo "📝 Creating new challenge ${name} in ${level} level..."
 
 # Create directory
-echo " 👉 Creating ${c} directory..."
-mkdir src/${l}/${c}
+echo " 👉 Creating ${name} directory..."
+mkdir src/${level}/${name}
 
 # Create README file
-echo " 👉 Creating ${c} README file..."
-touch src/${l}/${c}/README.md
+echo " 👉 Creating ${name} README file..."
+touch src/${level}/${name}/README.md
 # replace - with empty space
-NAME=$(echo ${c} | sed 's/-/ /g')
+NAME=$(echo ${name} | sed 's/-/ /g')
 # capitalize first letter of each word of NAME, ex: valid subsequence => Valid Subsequence
 NAME=$(echo ${NAME} | perl -pe 's/(\w+)/\u$1/g')
+# select category if not provided ${cat}
+if [ -z ${category} ]; then
+  echo "Category:"
+  case `select_opt "Arrays" "Binary Trees" "Binary Search Trees" "Dynamic Programming" "Famous Algorithms" "Graphs" "Greedy Algorithms" "Heaps" "Linked Lists" "Recursion" "Searching" "Sorting" "Stacks" "Strings" "Tries"` in
+      0) category="Arrays";;
+      1) category="Binary Trees";;
+      2) category="Binary Search Trees";;
+      3) category="Dynamic Programming";;
+      4) category="Famous Algorithms";;
+      5) category="Graphs";;
+      6) category="Greedy Algorithms";;
+      7) category="Heaps";;
+      8) category="Linked Lists";;
+      9) category="Recursion";;
+      10) category="Searching";;
+      11) category="Sorting";;
+      12) category="Stacks";;
+      13) category="Strings";;
+      14) category="Tries";;
+  esac
+fi
+# capitalize level name
+LEVEL=$(echo ${level} | perl -pe 's/(\w+)/\u$1/g')
+# capitalize category name
+CATEGORY=$(echo ${category} | perl -pe 's/(\w+)/\u$1/g')
 echo "# ${NAME}
-> Source: https://www.algoexpert.io/questions/${c}  
-> Difficulty: ${l}  
-> Category: 
+> Source: https://www.algoexpert.io/questions/${name}  
+> Difficulty: ${LEVEL}  
+> Category: ${CATEGORY}
 ---
-" >> src/${l}/${c}/README.md
+" >> src/${level}/${name}/README.md
 
 # Create solution file
-echo " 👉 Creating ${c} solution file..."
-touch src/${l}/${c}/solution.ts
-CAMEL=$(echo ${c} | perl -pe 's/(^|-)(\w)/\u$2/g' | perl -nE 'say lcfirst')
-echo -e "// Test: make test t=${c}
+echo " 👉 Creating ${name} solution file..."
+touch src/${level}/${name}/solution.ts
+CAMEL=$(echo ${name} | perl -pe 's/(^|-)(\w)/\u$2/g' | perl -nE 'say lcfirst')
+echo -e "// Test: make test t=${name}
 function ${CAMEL}(input) {
   return mySolution1(); // time O() | space O()
 }
@@ -70,30 +96,30 @@ function mySolution1() {
   
 }
 
-export default ${CAMEL};" >> src/${l}/${c}/solution.ts
+export default ${CAMEL};" >> src/${level}/${name}/solution.ts
 
 # Create test file
-echo " 👉 Creating ${c} test files..."
-touch src/${l}/${c}/solution.spec.ts
+echo " 👉 Creating ${name} test files..."
+touch src/${level}/${name}/solution.spec.ts
 echo "import { describe, expect, test } from '@jest/globals';
 import solution from './solution';
 import cases from './cases';
 
-describe('${c}', () => {
+describe('${name}', () => {
   test.each(cases)('%# (%j)', ({ input, expected }) => {
     const result = solution(input);
     expect(result).toEqual(expected);
   });
-});" >> src/${l}/${c}/solution.spec.ts
+});" >> src/${level}/${name}/solution.spec.ts
 
 # Create test cases file
-echo " 👉 Creating ${c} test cases file..."
-touch src/${l}/${c}/cases.ts
+echo " 👉 Creating ${name} test cases file..."
+touch src/${level}/${name}/cases.ts
 echo "export default [
   {
     input: [],
     expected: []
   },
-];" >> src/${l}/${c}/cases.ts
+];" >> src/${level}/${name}/cases.ts
 echo "✅ Done!"
 

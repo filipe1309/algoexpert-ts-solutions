@@ -20,7 +20,7 @@ run:
 # create new challenge
 # example: make new [l=easy] [c=valid-subsequence]
 new:
-	./scripts/new.sh l=${l} c=${c}
+	./scripts/new.sh name=${n} level=${l} category=${c}
 
 commit:
 	./scripts/commit.sh
