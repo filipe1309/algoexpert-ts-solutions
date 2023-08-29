@@ -2,6 +2,8 @@
 
 # This script creates a new challenge directory with README, solution, test and test cases files
 
+clear
+
 # Read arguments
 # read arguments from command line
 for argument in "$@"

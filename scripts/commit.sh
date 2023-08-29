@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# This script commits changes to a challenge directory
+clear
+
+# This script commits changes to a challenge directory and updates the README checkbox
 
 git add .
 # get challenge name and level from git status
@@ -23,7 +25,9 @@ else
 fi
 git commit -m "feat(${NAME_SNAKE_CASE}): add my solution"
 echo "✅ Done!"
-echo ""
+
+clear
+
 echo "📝 Pushing changes to ${NAME} in ${LEVEL} level in README..."
 # update readme checkbox
 FULL_LINE=$(grep -n "${NAME_SNAKE_CASE}" README.md)
