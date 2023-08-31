@@ -49,7 +49,7 @@ All challenges and tests are in [src](./src)/level-name/challenge-name.
 - [x] [Caesar Cipher Encryptor](./src/easy/caesar-cipher-encryptor)
 - [x] [Run-Length Encoding](./src/easy/run-length-encoding)
 - [x] [Common Characters](./src/easy/common-characters)
-- [ ] [Generate Document](./src/easy/generate-document)
+- [x] [Generate Document](./src/easy/generate-document)
 - [ ] [First Non-Repeating Character](./src/easy/first-non-repeating-character)
 - [ ] [Semordnilap](./src/easy/semordnilap)
 
