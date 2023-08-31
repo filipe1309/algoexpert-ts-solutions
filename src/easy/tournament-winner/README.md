@@ -26,7 +26,7 @@ corresponding competition won and a 0 means that the away team won.
 It's guaranteed that exactly one team will win the tournament and that each team will compete against
 all other teams exactly once. It's also guaranteed that the tournament will always have at least two teams.
 
-## Sample Input
+**Sample Input**
 ```javascript
 competitions = [
   ["HTML", "C#"],
@@ -36,7 +36,7 @@ competitions = [
 results = [0, 0, 1]
 ```
 
-## Sample Output
+**Sample Output**
 ```javascript
 "Python"
 // C# beats HTML, Python Beats C#, and Python Beats HTML.

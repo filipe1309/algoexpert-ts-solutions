@@ -16,7 +16,7 @@ input array, and returns it.
 If you're unfamiliar with Depth-first Search, we recommend watching the Conceptual
 Overview section of this question's video explanation before starting to code.
 
-## Sample Input:
+**Sample Input**:
 ```javascript
 graph =  A
       /  |  \
@@ -27,7 +27,7 @@ E      F G     H
       I   J  K
 ```
 
-## Sample Output:
+**Sample Output**:
 ```javascript
 ["A", "B", "E", "F", "I", "J", "C", "D", "G", "K", "H"]
 ```

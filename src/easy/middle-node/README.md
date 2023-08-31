@@ -11,12 +11,12 @@ these nodes.
 
 Each `LinkedList` node has an integer `value` as well as a `next` node pointing to the next node in the list or to `None` / `null` if it's the tail of the list.
 
-## Sample Input
+**Sample Input**
 ```
 linkedList = 2 -> 7 -> 3 -> 5
 ```
 
-## Sample Output
+**Sample Output**
 ```
 3 -> 5 // The middle node could be 7 or 3, we return the second middle node
 ```

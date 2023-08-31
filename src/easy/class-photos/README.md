@@ -25,13 +25,13 @@ not a class photo that follows the stated guidelines can be taken.
 
 Note: you can assume that each class has at least 2 students.
 
-## Sample Input:
+**Sample Input**:
 ```javascript
 redShirtHeights = [5, 8, 1, 3, 4]
 blueShirtHeights = [6, 9, 2, 4, 5]
 ```
 
-## Sample Output:
+**Sample Output**:
 ```javascript
 true // Place all students with blue shirts in the back row.
 ```

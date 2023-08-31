@@ -8,13 +8,13 @@ Given a non-empty string of lowercase letters and a non-negative integer represe
 
 Note that letters should "wrap" around the alphabet; in other words, the letter `z` shifted by one returns the letter `a`.
 
-## Sample Input:
+**Sample Input**:
 ```javascript
 string = "xyz"
 key = 2
 ```
 
-## Sample Output:
+**Sample Output**:
 ```javascript
 "zab"
 ```

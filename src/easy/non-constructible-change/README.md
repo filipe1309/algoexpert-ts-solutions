@@ -14,12 +14,12 @@ For example, if you're given coins = [1, 2, 5], the minimum amount of change tha
 can't create is 4. If you're given no coins, the minimum amount of change that you can't
 create is 1.
 
-## Sample Input
+**Sample Input**
 ```javascript
 coins = [5, 7, 1, 1, 2, 3, 22]
 ```
 
-## Sample Output
+**Sample Output**
 ```javascript
 20
 ```

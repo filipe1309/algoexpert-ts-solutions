@@ -10,22 +10,22 @@ The Fibonacci sequence is defined as follows: the first number of the sequence i
 
 Important note: the Fibonacci sequence is often defined with its first two numbers as `F0 = 0` and `F1 = 1`. For the purpose of this question, the first Fibonacci number is `F0`; therefore, `getNthFib(1)` is equal to `F0`, `getNthFib(2)` is equal to `F1`, etc..
 
-## Sample input #1
+**Sample Input** #1
 ```
 n = 2
 ```
 
-## Sample output #1
+**Sample Output** #1
 ```
 1 // 0, 1
 ```
 
-## Sample input #2
+**Sample Input** #2
 ```
 n = 6
 ```
 
-## Sample output #2
+**Sample Output** #2
 ```
 5 // 0, 1, 1, 2, 3, 5
 ```

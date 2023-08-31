@@ -26,11 +26,11 @@ the duration of the first two queries before being executed.
 
 Note: you're allowed to mutate the input array.
 
-  ## Sample Input
+  **Sample Input**
 ```javascript
   queries = [3, 2, 1, 2, 6]
 ```
-## Sample Output
+**Sample Output**
 ```javascript
 17
 // [3, 2, 1, 2, 6]

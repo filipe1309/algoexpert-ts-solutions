@@ -15,7 +15,7 @@ Each BinaryTree node has an integer value, a left child node, and a right
 child node. Children nodes can either be BinaryTree nodes themselves or
 None / null.
 
-## Sample Input
+**Sample Input**
 ```javascript
 tree =     1
         /     \
@@ -26,7 +26,7 @@ tree =     1
 8    9 10
 ```
 
-## Sample Output
+**Sample Output**
 ```javascript
 16
 // The depth of the node with value 2 is 1.

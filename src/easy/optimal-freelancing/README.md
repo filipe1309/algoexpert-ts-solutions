@@ -22,7 +22,7 @@ Note: There is no requirement to complete all of the jobs. Only one job can
 be worked on at a time, meaning that in some scenarios it will be impossible
 to complete them all.
 
-## Sample Input
+**Sample Input**
 ```javascript
 jobs = [
   {"deadline": 1, "payment": 1},
@@ -31,7 +31,7 @@ jobs = [
 ]
 ```
 
-## Sample Output
+**Sample Output**
 ```javascript
 3 // Job 0 would be completed first, followed by job 2. Job 1 is not completed.
 ```

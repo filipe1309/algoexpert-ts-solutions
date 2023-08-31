@@ -12,14 +12,14 @@ The transpose of a matrix is a flipped version of the original matrix across
 its main diagonal (which runs from top left to bottom right); it switches the 
 row and column indices of the original matrix.
 
-## Sample Input #1
+**Sample Input** #1
 ```javascript
 matrix = [
   [1, 2],
 ]
 ```
 
-## Sample Output #1
+**Sample Output** #1
 ```javascript
 [
   [1],
@@ -27,7 +27,7 @@ matrix = [
 ]
 ```
 
-## Sample Input #2
+**Sample Input** #2
 ```javascript
 matrix = [
   [1, 2],
@@ -36,7 +36,7 @@ matrix = [
 ]
 ```
 
-## Sample Output #2
+**Sample Output** #2
 ```javascript
 [
   [1, 3, 5],
@@ -44,7 +44,7 @@ matrix = [
 ]
 ```
 
-## Sample Input #3
+**Sample Input** #3
 ```javascript
 matrix = [
   [1, 2, 3],
@@ -53,7 +53,7 @@ matrix = [
 ]
 ```
 
-## Sample Output #3
+**Sample Output** #3
 ```javascript
 [
   [1, 4, 7],

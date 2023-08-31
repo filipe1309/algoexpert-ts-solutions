@@ -16,13 +16,13 @@ in the array; you can't add a single integer to itself in order to obtain the ta
 You can assume that there will be at most one pair of numbers summing up to the
 target sum.
 
-## Sample Input
+**Sample Input**
 ```javascript
 array = [3, 5, -4, 8, 11, 1, -1, 6]
 targetSum = 10
 ```
 
-## Sample Output
+**Sample Output**
 ```javascript
 [-1, 11] // the numbers could be in reverse order
 ```

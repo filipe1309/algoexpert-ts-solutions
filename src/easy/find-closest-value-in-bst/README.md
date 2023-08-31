@@ -16,7 +16,7 @@ its value is strictly greater than the values of every node to its left; its val
 is less than or equal to the values of every node to its right; and its children nodes
 are either valid BST nodes themselves or None / null.
 
-## Sample Input
+**Sample Input**
 ```javascript
 tree =   10
       /     \
@@ -28,7 +28,7 @@ tree =   10
 target = 12
 ```
 
-## Sample Output
+**Sample Output**
 ```javascript
 13
 ```

@@ -13,14 +13,14 @@ Write a function that returns the maximum possible total speed or the minimum po
 
 "Total speed" is defined as the sum of the speeds of all the tandem bicycles being ridden. For example, if there are 4 riders (2 red-shirt riders and 2 blue-shirt riders) who have speeds of `1, 3, 4, 5`, and if they're paired on tandem bicycles as follows: `[1, 4], [5, 3]`, then the total speed of these tandem bicycles is `4 + 5 = 9`.
 
-## Sample Input
+**Sample Input**
 ```javascript
 redShirtSpeeds = [5, 5, 3, 9, 2]
 blueShirtSpeeds = [3, 6, 7, 2, 1]
 fastest = true
 ```
 
-## Sample Output
+**Sample Output**
 ```javascript
 32 // since there are 5 tandem bicycles, and the 5 tandem bicycles that can be formed by combining every rider are `[5, 2], [5, 3], [3, 7], [9, 2], [2, 1]`. The total speed of these tandem bicycles is `5 + 5 + 7 + 9 + 2 = 32`.
 
