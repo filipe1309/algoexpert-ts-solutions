@@ -1,7 +1,8 @@
 // Test: make test t=common-characters
 function commonCharacters(strings: string[]): string[] {
   // return mySolution1(strings); // time O(n*m) | space O(c)
-  return solution1(strings); // time O(n*m) | space O(c)
+  // return solution1(strings); // time O(n*m) | space O(c)
+  return solution2(strings); // time O(n*m) | space O(m)
 }
 
 // Complexity (worst-case): time O(n*m) | space O(c)
@@ -41,6 +42,30 @@ function solution1(strings: string[]): string[] {
     if (charCount[char] === strings.length) result.push(char);
   }
   return result;
+}
+
+// Complexity (worst-case): time O(n*m) | space O(m)
+// n = number of strings, m = length of longest string
+function solution2(strings: string[]): string[] {
+  let smallestString = getSmallestString(strings);
+  let potentialCommonChars = new Set(smallestString);
+  for (let string of strings) {
+    potentialCommonChars.forEach((char) => {
+      const uniqueChars = new Set(string);
+      if (!uniqueChars.has(char)) potentialCommonChars.delete(char);
+    });
+  }
+  return Array.from(potentialCommonChars);
+}
+
+function getSmallestString(strings: string[]): string {
+  let smallestString = strings[0];
+  for (let i = 1; i < strings.length; i++) {
+    if (strings[i].length < smallestString.length) {
+      smallestString = strings[i];
+    }
+  }
+  return smallestString;
 }
 
 export default commonCharacters;
