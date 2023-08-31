@@ -2,7 +2,8 @@
 function generateDocument(characters: string, document: string) {
   // return mySolution1(characters, document); // time O(m * n) | space O(1) 
   // return solution1(characters, document); // time O(m * (n + m)) | space O(1)
-  return solution2(characters, document); // time 
+  // return solution2(characters, document); // time O(c * (m + n)) | space O(c) 
+  return solution3(characters, document); // time O(m + n) | space O(c) 
 }
 
 // Complexity (worst-case): time O(m * n) | space O(1)
@@ -43,6 +44,22 @@ function solution2(characters: string, document: string) {
     let charactersFrequency = countCharFrequency(char, characters);
     if (documentFrequency > charactersFrequency) return false;
     alreadyCount.add(char);
+  }
+  return true;
+}
+
+// Complexity (worst-case): time O(m + n) | space O(c)
+// m = document.length, n = characters.length, c = unique characters in document
+function solution3(characters: string, document: string) {
+  const characterCounts = new Map<string, number>();
+  for (let char of characters) {
+    characterCounts.set(char, (characterCounts.get(char) ?? 0) + 1);
+  }
+
+  for (let char of document) {
+    if (!characterCounts.has(char)) return false;
+    if (characterCounts.get(char) === 0) return false;
+    characterCounts.set(char, characterCounts.get(char)! - 1);
   }
   return true;
 }
