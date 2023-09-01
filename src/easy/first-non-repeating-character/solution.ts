@@ -16,9 +16,7 @@ function mySolution1(string: string): number {
   let minIndex = -1;
   for (let [key] of charsMap) {
     let charIndex = charsMap.get(key);
-    if (charIndex !== undefined && charIndex >= 0) {
-      if (minIndex === -1 || (charIndex < minIndex)) minIndex = charIndex;
-    }
+    if (charIndex !== -1 && charIndex !== undefined) return charIndex;
   }
 
   return minIndex;
