@@ -21,13 +21,21 @@ do
   esac
 done
 # read challenge name if not provided ${name}
-if [ -z ${name} ]; then echo "Challenge name:"; read name; fi
+if [ -z ${name} ]; then 
+  echo "Type challenge name in snake-case (ex: valid-subsequence):";
+  echo "OR paste challenge url (ex: https://www.algoexpert.io/questions/valid-subsequence)";
+  read -p "👉 " name
+fi
 # if challenge name is empty, exit
 if [ -z ${name} ]; then echo "❌ Please provide a challenge name"; exit 1; fi
+# if name is a url instead of a name, extract name from url
+if [[ ${name} == *"https://www.algoexpert.io/questions/"* ]]; then
+  name=$(echo ${name} | sed 's/https:\/\/www.algoexpert.io\/questions\///g')
+fi
 # read challenge level if not provided ${level}
 if [ -z ${level} ]; then 
   echo "Challenge level:"
-  case `select_opt "easy" "medium" "hard" "very-hard"` in
+  case `select_opt "😎 easy" "😅 medium" "😰 hard" "😱 very-hard"` in
       0) level="easy";;
       1) level="medium";;
       2) level="hard";;

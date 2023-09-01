@@ -288,7 +288,9 @@ make new [n=CHALLENGE_NAME] [l=CHALLENGE_LEVEL] [c=CHALLENGE_CATEGORY]
 > Example:  
 > `make new` (fill the prompts)  
 > OR  
-> `make new n=two-number-sum l=easy c=arrays`
+> `make new n=two-number-sum l=easy c=arrays`  
+>
+> Levels: `easy`, `medium`, `hard`, `very-hard`  
 >
 > This will create:
 > - a folder (`src/easy/two-number-sum`)
@@ -296,8 +298,6 @@ make new [n=CHALLENGE_NAME] [l=CHALLENGE_LEVEL] [c=CHALLENGE_CATEGORY]
 > - a test file
 > - a case test file
 > - a `README.md` file  
->
-> Levels: `easy`, `medium`, `hard`, `very-hard`  
 
 
 <!-- 
