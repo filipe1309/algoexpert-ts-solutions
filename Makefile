@@ -12,6 +12,11 @@ test:
 	@echo "🟢 Running tests..."
 	npm run test -- -t "${t}"
 
+# run changed tests: make test-changed
+test-changed:
+	@echo "🟢 Running changed tests..."
+	npm run test:changed
+
 # run node
 run:
 	@echo "🏁 Running code..."
@@ -29,6 +34,7 @@ help:
 	@echo "📖 Available commands:"
 	@echo "  make install (installs dependencies)"
 	@echo "  make test [t=<test name>] (runs all tests or specific test)"
+	@echo "  make test-changed (runs changed tests)"
 	@echo "  make new [n=<challenge name>] [l=<level (easy, medium, hard, very-hard)>] [c=<category>] (creates new challenge)"
 	@echo "  make commit (commits changes and updates README.md)"
 	@echo "  make help"

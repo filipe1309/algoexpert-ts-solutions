@@ -281,6 +281,11 @@ make test t=CHALLENGE_NAME
 ```
 > Example: `make test t=two-number-sum`
 
+Run changed tests:
+```sh
+make test-changed
+```
+
 Create a new test:
 ```sh
 make new [n=CHALLENGE_NAME] [l=CHALLENGE_LEVEL] [c=CHALLENGE_CATEGORY]

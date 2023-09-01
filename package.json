@@ -4,7 +4,8 @@
   "description": "<p align=\"center\">     <img src=\"https://img.shields.io/badge/Code-JavaScript-informational?style=flat-square&logo=javascript&color=F7DF1E\" alt=\"JavaScript\" />     <img src=\"https://img.shields.io/badge/Code-NodeJS-informational?style=flat-square&logo=node.js&color=339933\" alt=\"NodeJS\" /> </p>",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "test:changed": "jest --verbose --onlyChanged"
   },
   "keywords": [],
   "author": "",
