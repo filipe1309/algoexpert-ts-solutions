@@ -16,3 +16,5 @@ NC='\033[0m' # No Color
 
 BOLD='\033[1m'
 NORMAL='\033[0m'
+RESET='\033[0m'
+ITALIC='\033[3m'

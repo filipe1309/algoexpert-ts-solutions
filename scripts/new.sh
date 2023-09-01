@@ -5,6 +5,7 @@
 clear
 
 source scripts/menu.sh
+source scripts/colors.sh
 
 # Read arguments
 # read arguments from command line
@@ -22,8 +23,9 @@ do
 done
 # read challenge name if not provided ${name}
 if [ -z ${name} ]; then 
-  echo "Type challenge name in snake-case (ex: valid-subsequence):";
-  echo "OR paste challenge url (ex: https://www.algoexpert.io/questions/valid-subsequence)";
+  echo -e "Type challenge ${BOLD}name${RESET} in ${BOLD}snake-case${RESET} ${GRAY_DARKER}(ex: valid-subsequence)${RESET}";
+  echo -e "${BOLD}${ITALIC}OR${RESET}";
+  echo -e "Paste challenge ${BOLD}URL${RESET} ${GRAY_DARKER}(ex: https://www.algoexpert.io/questions/valid-subsequence)${RESET}";
   read -p "👉 " name
 fi
 # if challenge name is empty, exit
@@ -45,14 +47,24 @@ fi
 # if challenge level is empty, exit
 if [ -z ${level} ]; then echo "❌ Please provide a level (easy, medium, hard, very-hard)"; exit 1; fi
 
-echo "📝 Creating new challenge ${name} in ${level} level..."
+# Confirm with Yy or Enter
+echo -e "👉 You are about to create a new challenge ${GREEN}${BOLD}${name}${RESET} in ${GREEN}${BOLD}${level}${RESET} level."
+echo -e "👉 Is this correct? (Y/n)"
+read -p "👉 " confirm
+if [[ ${confirm} != "Y" && ${confirm} != "y" && ${confirm} != "" ]]; then echo -e "${RED}${BOLD}❌ Aborted!${RESET}"; exit 1; fi
+echo -e "✅ ${GREEN}${BOLD}Confirmed!${RESET}"
+
+echo ""
+
+# "📝 Creating new challenge ${name} in ${level} level..."
+echo -e "📝 Creating new challenge ${GREEN}${BOLD}${name}${RESET} in ${GREEN}${BOLD}${level}${RESET} level..."
 
 # Create directory
-echo " 👉 Creating ${name} directory..."
+echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}${RESET} directory..."
 mkdir src/${level}/${name}
 
 # Create README file
-echo " 👉 Creating ${name} README file..."
+echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/README.md${RESET} file..."
 touch src/${level}/${name}/README.md
 # replace - with empty space
 NAME=$(echo ${name} | sed 's/-/ /g')
@@ -91,7 +103,7 @@ echo "# ${NAME}
 " >> src/${level}/${name}/README.md
 
 # Create solution file
-echo " 👉 Creating ${name} solution file..."
+echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/solution.ts${RESET} file..."
 touch src/${level}/${name}/solution.ts
 CAMEL=$(echo ${name} | perl -pe 's/(^|-)(\w)/\u$2/g' | perl -nE 'say lcfirst')
 echo -e "// Test: make test t=${name}
@@ -107,7 +119,7 @@ function mySolution1() {
 export default ${CAMEL};" >> src/${level}/${name}/solution.ts
 
 # Create test file
-echo " 👉 Creating ${name} test files..."
+echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/solution.spec.ts${RESET} file..."
 touch src/${level}/${name}/solution.spec.ts
 echo "import { describe, expect, test } from '@jest/globals';
 import solution from './solution';
@@ -121,7 +133,7 @@ describe('${name}', () => {
 });" >> src/${level}/${name}/solution.spec.ts
 
 # Create test cases file
-echo " 👉 Creating ${name} test cases file..."
+echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/cases.ts${RESET} file..."
 touch src/${level}/${name}/cases.ts
 echo "export default [
   {
@@ -129,5 +141,5 @@ echo "export default [
     expected: []
   },
 ];" >> src/${level}/${name}/cases.ts
-echo "✅ Done!"
+echo -e "✅ ${GREEN}${BOLD}Done!${RESET}"
 
