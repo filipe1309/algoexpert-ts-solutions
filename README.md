@@ -51,7 +51,7 @@ All challenges and tests are in [src](./src)/level-name/challenge-name.
 - [x] [Common Characters](./src/easy/common-characters)
 - [x] [Generate Document](./src/easy/generate-document)
 - [x] [First Non-Repeating Character](./src/easy/first-non-repeating-character)
-- [ ] [Semordnilap](./src/easy/semordnilap)
+- [x] [Semordnilap](./src/easy/semordnilap)
 
 </details>
 
