@@ -27,3 +27,5 @@ npx ts-jest config:init
 ```sh
 make new l=easy c=valid-subsequence 
 ```
+
+https://dev.to/azu/git-hooks-without-extra-dependencies-like-husky-in-node-js-project-jjp

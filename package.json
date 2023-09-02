@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",
-    "test:changed": "jest --verbose --onlyChanged"
+    "test:changed": "jest --verbose --onlyChanged",
+    "prepare": "git config --local core.hooksPath .githooks || echo 'Can not set git hooks'"
   },
   "keywords": [],
   "author": "",
