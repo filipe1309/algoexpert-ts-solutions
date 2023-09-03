@@ -60,6 +60,11 @@ echo ""
 echo -e "📝 Creating new challenge ${GREEN}${BOLD}${name}${RESET} in ${GREEN}${BOLD}${level}${RESET} level..."
 
 # Create directory
+# if level directory does not exist, create it
+if [ ! -d "src/${level}" ]; then
+  echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}${RESET} directory..."
+  mkdir src/${level}
+fi
 echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}${RESET} directory..."
 mkdir src/${level}/${name}
 
