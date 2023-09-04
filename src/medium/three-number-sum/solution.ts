@@ -1,5 +1,3 @@
-type Triplet = [number, number, number];
-
 // Test: make test t=three-number-sum
 function threeNumberSum(array: number[], targetSum: number): Triplet[] {
   // return mySolution1(array, targetSum); // time O(n^3) | space O(n)

@@ -1,5 +1,5 @@
 import { describe, expect, test } from '@jest/globals';
-import solution, { SpecialArray } from './solution';
+import solution from './solution';
 import cases from './cases';
 
 describe('product-sum', () => {
