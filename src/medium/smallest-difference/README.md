@@ -26,3 +26,36 @@ arrayTwo = [26, 134, 135, 15, 17]
 ```
 [28, 26]
 ```
+
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+Instead of generating all possible pairs of numbers, try somehow only looking at
+pairs that you know could actually have the smallest difference. How can you
+accomplish this?
+</details>
+
+<details>
+<summary>Hint 2</summary>
+Would it help if the two arrays were sorted? If the arrays were sorted and you
+were looking at a given pair of numbers, could you efficiently find the next
+pair of numbers to look at? What are the runtime implications of sorting the
+arrays?
+</details>
+
+<details>
+<summary>Hint 3</summary>
+Start by sorting both arrays, as per Hint #2. Put a pointer at the beginning of
+both arrays and evaluate the absolute difference of the pointer-numbers. If the
+difference is equal to zero, then you've found the closest pair; otherwise,
+increment the pointer of the smaller of the two numbers to find a potentially
+better pair. Continue until you get a pair with a difference of zero or until
+one of the pointers gets out of range of its array.
+</details>
+
+<details>
+<summary>Optimal Space &amp; Time Complexity</summary>
+O(nlog(n) + mlog(m)) time | O(1) space - where n is the length of the first
+input array and m is the length of the second input array
+</details>
