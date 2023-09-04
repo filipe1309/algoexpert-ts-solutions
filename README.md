@@ -58,7 +58,7 @@ All challenges and tests are in [src](./src)/level-name/challenge-name.
 ### 😅 Medium (73)
 
 - [x] [Three Number Sum](./src/medium/three-number-sum)
-- [ ] [Smallest Difference](./src/medium/smallest-difference)
+- [x] [Smallest Difference](./src/medium/smallest-difference)
 - [ ] [Move Element To End](./src/medium/move-element-to-end)
 - [ ] [Monotonic Array](./src/medium/monotonic-array)
 - [ ] [Spiral Traverse](./src/medium/spiral-traverse)
