@@ -7,5 +7,6 @@ describe('move-element-to-end', () => {
     const result = solution(input.array, input.toMove);
     expect(result.slice(result.indexOf(input.toMove)))
     .toEqual(expected.slice(expected.indexOf(input.toMove)));
+    expect(result.sort()).toEqual(expected.sort());
   });
 });
