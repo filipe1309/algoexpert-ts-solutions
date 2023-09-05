@@ -1,5 +1,5 @@
 
-# <p align="center">AlgoExpert TS Solutions</p>
+# <p align="center">AlgoExpert <font color="#3075c1">TS</font> Solutions</p>
 
 ![github action deploy badge](https://github.com/filipe1309/algoexpert-solutions/actions/workflows/tests.yaml/badge.svg?event=push)
 ![TypeScript](https://img.shields.io/badge/Code-TypeScript-informational?style=flat-square&logo=typescript&color=3178C6)
@@ -12,24 +12,26 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 
 All challenges and tests are in [src](./src)/level-name/challenge-name.
 
-## :bulb: Method
+[Improve this about section]: # 
 
-My method for solving the challenges is:
-1. Read the challenge description
-2. Draw a solution
-3. Write the solution in TypeScript without looking at the solution hints
-4. Run the tests
-5. Refactor the solution
-6. Repeat steps 4 and 5 until all tests pass
-7. Evaluate the complexity of the solution
-8. Commit my solution
-9. Verify the solution hints
-10. Compare my solution with the solution hints
-11. Try to improve my solution or create a new one based on the solution hints
-12. Repeat steps 4 to 10 until I'm satisfied with the solution, but not item 8
-13. Watch the solution video
-14. Implement the solution from the video if it's different from mine
-15. Commit the solution from the video
+## :bulb: Study Method
+
+<mark>My method</mark> for solving the challenges is:
+1. **Read** the challenge description
+2. **Draw** a solution
+3. **Write the solution** in TypeScript without looking at the solution hints
+4. Run the **tests**
+5. **Refactor** the solution
+6. **Repeat** steps 4 and 5 until all tests pass
+7. Evaluate the **complexity** of the solution
+8. **Commit** my solution
+9. Verify the solution **hints**
+10. **Compare** my solution with the solution hints
+11. Try to **improve** my solution or create a new one based on the solution hints
+12. **Repeat** steps 4 to 10 until I'm satisfied with the solution, but not item 8
+13. Watch the solution **video**
+14. **Implement** the solution from the video if it's different from mine
+15. **Commit** the solution from the video
 
 
 ## :rocket: Challenge List
@@ -309,7 +311,7 @@ Create a new test:
 ```sh
 make new [n=CHALLENGE_NAME] [l=CHALLENGE_LEVEL] [c=CHALLENGE_CATEGORY]
 ```
-> Example:  
+> :memo: **Example:**  
 > `make new` (fill the prompts)  
 > OR  
 > `make new n=two-number-sum l=easy c=arrays`  
