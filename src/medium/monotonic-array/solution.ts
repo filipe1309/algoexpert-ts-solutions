@@ -39,6 +39,7 @@ function breaksDirection(dir: number, prev: number, curr: number): boolean {
   return diff > 0;
 }
 
+// Complexity (worst-case): time O(n) | space O(1)
 function solution2(array: number[]): boolean {
   let isNonDecreasing = true;
   let isNonIncreasing = true;
