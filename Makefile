@@ -8,6 +8,7 @@ NC=\033[0m # No Color
 install:
 	@echo "📦 Installing dependencies..."
 	npm install
+	npm run prepare
 
 # run all tests: make test
 # run specific test: make test t=two-number-sumtest
