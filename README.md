@@ -81,7 +81,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 - [x] [Three Number Sum](./src/medium/three-number-sum)
 - [x] [Smallest Difference](./src/medium/smallest-difference)
 - [x] [Move Element To End](./src/medium/move-element-to-end)
-- [ ] [Monotonic Array](./src/medium/monotonic-array)
+- [x] [Monotonic Array](./src/medium/monotonic-array)
 - [ ] [Spiral Traverse](./src/medium/spiral-traverse)
 <details>
   <summary>More...</summary>
