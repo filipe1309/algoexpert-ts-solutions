@@ -10,7 +10,7 @@
 
 This repository contains my solutions for the challenges from [AlgoExpert](https://www.algoexpert.io/).
 
-All challenges and tests are in [src](./src)/level-name/challenge-name.
+> All challenges and tests are in [src](./src)/level-name/challenge-name.
 
 [Improve this about section]: # 
 
