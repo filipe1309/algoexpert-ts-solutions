@@ -12,6 +12,24 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 
 All challenges and tests are in [src](./src)/level-name/challenge-name.
 
+## :bulb: Method
+
+My method for solving the challenges is:
+1. Read the challenge description
+2. Draw a solution
+3. Write the solution in TypeScript withut looking at the solution hints
+4. Run the tests
+5. Refactor the solution
+6. Repeat steps 4 and 5 until all tests pass
+7. Evaluate the complexity of the solution
+8. Commit my solution
+9. Verify the solution hints
+10. Compare my solution with the solution hints
+11. Try to improve my solution or create a new one based on the solution hints
+12. Repeat steps 4 to 10 until I'm satisfied with the solution
+13. Watch the solution video
+14. Implement the solution from the video if it's different from mine
+
 
 ## :rocket: Challenge List
 
