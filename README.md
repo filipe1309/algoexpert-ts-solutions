@@ -77,7 +77,7 @@ My method for solving the challenges is:
 
 - [x] [Three Number Sum](./src/medium/three-number-sum)
 - [x] [Smallest Difference](./src/medium/smallest-difference)
-- [ ] [Move Element To End](./src/medium/move-element-to-end)
+- [x] [Move Element To End](./src/medium/move-element-to-end)
 - [ ] [Monotonic Array](./src/medium/monotonic-array)
 - [ ] [Spiral Traverse](./src/medium/spiral-traverse)
 <details>
