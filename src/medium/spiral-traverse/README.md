@@ -26,3 +26,33 @@ array = [
 ```javascript
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11, 12, 13, 14, 15, 16]
 ```
+
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+You can think of the spiral that you have to traverse as a set of rectangle
+perimeters that progressively get smaller (i.e., that progressively move 
+inward in the two-dimensional array).
+</details>
+
+<details>
+<summary>Hint 2</summary>
+Going off of Hint #1, declare four variables: a starting row, a starting
+column, an ending row, and an ending column. These four variables represent
+the bounds of the first rectangle perimeter in the spiral that you have to
+traverse. Traverse that perimeter using those bounds, and then move the bounds
+inwards. End your algorithm once the starting row passes the ending row or the
+starting column passes the ending column.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+You can solve this problem iteratively or recursively following very similar
+logic.
+</details>
+
+<details>
+<summary>Optimal Space &amp; Time Complexity</summary>
+O(n) time | O(n) space - where n is the total number of elements in the array
+</details>
