@@ -1,7 +1,7 @@
 
 # <p align="center">AlgoExpert <font color="#3075c1">TS</font> Solutions</p>
 
-![github action deploy badge](https://github.com/filipe1309/algoexpert-solutions/actions/workflows/tests.yaml/badge.svg?event=push)
+![Github Action - Deploy Badge](https://github.com/filipe1309/algoexpert-solutions/actions/workflows/tests.yaml/badge.svg?event=push)
 ![TypeScript](https://img.shields.io/badge/Code-TypeScript-informational?style=flat-square&logo=typescript&color=3178C6)
 ![NodeJS](https://img.shields.io/badge/Code-NodeJS-informational?style=flat-square&logo=node.js&color=339933)
 ![Jest](https://img.shields.io/badge/Code-Jest-informational?style=flat-square&logo=jest&color=C21325)
@@ -24,19 +24,17 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 5. **Refactor** the solution
 6. **Repeat** steps 4 and 5 until all tests pass
 7. Evaluate the **complexity** of the solution
-8. **Commit** my solution
-9. Verify the solution **hints**
-10. **Compare** my solution with the solution hints
-11. Try to **improve** my solution or create a new one based on the solution hints
-12. **Repeat** steps 4 to 10 until I'm satisfied with the solution, but not item 8
-13. Watch the solution **video**
-14. **Implement** the solution from the video if it's different from mine
-15. **Commit** the solution from the video
+8. Verify the solution **hints**
+9. **Compare** my solution with the solution hints
+10. Try to **improve** my solution or create a new one based on the solution hints
+11. **Repeat** steps 4 to 10 until I'm satisfied with the solution, but not item 8
+12. Watch the solution **video**
+13. **Implement** the solution from the video if it's different from mine
 
 
 ## :rocket: Challenge List
 
-### 😎 Easy (31)
+### 😎 [Easy](./src/easy) (31)
 
 - [x] [Two Number Sum](./src/easy/two-number-sum)
 - [x] [Validate Subsequence](./src/easy/validate-subsequence)
@@ -76,7 +74,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 
 </details>
 
-### 😅 Medium (73)
+### 😅 [Medium](./src/medium) (73)
 
 - [x] [Three Number Sum](./src/medium/three-number-sum)
 - [x] [Smallest Difference](./src/medium/smallest-difference)
@@ -157,7 +155,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 
 </details>
 
-### 😰 Hard (54)
+### 😰 [Hard](./src/hard) (54)
 
 - [ ] [Four Number Sum](./src/hard/four-number-sum)
 - [ ] [Subarray Sort](./src/hard/subarray-sort)
@@ -219,7 +217,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 
 </details>
 
-### 😱 Very Hard (37)
+### 😱 [Very Hard](./src/very-hard) (37)
 
 - [ ] [Apartment Hunting](./src/very-hard/apartment-hunting)
 - [ ] [Calendar Matching](./src/very-hard/calendar-matching)
@@ -316,14 +314,14 @@ make new [n=CHALLENGE_NAME] [l=CHALLENGE_LEVEL] [c=CHALLENGE_CATEGORY]
 > OR  
 > `make new n=two-number-sum l=easy c=arrays`  
 >
-> Levels: `easy`, `medium`, `hard`, `very-hard`  
+> > Levels: `easy`, `medium`, `hard`, `very-hard`  
 >
-> This will create:
-> - a folder (`src/easy/two-number-sum`)
-> - a solution file 
-> - a test file
-> - a case test file
-> - a `README.md` file  
+> > This will create:
+> > - a folder (`src/easy/two-number-sum`)
+> > - a solution file 
+> > - a test file
+> > - a case test file
+> > - a `README.md` file  
 
 
 <!-- 
@@ -334,11 +332,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate. -->
 
-## License
+## :memo: License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-## About Me
+## 🧙‍♂️ About Me
 
 <p align="center">
     <a style="font-weight: bold" href="https://github.com/filipe1309/">
