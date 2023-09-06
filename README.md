@@ -323,6 +323,13 @@ make new [n=CHALLENGE_NAME] [l=CHALLENGE_LEVEL] [c=CHALLENGE_CATEGORY]
 > > - a case test file
 > > - a `README.md` file  
 
+---
+
+> :memo: **Help:**
+> ```sh
+> make help
+> ```
+
 
 <!-- 
 
