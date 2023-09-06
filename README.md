@@ -27,9 +27,9 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 8. Verify the solution **hints**
 9. **Compare** my solution with the solution hints
 10. Try to **improve** my solution or create a new one based on the solution hints
-11. **Repeat** steps 4 to 10 until I'm satisfied with the solution, but not item 8
+11. **Repeat** steps 4 to 10 until I'm satisfied with the solution
 12. Watch the solution **video**
-13. **Implement** the solution from the video if it's different from mine
+13. **Implement** other solutions from the video or refactor my solution based on the video
 
 
 ## :rocket: Challenge List
