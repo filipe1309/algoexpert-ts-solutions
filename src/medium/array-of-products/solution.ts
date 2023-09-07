@@ -2,6 +2,7 @@
 function arrayOfProducts(array: number[]): number[] {
   // return mySolution1(array); // time O(n^2) | space O(n)
   // return solution1(array); // time O(n^2) | space O(n)
+  // return solution2(array); // time O(n) | space O(n)
   return solution2(array); // time O(n) | space O(n)
 }
 
@@ -52,6 +53,26 @@ function solution2(array: number[]): number[] {
 
   for (let i = 0; i < array.length; i++) {
     products[i] = leftProducts[i] * rightProducts[i];
+  }
+
+  return products;
+}
+
+// Left/Right Optimized approach
+// Complexity (worst-case): time O(n^2) | space O(n)
+function solution3(array: number[]): number[] {
+  let products: number[] = Array(array.length).fill(1);
+  
+  let leftRunningProducts = 1;
+  for (let i = 0; i < array.length; i++) {
+    products[i] = leftRunningProducts
+    leftRunningProducts *= array[i];
+  }
+
+  let rightRunningProducts = 1;
+  for (let i = array.length - 1; i >= 0; i--) {
+    products[i] *= rightRunningProducts
+    rightRunningProducts *= array[i];
   }
 
   return products;
