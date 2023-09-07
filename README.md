@@ -84,7 +84,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 <details>
   <summary>More...</summary>
 
-- [ ] [Longest Peak](./src/medium/longest-peak)
+- [x] [Longest Peak](./src/medium/longest-peak)
 - [ ] [Array Of Products](./src/medium/array-of-products)
 - [ ] [First Duplicate Value](./src/medium/first-duplicate-value)
 - [ ] [Merge Overlapping Intervals](./src/medium/merge-overlapping-intervals)
