@@ -85,7 +85,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
   <summary>More...</summary>
 
 - [x] [Longest Peak](./src/medium/longest-peak)
-- [ ] [Array Of Products](./src/medium/array-of-products)
+- [x] [Array Of Products](./src/medium/array-of-products)
 - [ ] [First Duplicate Value](./src/medium/first-duplicate-value)
 - [ ] [Merge Overlapping Intervals](./src/medium/merge-overlapping-intervals)
 - [ ] [Best Seat](./src/medium/best-seat)
