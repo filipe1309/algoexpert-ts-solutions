@@ -2,8 +2,8 @@
 function firstDuplicateValue(array: number[]): number {
   // return mySolution1(array); // time O(n) | space O(n)
   // return mySolution2(array); // time O(n^2) | space O(1)
-  return solution2(array); // time O(n) | space O(n)
-  // return solution3(array); // time O(n) | space O(1)
+  // return solution2(array); // time O(n) | space O(n)
+  return solution3(array); // time O(n) | space O(1)
 }
 
 // Hash approach
@@ -36,6 +36,17 @@ function solution2(array: number[]): number {
   for (let i = 0; i < array.length; i++) {
     if (seen.has(array[i])) return array[i];
     seen.add(array[i]);
+  }
+  return -1;
+}
+
+// Indices as values approach
+// Complexity (worst-case): time O(n) | space O(1)
+function solution3(array: number[]): number {
+  for (let i = 0; i < array.length; i++) {
+    const pos = Math.abs(array[i]) - 1;
+    if (array[pos] < 0) return Math.abs(array[i])
+    array[pos] *= -1;
   }
   return -1;
 }
