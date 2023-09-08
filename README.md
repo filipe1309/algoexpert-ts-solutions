@@ -1,5 +1,6 @@
 
 # <p align="center">AlgoExpert <font color="#3075c1">TS</font> Solutions</p>
+<a name="readme-top"></a>
 
 ![Github Action - Deploy Badge](https://github.com/filipe1309/algoexpert-solutions/actions/workflows/tests.yaml/badge.svg?event=push)
 ![TypeScript](https://img.shields.io/badge/Code-TypeScript-informational?style=flat-square&logo=typescript&color=3178C6)
@@ -31,6 +32,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 12. Watch the solution **video**
 13. **Implement** other solutions from the video or refactor my solution based on the video
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :rocket: Challenge List
 
@@ -263,15 +265,21 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 
 </details>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## :computer: Technologies
 
 - [Node.js](https://nodejs.org/en/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Jest](https://jestjs.io/)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## :scroll: Requirements
 
 - [Node.js](https://nodejs.org/en/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :cd: Installation
 
@@ -286,6 +294,8 @@ cd algoexpert-solutions
 ```sh
 make install
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :white_check_mark: Tests
 
@@ -330,6 +340,7 @@ make new [n=CHALLENGE_NAME] [l=CHALLENGE_LEVEL] [c=CHALLENGE_CATEGORY]
 > make help
 > ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- 
 
@@ -356,6 +367,8 @@ Please make sure to update tests as appropriate. -->
 <p align="center">
     Done with&nbsp;&nbsp;:heart:&nbsp;&nbsp;by <a style="font-weight: bold" href="https://github.com/filipe1309/">Filipe Leuch Bonfim</a> 🖖
 </p>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
