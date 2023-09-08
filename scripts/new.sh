@@ -112,12 +112,12 @@ echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/solution.ts${RESET} f
 touch src/${level}/${name}/solution.ts
 CAMEL=$(echo ${name} | perl -pe 's/(^|-)(\w)/\u$2/g' | perl -nE 'say lcfirst')
 echo -e "// Test: make test t=${name}
-function ${CAMEL}(input: number[]): number[] {
-  return mySolution1(input); // time O() | space O()
+function ${CAMEL}(array: number[]): number[] {
+  return mySolution1(array); // time O() | space O()
 }
 
 // Complexity (worst-case): time O() | space O()
-function mySolution1(input: number[]): number[] {
+function mySolution1(array: number[]): number[] {
   return [];
 }
 
