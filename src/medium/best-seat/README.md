@@ -30,3 +30,32 @@ seats = [1, 0, 1, 0, 0, 0, 1]
 ```javascript
 4
 ```
+
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+Try thinking about this problem in real life. How would you determine what seat
+has the most space?
+</details>
+
+<details>
+<summary>Hint 2</summary>
+The best seat will always be within the longest contiguous subarray of all zeroes.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+Once you find the longest contiguous subarray of empty seats, how can you choose
+where to sit within that subarray?
+</details>
+
+<details>
+<summary>Hint 4</summary>
+How can you find the midpoint between two people?
+</details>
+
+<details>
+<summary>Optimal Space & Time Complexity</summary>
+O(n) time | O(1) space - where n is the number of seats
+</details>
