@@ -24,24 +24,22 @@ function mySolution1(array: number[][]): number[][] {
 function solution1(array: number[][]): number[][] {
   let result: number[][] = [];
   array.sort((a, b) => a[0] - b[0]);
-  for (let i = 0; i < array.length; i++) {
-    let next = i + 1;
-    while (next < array.length && isOverlaping(array, i , next)) {
-      array[i] = genNewInterval(array, i, next++);
+  let currInterval = array[0]
+  result.push(currInterval);
+  for (let nextInterval = 1; nextInterval < array.length; nextInterval++) {
+    if (isOverlaping(currInterval, array[nextInterval])) {
+      currInterval[1] = Math.max(currInterval[1], array[nextInterval][1]);
+    } else {
+      currInterval = array[nextInterval];
+      result.push(currInterval);
     }
-    result.push(array[i]);
-    if (next !== (i + 1)) { i = next - 1;}
   }
 
   return result
 }
 
-function isOverlaping(array: number[][], i: number, j: number): boolean {
-  return array[i][1] >= array[j][0];
-}
-
-function genNewInterval(array: number[][], i: number, j: number): number[] {
-  return [array[i][0], Math.max(array[i][1], array[j][1])]
+function isOverlaping(array1: number[], array2: number[]): boolean {
+  return array1[1] >= array2[0];
 }
 
 export default mergeOverlappingIntervals;
