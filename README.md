@@ -90,7 +90,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 - [x] [Array Of Products](./src/medium/array-of-products)
 - [x] [First Duplicate Value](./src/medium/first-duplicate-value)
 - [x] [Merge Overlapping Intervals](./src/medium/merge-overlapping-intervals)
-- [ ] [Best Seat](./src/medium/best-seat)
+- [x] [Best Seat](./src/medium/best-seat)
 - [ ] [Zero Sum Subarray](./src/medium/zero-sum-subarray)
 - [ ] [Missing Numbers](./src/medium/missing-numbers)
 - [ ] [Majority Element](./src/medium/majority-element)
