@@ -92,7 +92,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 - [x] [Merge Overlapping Intervals](./src/medium/merge-overlapping-intervals)
 - [x] [Best Seat](./src/medium/best-seat)
 - [x] [Zero Sum Subarray](./src/medium/zero-sum-subarray)
-- [ ] [Missing Numbers](./src/medium/missing-numbers)
+- [x] [Missing Numbers](./src/medium/missing-numbers)
 - [ ] [Majority Element](./src/medium/majority-element)
 - [ ] [Sweet And Savory](./src/medium/sweet-and-savory)
 - [ ] [BST Construction](./src/medium/bst-construction)
