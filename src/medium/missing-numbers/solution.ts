@@ -2,6 +2,7 @@
 function missingNumbers(nums: number[]): number[] {
   // return mySolution1(nums); // time time O(n) | space O(n)
   return solution1(nums); // time time O(n) | space O(1)
+  // return solution2(nums); // time time O(n) | space O(1)
 }
 
 // Set approach
@@ -36,6 +37,29 @@ function solution1(nums: number[]): number[] {
   let expectedSecond = ((fullSize * (fullSize + 1)) / 2) - expectedFirst;
 
   return [expectedFirst - foundFirst, expectedSecond - foundSecond];
+}
+
+// XOR approach
+// Complexity (worst-case): time O(n) | space O(1)
+function solution2(nums: number[]): number[] {
+  let solutionXOR = 0;
+  for (let i = 0; i <= nums.length + 2; i++) { 
+    solutionXOR ^= i; 
+    if (i < nums.length) solutionXOR ^= nums[i];
+  }
+
+  let solution = [0, 0];
+  let setBit = solutionXOR & -solutionXOR;
+  for (let i = 0; i <= nums.length + 2; i++) {
+    if ((i & setBit) === 0) solution[0] ^= i;
+    else solution[1] ^= i;
+
+    if (i < nums.length)
+      if ((nums[i] & setBit) === 0) solution[0] ^= nums[i];
+      else solution[1] ^= nums[i];
+  }
+
+  return solution.sort((a, b) => a - b)
 }
 
 
