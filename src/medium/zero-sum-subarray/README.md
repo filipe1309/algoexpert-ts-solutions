@@ -21,3 +21,30 @@ nums = [-5, -5, 2, 3, -2]
 ```javascript
 true // The subarray [-5, 2, 3] has a sum of 0
 ```
+
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+A good way to approach this problem is to first think of a simpler version. How
+would you check if the entire array sum is zero?
+</details>
+
+<details>
+<summary>Hint 2</summary>
+If the entire array does not sum to zero, the you need to check if there are any
+smaller subarray that sum to zero. For this, it can be helpful to keep track of 
+all of the sums from [0, i], where i is every index in the array.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+After recording all of the sums from [0, i], what would it mean if a sum is
+repeated?
+</details>
+
+<details>
+<summary>Optimal Space & Time Complexity</summary>
+O(n) time | O(n) space - where n is the length of the input array
+</details>
+
