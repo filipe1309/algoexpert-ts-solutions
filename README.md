@@ -354,6 +354,8 @@ Please make sure to update tests as appropriate. -->
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🧙‍♂️ About Me
 
 <p align="center">
@@ -370,6 +372,11 @@ Please make sure to update tests as appropriate. -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
----
+## :clap: Acknowledgments
 
-> @ Generated with [ShubcoGen Template™](https://github.com/filipe1309/shubcogen-template)   
+- [AlgoExpert](https://www.algoexpert.io/)
+- [ShubcoGen Template™](https://github.com/filipe1309/shubcogen-template)
+- [Git Hooks without extra dependencies like Husky in Node.js project](https://dev.to/azu/git-hooks-without-extra-dependencies-like-husky-in-node-js-project-jjp)
+- [TypeScript + Jest](https://basarat.gitbook.io/typescript/intro-1/jest)
+- [Testes Unitários com Node.js, Jest e TypeScript](https://sharklabs.com.br/testes-unitarios-com-nodejs-jest-typescript/)
+- [What is Big O Notation Explained: Space and Time Complexity](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/)
