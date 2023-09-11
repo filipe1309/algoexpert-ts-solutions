@@ -113,8 +113,14 @@ touch src/${level}/${name}/solution.ts
 CAMEL=$(echo ${name} | perl -pe 's/(^|-)(\w)/\u$2/g' | perl -nE 'say lcfirst')
 echo -e "// Test: make test t=${name}
 function ${CAMEL}(array: number[]): number[] {
-  return mySolution1(array); // time O(??) | space O(??)
+  return solutions.mySolution1(array);
 }
+
+const solutions = {
+  mySolution1, // time O(??) | space O(??)
+  // solution1 // time O(??) | space O(??)
+  // solution2 // time O(??) | space O(??)
+};
 
 // ?? approach
 // Complexity (worst-case): time O(??) | space O(??)

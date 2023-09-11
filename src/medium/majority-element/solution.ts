@@ -1,10 +1,14 @@
 // Test: make test t=majority-element
 function majorityElement(array: number[]): number {
-  // return mySolution1(array); // time O(nlogn) | space O(1)
-  return solution1(array); // time O(n) | space O(1)
-  // return solution2(array); // time O(n) | space O(1)
-  // return solution3(array); // time O(n) | space O(1)
+  return solutions.solution1(array);
 }
+
+const solutions = {
+  mySolution1, // time O(nlogn) | space O(1)
+  solution1,   // time O(n) | space O(1)
+  solution2,   // time O(n) | space O(1)
+  solution3,   // time O(n) | space O(1)
+};
 
 // Sorting approach
 // Complexity (worst-case): time O(nlogn) | space O(1)
