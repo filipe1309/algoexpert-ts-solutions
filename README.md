@@ -93,7 +93,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 - [x] [Best Seat](./src/medium/best-seat)
 - [x] [Zero Sum Subarray](./src/medium/zero-sum-subarray)
 - [x] [Missing Numbers](./src/medium/missing-numbers)
-- [ ] [Majority Element](./src/medium/majority-element)
+- [x] [Majority Element](./src/medium/majority-element)
 - [ ] [Sweet And Savory](./src/medium/sweet-and-savory)
 - [ ] [BST Construction](./src/medium/bst-construction)
 - [ ] [Validate BST](./src/medium/validate-bst)
