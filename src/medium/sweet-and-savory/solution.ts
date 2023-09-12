@@ -5,7 +5,7 @@ function sweetAndSavory(dishes: number[], target: number): number[] {
 
 const solutions = {
   mySolution1, // time O(nlogn) | space O(1)
-  // solution1 // time O(??) | space O(??)
+  solution1    // time O(nlogn) | space O(n)
   // solution2 // time O(??) | space O(??)
 };
 
@@ -26,6 +26,32 @@ function mySolution1(dishes: number[], target: number): number[] {
     else right--;
   }
   return flavorProfile;
+}
+
+// Sorting + 2 Arrays Sw/Sv approach
+// Complexity (worst-case): time O(nlogn) | space O(n)
+function solution1(dishes: number[], target: number): number[] {
+  let sweetDishes = dishes.filter((dish) => dish < 0).sort((a, b) => b - a)
+  let savoryDishes = dishes.filter((dish) => dish > 0).sort((a, b) => a - b);
+  let bestPair = [0, 0];
+  let bestDiff = Infinity;
+  let sweetIdx = 0;
+  let savoryIdx = 0;
+
+  while (sweetIdx < sweetDishes.length && savoryIdx < savoryDishes.length) {
+    let currSum = sweetDishes[sweetIdx] + savoryDishes[savoryIdx];
+    if (currSum <= target) {
+      let currDiff = target - currSum;
+      if (currDiff < bestDiff) {
+        bestDiff = currDiff;
+        bestPair = [sweetDishes[sweetIdx], savoryDishes[savoryIdx]];
+      }
+      savoryIdx++;
+    } 
+    else sweetIdx++;
+  }
+
+  return  bestPair;
 }
 
 export default sweetAndSavory;

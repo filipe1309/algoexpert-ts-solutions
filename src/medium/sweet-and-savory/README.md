@@ -59,3 +59,30 @@ target = -20
 ```javascript
 [-25, 5] // this pairing gets the exact combined profile of -20
 ```
+
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+The sweet and savory dishes are essencially two different lists that have been
+combined into one. It can be helpful to first separate them.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+Looking at all possible pairs will be innefficient. Would sorting the lists 
+first help improve the time complexity?
+</details>
+
+<details>
+<summary>Hint 3</summary>
+Try using a two pointer approach to find the best pairing. Start with a
+current pairing, and move the savory pointer until the pairing gets too
+savory. If the dish is too savory, then move the sweet pointer. Do this
+through the entire lists, keeping track of the best pairing you find.
+</details>
+
+<details>
+<summary>Optimal Space &amp; Time Complexity</summary>
+O(n * log(n)) time | O(n) space - where n is the number of dishes
+</details>
