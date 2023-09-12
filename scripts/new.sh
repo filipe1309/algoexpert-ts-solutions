@@ -125,7 +125,7 @@ const solutions = {
 // ?? approach
 // Complexity (worst-case): time O(??) | space O(??)
 function mySolution1(array: number[]): number[] {
-  return [];
+  return array;
 }
 
 export default ${CAMEL};" >> src/${level}/${name}/solution.ts
