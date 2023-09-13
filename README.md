@@ -95,7 +95,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 - [x] [Missing Numbers](./src/medium/missing-numbers)
 - [x] [Majority Element](./src/medium/majority-element)
 - [x] [Sweet And Savory](./src/medium/sweet-and-savory)
-- [ ] [BST Construction](./src/medium/bst-construction)
+- [x] [BST Construction](./src/medium/bst-construction)
 - [ ] [Validate BST](./src/medium/validate-bst)
 - [ ] [BST Traversal](./src/medium/bst-traversal)
 - [ ] [Min Height BST](./src/medium/min-height-bst)
