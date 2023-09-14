@@ -72,6 +72,7 @@ class BST {
   }
 
   // Iterative approach
+  // Complexity (average-case): time O(logn) | space O(1)
   // Complexity (worst-case): time O(n) | space O(1)
   containsSolution(value: number): boolean {
     let currNode: BST | null = this;
@@ -85,6 +86,13 @@ class BST {
   }
 
   remove(value: number): BST {
+    // return this.myRemove(value);
+    return this.removeSolution(value);
+  }
+
+  // Complexity (average-case): time O(logn) | space O(1)
+  // Complexity (worst-case): time O(n) | space O(1)
+  myRemove(value: number): BST {
     let parent: BST | null = null;
     let node: BST | null = this;
     while (node) {
@@ -125,14 +133,54 @@ class BST {
             // single-node tree; do nothing
           }
         } else if (parent.left === node) {
-          parent.left = node.left ? node.left : node.right;
+          parent.left = node.left ?? node.right;
         } else if (parent.right === node) {
-          parent.right = node.left ? node.left : node.right;
+          parent.right = node.left ?? node.right;
         }
         break;
       }
     }
 
+    return this;
+  }
+
+  // Recursive approach
+  // Complexity (average-case): time O(logn) | space O(1)
+  // Complexity (worst-case): time O(n) | space O(1)
+  removeSolution(value: number, parent: BST | null = null): BST {
+    let currNode: BST | null = this;
+    while (currNode) {
+      if (value < currNode.value) { 
+        parent = currNode; 
+        currNode = currNode.left; 
+      } else if (currNode && value > currNode.value) {
+        parent = currNode;
+        currNode = currNode.right;
+      } else {
+        if (currNode.left && currNode.right) {
+          currNode.value = currNode.right.getMinValue();
+          currNode.right.removeSolution(currNode.value, currNode);
+        } else if (!parent) {
+            if (currNode.left) {
+              currNode.value = currNode.left.value;
+              currNode.right = currNode.left.right;
+              currNode.left = currNode.left.left;
+            } if (currNode.right) {
+              currNode.value = currNode.right.value;
+              currNode.left = currNode.right.left;
+              currNode.right = currNode.right.right;
+            } else {
+              // root without childs
+              // currNode.value = null
+            }
+        } else if (parent.left === currNode) {
+          parent.left = currNode.left ?? currNode.right;
+        } else if (parent.right === currNode) {
+          parent.right = currNode.left ?? currNode.right;
+        }
+        break;
+      }
+    }
     return this;
   }
 
