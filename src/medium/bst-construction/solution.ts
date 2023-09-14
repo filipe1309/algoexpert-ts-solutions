@@ -19,8 +19,25 @@ class BST {
     return this.insertSolution(value);
   }
 
-  // Complexity (average-case): time O(logn) | space O(n)
+  // Recursive approach
   // Complexity (worst-case): time O(n) | space O(n)
+  myInsert(value: number): BST {
+    if (value < this.value) {
+      if (this.left) this.left.myInsert(value);
+      else this.left = new BST(value);
+    }
+    
+    if (value >= this.value) {
+      if (this.right) this.right.myInsert(value);
+      else this.right = new BST(value);
+    }
+
+    return this;
+  }
+
+    // Iterative approach
+  // Complexity (average-case): time O(logn) | space O(1)
+  // Complexity (worst-case): time O(n) | space O(1)
   insertSolution(value: number): BST {
     let currNode: BST = this;
     while (true) {
@@ -40,25 +57,30 @@ class BST {
     return this;
   }
 
-  // Complexity (worst-case): time O(n) | space O(n)
-  myInsert(value: number): BST {
-    if (value < this.value) {
-      if (this.left) this.left.myInsert(value);
-      else this.left = new BST(value);
-    }
-    
-    if (value >= this.value) {
-      if (this.right) this.right.myInsert(value);
-      else this.right = new BST(value);
-    }
-
-    return this;
+  contains(value: number): boolean {
+    // return this.myContains(value);
+    return this.containsSolution(value);
   }
 
-  contains(value: number): boolean {
+  // Recursive approach
+  // Complexity (worst-case): time O(n) | space O(n)
+  myContains(value: number): boolean {
     if (value === this.value) return true;
     if (value < this.value && this.left) return this.left.contains(value);
     if (value >= this.value && this.right) return this.right.contains(value);
+    return false;
+  }
+
+  // Iterative approach
+  // Complexity (worst-case): time O(n) | space O(1)
+  containsSolution(value: number): boolean {
+    let currNode: BST | null = this;
+    while (currNode) {
+      if (value < currNode.value) currNode = currNode.left;
+      else if (value > currNode.value) currNode = currNode.right;
+      else return true;
+    }
+
     return false;
   }
 
