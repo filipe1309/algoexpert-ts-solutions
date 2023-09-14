@@ -31,3 +31,26 @@ tree =   10
 ```
 true
 ```
+
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+Every node in the BST has a maximum possible value and a minimum possible value.
+In other words, the value of any given node in the BST must be strictly smaller
+than some value (the value of its closest right parent) and must be greater than
+or equal to some other value (the value of its closest left parent).
+</details>
+
+<details>
+<summary>Hint 2</summary>
+Validate the BST by recursively calling the validateBst function on every node,
+passing in the correct maximum and minimum possible values to each. Initialize
+thoose values to be -Infinity and +Infinity.
+</details>
+
+<details>
+<summary>Optimal Space &amp; Time Complexity</summary>
+O(n) time | O(d) space - where n is the number of nodes in the BST and d is the
+depth (height) of the BST
+</details>

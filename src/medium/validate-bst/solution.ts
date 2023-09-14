@@ -4,28 +4,23 @@ function validateBst(tree: BST): boolean {
 }
 
 const solutions = {
-  mySolution1, // time O(??) | space O(??)
-  // solution1 // time O(??) | space O(??)
-  // solution2 // time O(??) | space O(??)
+  mySolution1, // time time O(n) | space O(d)
 };
 
 // Recursive approach
-// Complexity (worst-case): time O(n) | space O(n)
+// Complexity (worst-case): time O(n) | space O(d)
+// where n is the number of nodes in the BST
+// and d is the depth (height) of the BST
 function mySolution1(tree: BST): boolean {
-  return walk(tree);
+  return walk(tree, Infinity, -Infinity);
 }
 
-function walk(tree: BST | null, max: number | null = null, min: number | null = null): boolean {
+function walk(tree: BST | null, max: number, min: number): boolean {
   if (!tree) return true;
-  if (max && tree.value >= max) return false;
-  if (min && tree.value < min) return false;
+  if (tree.value >= max) return false;
+  if (tree.value < min) return false;
 
-  return  walk(tree.left, tree.value, min) && walk(tree.right, max, tree.value);
+  return walk(tree.left, tree.value, min) && walk(tree.right, max, tree.value);
 }
-
-mySolution1({
-  "value":10,
-  "left":{"value":5,"left":null,"right":{"value":10,"left":null,"right":null}},
-  "right":{"value":15,"left":null,"right":null}}) // false
 
 export default validateBst;
