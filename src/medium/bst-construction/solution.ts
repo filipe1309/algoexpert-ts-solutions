@@ -15,13 +15,40 @@ class BST {
   [key: string]: any;
 
   insert(value: number): BST {
+    // return this.myInsert(value);
+    return this.insertSolution(value);
+  }
+
+  // Complexity (average-case): time O(logn) | space O(n)
+  // Complexity (worst-case): time O(n) | space O(n)
+  insertSolution(value: number): BST {
+    let currNode: BST = this;
+    while (true) {
+      if (value < currNode.value) {
+        if (!currNode.left) {
+          currNode.left = new BST(value);
+          break;
+        } else { currNode = currNode.left; }
+      } else {
+        if (!currNode.right) {
+          currNode.right = new BST(value);
+          break;
+        } else { currNode = currNode.right; }
+      }
+    }
+
+    return this;
+  }
+
+  // Complexity (worst-case): time O(n) | space O(n)
+  myInsert(value: number): BST {
     if (value < this.value) {
-      if (this.left) this.left.insert(value);
+      if (this.left) this.left.myInsert(value);
       else this.left = new BST(value);
     }
     
     if (value >= this.value) {
-      if (this.right) this.right.insert(value);
+      if (this.right) this.right.myInsert(value);
       else this.right = new BST(value);
     }
 
