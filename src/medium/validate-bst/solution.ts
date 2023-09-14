@@ -12,15 +12,14 @@ const solutions = {
 // where n is the number of nodes in the BST
 // and d is the depth (height) of the BST
 function mySolution1(tree: BST): boolean {
-  return walk(tree, Infinity, -Infinity);
+  return walk(tree, -Infinity, Infinity);
 }
 
-function walk(tree: BST | null, max: number, min: number): boolean {
+function walk(tree: BST | null, min: number, max: number): boolean {
   if (!tree) return true;
-  if (tree.value >= max) return false;
-  if (tree.value < min) return false;
+  if (tree.value >= max || tree.value < min) return false;
 
-  return walk(tree.left, tree.value, min) && walk(tree.right, max, tree.value);
+  return walk(tree.left, min, tree.value) && walk(tree.right, tree.value, max);
 }
 
 export default validateBst;
