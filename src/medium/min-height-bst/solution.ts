@@ -42,14 +42,11 @@ const solutions = {
 function mySolution1(array: number[], bst: BST | null = null): BST {
   const midPos = Math.floor((array.length-1)/2);
   const midNumber = array[midPos];
-  if (midNumber !== undefined) {
-    if (!bst && midNumber !== undefined) bst = new BST(midNumber);
-    else bst?.insert(midNumber);
-    if (array.length > 1) {
-      mySolution1(array.slice(0, midPos), bst)
-      mySolution1(array.slice(midPos + 1), bst)
-    }
-  }
+  if (midNumber === undefined) return bst as BST;
+  if (!bst) bst = new BST(midNumber);
+  else bst?.insert(midNumber);
+  mySolution1(array.slice(0, midPos), bst)
+  mySolution1(array.slice(midPos + 1), bst)
   return bst as BST;
 }
 
