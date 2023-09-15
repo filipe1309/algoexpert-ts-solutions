@@ -98,7 +98,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 - [x] [BST Construction](./src/medium/bst-construction)
 - [x] [Validate BST](./src/medium/validate-bst)
 - [x] [BST Traversal](./src/medium/bst-traversal)
-- [ ] [Min Height BST](./src/medium/min-height-bst)
+- [x] [Min Height BST](./src/medium/min-height-bst)
 - [ ] [Find Kth Largest Value In BST](./src/medium/find-kth-largest-value-in-bst)
 - [ ] [Reconstruct BST](./src/medium/reconstruct-bst)
 - [ ] [Invert Binary Tree](./src/medium/invert-binary-tree)
