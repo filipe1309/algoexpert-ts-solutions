@@ -38,3 +38,27 @@ inOrderTraverse: [1, 2, 5, 5, 10, 15, 22] // where the array is the input array
 preOrderTraverse: [10, 5, 2, 1, 5, 15, 22] // where the array is the input array
 postOrderTraverse: [1, 2, 5, 5, 22, 15, 10] // where the array is the input array
 ```
+
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+Realize that in-order traversal simply means traversing left nodes before 
+traversing current nodes before traversing right nodes. Try implementing this 
+algorithm recursively by calling the inOrderTraverse method on a left node, 
+then appending the current node's value to the input array, and then calling the
+ inOrderTraverse method on a right node.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+Apply the same logic described in Hint #1 for the two other traversal methods, 
+but change the order in which you do things.
+</details>
+
+<details>
+<summary>Optimal Space &amp; Time Complexity</summary>
+All three methods: O(n) time | O(n) space - where n is the number of nodes in
+the BST
+</details>
+

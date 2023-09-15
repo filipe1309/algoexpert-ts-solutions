@@ -3,14 +3,11 @@
 // Recursive approach
 // Complexity (worst-case): time O(n) | space O(n)
 export function inOrderTraverse(tree: BST | null, array: number[]) {
-  if (!tree) return array;
+  if (!tree) return;
 
-  if (tree?.left) inOrderTraverse(tree.left, array);
-
+  inOrderTraverse(tree.left, array);
   array.push(tree.value);
-
-  if (tree?.right) inOrderTraverse(tree.right, array);
-
+  inOrderTraverse(tree.right, array);
 
   return array;
 }
@@ -18,13 +15,11 @@ export function inOrderTraverse(tree: BST | null, array: number[]) {
 // Recursive approach
 // Complexity (worst-case): time O(n) | space O(n)
 export function preOrderTraverse(tree: BST | null, array: number[]) {
-  if (!tree) return array;
+  if (!tree) return;
 
   array.push(tree.value);
-
-  if (tree?.left) preOrderTraverse(tree.left, array);
-
-  if (tree?.right) preOrderTraverse(tree.right, array);
+  preOrderTraverse(tree.left, array);
+  preOrderTraverse(tree.right, array);
 
   return array;
 }
@@ -32,12 +27,10 @@ export function preOrderTraverse(tree: BST | null, array: number[]) {
 // Recursive approach
 // Complexity (worst-case): time O(n) | space O(n)
 export function postOrderTraverse(tree: BST | null, array: number[]) {
-  if (!tree) return array;
+  if (!tree) return;
 
-  if (tree?.left) postOrderTraverse(tree.left, array);
-
-  if (tree?.right) postOrderTraverse(tree.right, array);
-
+  postOrderTraverse(tree.left, array);
+  postOrderTraverse(tree.right, array);
   array.push(tree.value);
 
   return array;
