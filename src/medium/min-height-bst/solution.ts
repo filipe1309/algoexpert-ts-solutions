@@ -1,6 +1,6 @@
 // Test: make test t=min-height-bst
 function minHeightBst(array: number[]): BST {
-  return solutions.solution1(array);
+  return solutions.solution2(array);
 }
 
 export class BST {
@@ -33,8 +33,8 @@ export class BST {
 
 const solutions = {
   mySolution1, // time O(nlogn) | space O(n)
-  solution1 // time O(nlogn) | space O(n)
-  // solution2 // time O(??) | space O(??)
+  solution1,   // time O(nlogn) | space O(n)
+  solution2    // time O(n) | space O(n)
 };
 
 // Recursive approach
@@ -66,6 +66,28 @@ function constructMinHeightBst(array: number[], bst: BST | null = null, startIdx
   else bst.insert(midNumber);
   constructMinHeightBst(array, bst, startIdx, midIdx - 1)
   constructMinHeightBst(array, bst, midIdx + 1, endIdx)
+  return bst as BST;
+}
+
+// Recursive with slices approach
+// Complexity (worst-case): time O(n) | space O(n)
+function solution2(array: number[]): BST {
+  return constructMinHeightBst2(array, null, 0, array.length - 1);
+}
+
+// Recursive with Idx && manual inserts approach
+// Complexity (worst-case): time O(n) | space O(n)
+function constructMinHeightBst2(array: number[], bst: BST | null = null, startIdx: number, endIdx: number): BST {
+  if (endIdx < startIdx) return bst as BST;
+  const midIdx = Math.floor((endIdx + startIdx) / 2);
+  const newBstNode = new BST(array[midIdx]);
+  if (!bst) bst = newBstNode;
+  else {
+    if (array[midIdx] < bst.value) { bst.left = newBstNode; bst = bst.left; }
+    else { bst.right = newBstNode; bst = bst.right; }
+  }
+  constructMinHeightBst2(array, bst, startIdx, midIdx - 1)
+  constructMinHeightBst2(array, bst, midIdx + 1, endIdx)
   return bst as BST;
 }
 
