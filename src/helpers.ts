@@ -1,4 +1,4 @@
-export function bstToTreeNodesArray(bst: BST): any[] {
+export function bstToTreeNodesArray(bst: BinaryTree): any[] {
   const nodes = [];
   const queue = [bst];
   while (queue.length) {
