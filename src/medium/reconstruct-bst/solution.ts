@@ -1,6 +1,6 @@
 // Test: make test t=reconstruct-bst
 function reconstructBst(preOrderTraversalValues: number[]): BST | null {
-  return solutions.mySolution1(preOrderTraversalValues);
+  return solutions.solution1(preOrderTraversalValues);
 }
 
 export class BST {
@@ -17,7 +17,7 @@ export class BST {
 
 const solutions = {
   mySolution1, // time O(n) | space O(n)
-  // solution1 // time O(??) | space O(??)
+  solution1    // time O(n^2) | space O(n)
   // solution2 // time O(??) | space O(??)
 };
 
@@ -41,6 +41,26 @@ function mySolution1Insert(bst: BST, value: number) {
     if (bst.right) mySolution1Insert(bst.right, value);
     else bst.right = new BST(value);
   }
+}
+
+// Right Child Array Slices approach
+// Complexity (worst-case): time O(n^2) | space O(n)
+function solution1(preOrderTraversalValues: number[]): BST | null {
+  if (preOrderTraversalValues.length === 0) return null;
+  let currValue: number = preOrderTraversalValues[0];
+  let rightSubtreeRootIdx: number = preOrderTraversalValues.length;
+
+  for (let idx = 1; idx < preOrderTraversalValues.length; idx++) {
+    if (preOrderTraversalValues[idx] >= currValue) {
+      rightSubtreeRootIdx = idx;
+      break;
+    }
+  }
+
+  let leftSubtree = solution1(preOrderTraversalValues.slice(1, rightSubtreeRootIdx));
+  let rightSubtree = solution1(preOrderTraversalValues.slice(rightSubtreeRootIdx));
+
+  return new BST(currValue, leftSubtree, rightSubtree);
 }
 
 export default reconstructBst;

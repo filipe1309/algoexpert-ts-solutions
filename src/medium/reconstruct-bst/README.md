@@ -40,3 +40,47 @@ preOrderTraversalValues = [10, 4, 2, 1, 5, 17, 19, 18]
    /        /
   1        18
 ```
+
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+Think about the properties of a BST. Looking at the pre-order-traversal nodes
+(values), how can you determine the right child of a particular node?
+</details>
+
+<details>
+<summary>Hint 2</summary>
+The right child of any BST node is simply the first node in the pre-order
+traversal whose value is larger than or equal to the particular node's value.
+From this, we know that the nodes in the pre-order traversal that come before
+the right child of a node must be in the left subtree of that node.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+Once you determine the right child of any given node, you're able to generate
+the entire left and right subtrees of that node. You can do so by recursively
+creating the left and right child nodes of each subsequent node using the fact
+stated in Hint #2. A node that has no left and right children is naturally a
+leaf node.
+</details>
+
+<details>
+<summary>Hint 4</summary>
+To solve this problem with an optimal time complexity, you need to realize
+that it's unnecessary to locate the right child of every node. You can simply
+keep track of the pre-order-traversal position of the current node that needs
+to be created and try to insert that node as the left or right child of the
+relevant previously visited node. Since this tree is a BST, every node must
+satisfy the BST property; by somehow keeping track of lower and upper bounds
+for node values, you should be able to determine if a node can be inserted as
+the left or right child of another node. With this approach, you can solve
+this problem in linear time. See this question's video explanation for a more
+detailed explanation of this approach.
+</details>
+
+<details>
+<summary>Optimal Space &amp; Time Complexity</summary>
+O(n) time | O(n) space - where n is the length of the input array
+</details>
