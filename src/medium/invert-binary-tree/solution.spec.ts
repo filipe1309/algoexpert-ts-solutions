@@ -16,6 +16,5 @@ describe('invert-binary-tree', () => {
     expected.nodes.sort((a, b) => a.value - b.value);
 
     expect(nodes).toEqual(expected.nodes);
-    // expect(true).toEqual(true);
   });
 });

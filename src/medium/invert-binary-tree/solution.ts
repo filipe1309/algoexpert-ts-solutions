@@ -1,10 +1,10 @@
 
 import mySolution1 from "./solution-0";
-// import mySolution2 from "./solution-1";
+import solution1 from "./solution-1";
 
 // Test: make test t=invert-binary-tree
 function invertBinaryTree(tree: BinaryTree | null): BinaryTree | null {
-  return solutions.mySolution1(tree);
+  return solutions.solution1(tree);
 }
 
 export class BinaryTree {
@@ -21,7 +21,7 @@ export class BinaryTree {
 
 const solutions = {
   mySolution1, // time O(n) | space O(n)
-  // mySolution2,// time O(??) | space O(??)
+  solution1,   // time O(n) | space O(d)
   // solution2 // time O(??) | space O(??)
 };
 

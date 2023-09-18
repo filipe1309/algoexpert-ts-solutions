@@ -1,6 +1,6 @@
 import { BinaryTree as BT } from "./solution";
 
-// Second Tree approach
+// Insert Invert Second Tree approach
 // Complexity (worst-case): time O(n) | space O(n)
 function invertBinaryTree(tree: BT | null): BT | null {
   if (!tree) return null;
