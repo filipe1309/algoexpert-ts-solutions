@@ -13,9 +13,6 @@ describe('min-height-bst', () => {
     // Sort tree by value for comparison
     expected.nodes.sort((a, b) => a.value - b.value);
 
-    console.log('result', result)
-    console.log('nodes', nodes)
-    console.log('expected.nodes', expected.nodes)
     expect(nodes).toEqual(expected.nodes);
   });
 });
