@@ -111,24 +111,30 @@ echo "# ${NAME}
 echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/solution.ts${RESET} file..."
 touch src/${level}/${name}/solution.ts
 CAMEL=$(echo ${name} | perl -pe 's/(^|-)(\w)/\u$2/g' | perl -nE 'say lcfirst')
-echo -e "// Test: make test t=${name}
+echo -e "
+import mySolution1 from \"./solution-0\";
+// import solution1 from \"./solution-1\";
+
+// Test: make test t=${name}
 function ${CAMEL}(array: number[]): number[] {
   return solutions.mySolution1(array);
 }
 
 const solutions = {
   mySolution1, // time O(??) | space O(??)
-  // solution1 // time O(??) | space O(??)
+  // solution1,// time O(??) | space O(??)
   // solution2 // time O(??) | space O(??)
 };
 
-// ?? approach
+export default ${CAMEL};" >> src/${level}/${name}/solution.ts
+echo -e "// ?? approach
 // Complexity (worst-case): time O(??) | space O(??)
-function mySolution1(array: number[]): number[] {
+function ${CAMEL}(array: number[]): number[] {
   return array;
 }
 
-export default ${CAMEL};" >> src/${level}/${name}/solution.ts
+export default ${CAMEL};" >> src/${level}/${name}/solution-0.ts
+
 
 # Create test file
 echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/solution.spec.ts${RESET} file..."
