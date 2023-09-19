@@ -36,3 +36,36 @@ tree =      1
 // first node and the last node 
 // of this tree's longest path.
 ```
+
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+How can you use the height of a binary tree and the heights of its subtrees to
+calculate its diameter?
+</details>
+
+<details>
+<summary>Hint 2</summary>
+The length of the longest path that goes through the root of a binary tree is 
+the sum of the heights of its left and right subtrees (left subtree height + 
+right subtree height). The diameter of a binary tree can be calculated by 
+taking the maximum of: 1) the maximum subtree diameter (max(left subtree 
+diameter, right subtree diameter)); and 2) the length of the longest path that 
+goes through the root (left subtree height + right subtree height).
+</details>
+
+<details>
+<summary>Hint 3</summary>
+Implement a variation of depth-first search that recursively keeps track of both 
+the diameter and the height of a each subtree in the input binary tree. Follow 
+Hint #2 to continuously compute these diameters.
+</details>
+
+<details>
+<summary>Optimal Space &amp; Time Complexity</summary>
+Average case: when the tree is balanced
+O(n) time | O(h) space - where n is the number of nodes in the Binary Tree and 
+h is the height of the Binary Tree
+</details>
+

@@ -1,21 +1,17 @@
-type myMax = { max: number }
+type TreeInfo = { max: number }
 
 // Recursive Height approach
-// Complexity (worst-case): time O(n) | space O(d)
-// where n is the number of nodes in the BST
-// and d is the depth (height) of the BST
-function binaryTreeDiameter(tree: BinaryTree | null): number {
-  let result: myMax = { max: 0 };
+// Complexity (worst-case): time O(n) | space O(n)
+function binaryTreeDiameter(tree: BinaryTree): number {
+  let result: TreeInfo = { max: 0 };
   getHeight(tree, result)
   return result.max;
 }
 
-function getHeight(tree: BinaryTree | null, maxHeight: myMax): number {
-  if (!tree) return 0;
-  const leftHeight = getHeight(tree.left, maxHeight);
-  const rightHeight = getHeight(tree.right, maxHeight);
-  const currHeight = leftHeight + rightHeight;
-  maxHeight.max = Math.max(maxHeight.max, currHeight);
+function getHeight(tree: BinaryTree, maxHeight: TreeInfo): number {
+  const leftHeight = tree.left ? getHeight(tree.left, maxHeight) : 0;
+  const rightHeight = tree.right ? getHeight(tree.right, maxHeight) : 0;
+  maxHeight.max = Math.max(maxHeight.max, leftHeight + rightHeight);
   return 1 + Math.max(leftHeight, rightHeight);
 }
 
