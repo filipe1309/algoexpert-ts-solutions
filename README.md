@@ -299,6 +299,8 @@ make install
 
 ## :white_check_mark: Tests
 
+I have created a `Makefile` to help you run the tests.
+
 Run all tests:
 ```sh
 make test
@@ -315,6 +317,8 @@ Run changed tests:
 make test-changed
 ```
 
+I have also created a `Makefile` command to help you create new challenges.
+
 Create a new test:
 ```sh
 make new [n=CHALLENGE_NAME] [l=CHALLENGE_LEVEL] [c=CHALLENGE_CATEGORY]
@@ -328,10 +332,23 @@ make new [n=CHALLENGE_NAME] [l=CHALLENGE_LEVEL] [c=CHALLENGE_CATEGORY]
 >
 > > This will create:
 > > - a folder (`src/easy/two-number-sum`)
-> > - a solution file 
+> > - a solution file (that you can choose which solution to use)
+> > - a solution-0 file (the file where you will write your solution, you can create more if you want and change the `solution` file to use it)
 > > - a test file
 > > - a case test file
 > > - a `README.md` file  
+
+
+And finally, I have created a `Makefile` command to help you commit your solutions.
+
+Commit your solutions:
+```sh
+make commit [m=COMMIT_MESSAGE]
+```
+> :memo: **Example:**
+> `make commit m="feat: add two number sum solution"`
+> if you don't pass the `m` argument, it will commit with the message 
+> `feat(CHALLENGE_NAME): add my solution`
 
 ---
 

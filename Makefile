@@ -34,8 +34,10 @@ run:
 new:
 	./scripts/new.sh name="${n}" level="${l}" category="${c}"
 
+# commit changes
+# example: make commit [m="feat: add two number sum solution"]
 commit:
-	./scripts/commit.sh
+	./scripts/commit.sh m="${m}"
 
 help:
 	@echo -e "📖 ${BOLD}Available commands:${NC}"

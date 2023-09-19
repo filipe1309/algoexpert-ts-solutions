@@ -6,6 +6,18 @@ source scripts/colors.sh
 
 # This script commits changes to a challenge directory and updates the README checkbox
 
+# read m argument from command line
+for argument in "$@"
+do
+  key=$(echo $argument | cut -f1 -d=)
+  value=$(echo $argument | cut -f2 -d=)
+
+  case "$key" in
+    "m")        message="$value" ;;
+    *)
+  esac
+done
+
 git add .
 # get challenge name and level from git status
 CHALLENGE_PATH=$(git status -s | grep -oE 'src\/.*\/.*\/' | sed 's/src\///g')
@@ -25,7 +37,13 @@ else
   echo -e "${RED}${BOLD}❌ Commit aborted${NORMAL}${NC}";
   exit 1;
 fi
-git commit -m "feat(${NAME_SNAKE_CASE}): add my solution"
+
+# if no message provided, set default message
+if [ -z ${message} ]; then 
+  message="feat(${NAME_SNAKE_CASE}): add my solution"
+fi
+
+git commit -m "${message}"
 echo -e "${GREEN}${BOLD}✅ Done!${NORMAL}${NC}"
 
 clear
