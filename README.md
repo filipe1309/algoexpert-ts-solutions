@@ -329,14 +329,13 @@ make new [n=CHALLENGE_NAME] [l=CHALLENGE_LEVEL] [c=CHALLENGE_CATEGORY]
 > `make new n=two-number-sum l=easy c=arrays`  
 >
 > > Levels: `easy`, `medium`, `hard`, `very-hard`  
->
-> > This will create:
-> > - a folder (`src/easy/two-number-sum`)
-> > - a solution file (that you can choose which solution to use)
-> > - a solution-0 file (the file where you will write your solution, you can create more if you want and change the `solution` file to use it)
-> > - a test file
-> > - a case test file
-> > - a `README.md` file  
+
+This will create:  
+- a folder (`src/easy/two-number-sum`)  
+- a `solution-0.ts` file *(the file where you will write your solution, you can create more if you want and update the test file)*  
+- a test file `solution.spec.ts`  
+- a case test file `cases.ts`  
+- a `README.md` file  
 
 
 And finally, I have created a `Makefile` command to help you commit your solutions.

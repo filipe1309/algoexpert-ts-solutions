@@ -111,22 +111,6 @@ echo "# ${NAME}
 echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/solution.ts${RESET} file..."
 touch src/${level}/${name}/solution.ts
 CAMEL=$(echo ${name} | perl -pe 's/(^|-)(\w)/\u$2/g' | perl -nE 'say lcfirst')
-echo -e "
-import mySolution1 from \"./solution-0\";
-// import solution1 from \"./solution-1\";
-
-// Test: make test t=${name}
-function ${CAMEL}(array: number[]): number[] {
-  return solutions.mySolution1(array);
-}
-
-const solutions = {
-  mySolution1, // time O(??) | space O(??)
-  // solution1,// time O(??) | space O(??)
-  // solution2 // time O(??) | space O(??)
-};
-
-export default ${CAMEL};" >> src/${level}/${name}/solution.ts
 echo -e "// ?? approach
 // Complexity (worst-case): time O(??) | space O(??)
 function ${CAMEL}(array: number[]): number[] {
@@ -140,12 +124,14 @@ export default ${CAMEL};" >> src/${level}/${name}/solution-0.ts
 echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/solution.spec.ts${RESET} file..."
 touch src/${level}/${name}/solution.spec.ts
 echo "import { describe, expect, test } from '@jest/globals';
-import solution from './solution';
 import cases from './cases';
+import mySolution1 from \"./solution-0\";
+// import solution1 from \"./solution-1\";
 
+// Test: make test t=${name}
 describe('${name}', () => {
   test.each(cases)('%# (%j)', ({ input, expected }) => {
-    const result = solution(input);
+    const result = mySolution1(input);
     expect(result).toEqual(expected);
   });
 });" >> src/${level}/${name}/solution.spec.ts
