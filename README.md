@@ -102,7 +102,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 - [x] [Find Kth Largest Value In BST](./src/medium/find-kth-largest-value-in-bst)
 - [x] [Reconstruct BST](./src/medium/reconstruct-bst)
 - [x] [Invert Binary Tree](./src/medium/invert-binary-tree)
-- [ ] [Binary Tree Diameter](./src/medium/binary-tree-diameter)
+- [x] [Binary Tree Diameter](./src/medium/binary-tree-diameter)
 - [ ] [Find Successor](./src/medium/find-successor)
 - [ ] [Height Balanced Binary Tree](./src/medium/height-balanced-binary-tree)
 - [ ] [Merge Binary Trees](./src/medium/merge-binary-trees)
