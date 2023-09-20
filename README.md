@@ -11,9 +11,9 @@
 
 This repository contains my solutions for the challenges from [AlgoExpert](https://www.algoexpert.io/).
 
-> All challenges and tests are in [src](./src)/level-name/challenge-name.
-> After every commit, the tests are run by a Githook.
-> After every push, the tests are run by a [Github Action](https://github.com/filipe1309/algoexpert-ts-solutions/blob/main/.github/workflows/tests.yaml).
+> All challenges and tests are in [src](./src)/level-name/challenge-name.  
+> After every commit, the tests are run by a Githook.  
+> After every push, the tests are run by a [Github Action](https://github.com/filipe1309/algoexpert-ts-solutions/blob/main/.github/workflows/tests.yaml).  
 
 [Improve this about section]: # 
 
