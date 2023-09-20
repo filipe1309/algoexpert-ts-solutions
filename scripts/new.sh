@@ -108,8 +108,7 @@ echo "# ${NAME}
 " >> src/${level}/${name}/README.md
 
 # Create solution file
-echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/solution.ts${RESET} file..."
-touch src/${level}/${name}/solution.ts
+echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/solution-0.ts${RESET} file..."
 CAMEL=$(echo ${name} | perl -pe 's/(^|-)(\w)/\u$2/g' | perl -nE 'say lcfirst')
 echo -e "// ?? approach
 // Complexity (worst-case): time O(??) | space O(??)
