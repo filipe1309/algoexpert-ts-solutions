@@ -12,27 +12,10 @@
 This repository contains my solutions for the challenges from [AlgoExpert](https://www.algoexpert.io/).
 
 > All challenges and tests are in [src](./src)/level-name/challenge-name.
+> After every commit, the tests are run by a Githook.
+> After every push, the tests are run by a [Github Action](https://github.com/filipe1309/algoexpert-ts-solutions/blob/main/.github/workflows/tests.yaml).
 
 [Improve this about section]: # 
-
-## :bulb: Study Method
-
-<mark>My method</mark> for solving the challenges is:
-1. **Read** the challenge description
-2. **Draw** a solution
-3. **Write the solution** in TypeScript without looking at the solution hints
-4. Run the **tests**
-5. **Refactor** the solution
-6. **Repeat** steps 4 and 5 until all tests pass
-7. Evaluate the **complexity** of the solution
-8. Verify the solution **hints**
-9. **Compare** my solution with the solution hints
-10. Try to **improve** my solution or create a new one based on the solution hints
-11. **Repeat** steps 4 to 10 until I'm satisfied with the solution
-12. Watch the solution **video**
-13. **Implement** other solutions from the video or refactor my solution based on the video
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :rocket: Challenge List
 
@@ -264,6 +247,25 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 - [ ] [Longest Balanced Substring](./src/very-hard/longest-balanced-substring)
 
 </details>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## :bulb: Study Method
+
+<mark>My method</mark> for solving the challenges is:
+1. **Read** the challenge description
+2. **Draw** a solution
+3. **Write the solution** in TypeScript without looking at the solution hints
+4. Run the **tests**
+5. **Refactor** the solution
+6. **Repeat** steps 4 and 5 until all tests pass
+7. Evaluate the **complexity** of the solution
+8. Verify the solution **hints**
+9. **Compare** my solution with the solution hints
+10. Try to **improve** my solution or create a new one based on the solution hints
+11. **Repeat** steps 4 to 10 until I'm satisfied with the solution
+12. Watch the solution **video**
+13. **Implement** other solutions from the video or refactor my solution based on the video
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
