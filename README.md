@@ -317,9 +317,11 @@ Run changed tests:
 make test-changed
 ```
 
+## :wrench: Extras
+
 I have also created a `Makefile` command to help you create new challenges.
 
-Create a new test:
+Create a new challenge folder and files:
 ```sh
 make new [n=CHALLENGE_NAME] [l=CHALLENGE_LEVEL] [c=CHALLENGE_CATEGORY]
 ```
@@ -351,10 +353,10 @@ make commit [m=COMMIT_MESSAGE]
 
 ---
 
-> :memo: **Help:**
-> ```sh
-> make help
-> ```
+Help command:
+```sh
+make help
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
