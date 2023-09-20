@@ -1,4 +1,4 @@
-import { BinaryTreeWithParent } from '../../helpers';
+import BinaryTreeWithParent from '../../common/BinaryTreeWithParent';
 
 type TreeInfo = {
   nodeSucessor: BinaryTreeWithParent | null;

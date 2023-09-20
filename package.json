@@ -1,7 +1,7 @@
 {
-  "name": "algoexpert-solutions",
+  "name": "algoexpert-ts-solutions",
   "version": "1.0.0",
-  "description": "<p align=\"center\">     <img src=\"https://img.shields.io/badge/Code-JavaScript-informational?style=flat-square&logo=javascript&color=F7DF1E\" alt=\"JavaScript\" />     <img src=\"https://img.shields.io/badge/Code-NodeJS-informational?style=flat-square&logo=node.js&color=339933\" alt=\"NodeJS\" /> </p>",
+  "description": "This repository contains my solutions for the challenges from AlgoExpert",
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",

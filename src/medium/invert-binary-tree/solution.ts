@@ -8,18 +8,6 @@ function invertBinaryTree(tree: BinaryTree | null): BinaryTree | null {
   return solutions.solution2(tree);
 }
 
-export class BinaryTree {
-  value: number;
-  left: BinaryTree | null;
-  right: BinaryTree | null;
-
-  constructor(value: number) {
-    this.value = value;
-    this.left = null;
-    this.right = null;
-  }
-}
-
 const solutions = {
   mySolution1, // time O(n) | space O(n)
   solution1,   // time O(n) | space O(n)

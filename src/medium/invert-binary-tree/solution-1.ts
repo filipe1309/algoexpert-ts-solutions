@@ -1,10 +1,8 @@
-import { BinaryTree as BT } from "./solution";
-
 // Queue approach
 // Complexity (worst-case): time O(n) | space O(n)
 // where n is the number of nodes in the Binary Tree
-function invertBinaryTree(tree: BT | null): BT | null {
-  let queue: (BT | null)[] = [tree];
+function invertBinaryTree(tree: BinaryTree | null): BinaryTree | null {
+  let queue: (BinaryTree | null)[] = [tree];
   while (queue.length) {
     const node = queue.shift();
     if (!node) continue;

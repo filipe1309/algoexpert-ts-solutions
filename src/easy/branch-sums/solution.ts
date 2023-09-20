@@ -1,17 +1,5 @@
 // https://www.algoexpert.io/questions/branch-sums
 
-class BinaryTree {
-  value: number;
-  left: BinaryTree | null;
-  right: BinaryTree | null;
-
-  constructor(value: number) {
-    this.value = value;
-    this.left = null;
-    this.right = null;
-  }
-}
-
 function branchSums(root: BinaryTree): number[] {
   return mySolution1(root);
 }
