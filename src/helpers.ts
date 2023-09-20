@@ -1,8 +1,9 @@
-export function bstToTreeNodesArray(bst: BinaryTree): any[] {
+// Convert binaryTree Obj To Flat Tree Obj
+export function binaryTreeToFlatTreeObj(bt: BinaryTree): any[] {
   const nodes = [];
-  const queue = [bst];
+  const queue = [bt];
   while (queue.length) {
-    const node = queue.shift() as BST;
+    const node = queue.shift() as BT;
     nodes.push({
       left: node.left?.value ?? null,
       right: node.right?.value ?? null,
@@ -13,3 +14,4 @@ export function bstToTreeNodesArray(bst: BinaryTree): any[] {
   }
   return nodes;
 }
+

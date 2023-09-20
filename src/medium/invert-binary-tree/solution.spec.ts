@@ -1,14 +1,14 @@
 import { describe, expect, test } from '@jest/globals';
 import solution from './solution';
 import cases from './cases';
-import { bstToTreeNodesArray } from '../../helpers';
+import { binaryTreeToFlatTreeObj } from '../../helpers';
 
 describe('invert-binary-tree', () => {
   test.each(cases)('%# (%j)', ({ input, expected }) => {
     solution(input);
     const result = input;
     // convert bst to flat array of nodes for comparison
-    const nodes = bstToTreeNodesArray(result as BinaryTree);
+    const nodes = binaryTreeToFlatTreeObj(result as BinaryTree);
 
     // Sort nodes by value for comparison
     nodes.sort((a, b) => a.value - b.value);

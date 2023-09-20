@@ -9,3 +9,5 @@ declare type BinaryTree = {
 };
 
 declare type BST = BinaryTree;
+
+declare type BT = BinaryTree;
