@@ -1,5 +1,3 @@
-import BTWP from 'common/BinaryTreeWithParent';
-
 type TreeInfo = {
   nodeSucessor: BTWP | null;
   lastVisitedNode: BTWP | null;

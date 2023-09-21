@@ -1,6 +1,3 @@
-import BTWP from 'common/BinaryTreeWithParent';
-
-
 // Recursive In Order Traverse + Array approach
 // Complexity (worst-case): time O(n) | space O(n)
 function findSuccessor(tree: BTWP, node: BTWP) {

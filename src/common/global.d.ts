@@ -11,3 +11,12 @@ declare type BinaryTree = {
 declare type BST = BinaryTree;
 
 declare type BT = BinaryTree;
+
+declare type BinaryTreeWithParent = {
+  value: number;
+  left: BinaryTreeWithParent | null;
+  right: BinaryTreeWithParent | null;
+  parent: BinaryTreeWithParent | null;
+};
+
+declare type BTWP = BinaryTreeWithParent;
