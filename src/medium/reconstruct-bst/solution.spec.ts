@@ -8,7 +8,7 @@ describe('reconstruct-bst', () => {
   test.each(cases)('%# (%j)', ({ input, expected }) => {
     const result: BST | null = solution(input);
     // convert bst to flat array of nodes for comparison
-    const nodes = BT.binaryTreeToFlatTreeObj(result as BST);
+    const nodes = BT.toFlat(result as BST);
 
     // Sort nodes by value for comparison
     nodes.sort((a, b) => a.value - b.value);

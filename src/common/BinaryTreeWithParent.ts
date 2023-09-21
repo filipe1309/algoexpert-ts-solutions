@@ -12,10 +12,10 @@ export default class BinaryTreeWithParent {
     this.parent = null;
   }
 
-  static flatTreeObjToBinaryTreeWithParent(treeObj: any[]): BinaryTreeWithParent {
-    const nodes = treeObj.map((node) => new BinaryTreeWithParent(node.value));
-    for (let i = 0; i < treeObj.length; i++) {
-      const node = treeObj[i];
+  static toBTWP(flatTreeObj: any[]): BinaryTreeWithParent {
+    const nodes = flatTreeObj.map((node) => new BinaryTreeWithParent(node.value));
+    for (let i = 0; i < flatTreeObj.length; i++) {
+      const node = flatTreeObj[i];
       const left = node.left !== null ? nodes[node.left - 1] : null;
       const right = node.right !== null ? nodes[node.right- 1] : null;
       nodes[i].left = left;

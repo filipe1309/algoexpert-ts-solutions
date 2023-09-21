@@ -8,7 +8,7 @@ describe('invert-binary-tree', () => {
     solution(input);
     const result = input;
     // convert bst to flat array of nodes for comparison
-    const nodes = BT.binaryTreeToFlatTreeObj(result as BT);
+    const nodes = BT.toFlat(result as BT);
 
     // Sort nodes by value for comparison
     nodes.sort((a, b) => a.value - b.value);

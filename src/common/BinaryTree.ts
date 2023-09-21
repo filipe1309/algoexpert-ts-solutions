@@ -9,10 +9,10 @@ export default class BinaryTree {
     this.right = null;
   }
 
-  static flatTreeObjToBinaryTree(treeObj: any[]): BinaryTree {
-    const nodes = treeObj.map((node) => new BinaryTree(node.value));
-    for (let i = 0; i < treeObj.length; i++) {
-      const node = treeObj[i];
+  static toBT(flatTreeObj: any[]): BinaryTree {
+    const nodes = flatTreeObj.map((node) => new BinaryTree(node.value));
+    for (let i = 0; i < flatTreeObj.length; i++) {
+      const node = flatTreeObj[i];
       const left = node.left !== null ? nodes[node.left] : null;
       const right = node.right !== null ? nodes[node.right] : null;
       nodes[i].left = left;
@@ -21,7 +21,7 @@ export default class BinaryTree {
     return nodes[0];
   }
 
-  static binaryTreeToFlatTreeObj(bt: BinaryTree): any[] {
+  static toFlat(bt: BinaryTree): any[] {
     const nodes = [];
     const queue = [bt];
     while (queue.length) {

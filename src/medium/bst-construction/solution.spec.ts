@@ -10,7 +10,7 @@ describe('bst-construction', () => {
       const result = bst[method](...args);
       if (output) expect(result).toEqual(output);
       // convert bst to flat array of nodes for comparison
-      const nodes = BT.binaryTreeToFlatTreeObj(bst);
+      const nodes = BT.toFlat(bst);
 
       // Sort nodes by value for comparison
       nodes.sort((a, b) => a.value - b.value);

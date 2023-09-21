@@ -14,7 +14,7 @@ const solutions = {
 // Test: make test t=find-successor
 describe('find-successor', () => {
   test.each(cases)('%# (%j)', ({ input, expected }) => {
-    const binaryTreeWithParent = BTWP.flatTreeObjToBinaryTreeWithParent(input.tree.nodes);
+    const binaryTreeWithParent = BTWP.toBTWP(input.tree.nodes);
     let node: BTWP | null = BTWP.findNodeInTree(binaryTreeWithParent, parseInt(input.node));
     const result: BTWP | null = solutions.mySolution1(binaryTreeWithParent, node as BTWP);
     expect(result ? result.value : null).toEqual(expected);
