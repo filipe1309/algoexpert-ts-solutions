@@ -10,7 +10,7 @@ type TreeInfo = {
 function findSuccessor(tree: BTWP, node: BTWP) {
   const treeInfo: TreeInfo = { nodeSucessor: null, lastVisitedNode: null};
   walkInOrder(tree, node.value, treeInfo);
-  return treeInfo.nodeSucessor?.value ?? null;
+  return treeInfo.nodeSucessor ?? null;
 }
 
 function walkInOrder(tree: BTWP | null, nodeValue: number, treeInfo: TreeInfo) {

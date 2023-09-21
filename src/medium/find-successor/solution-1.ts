@@ -8,7 +8,7 @@ function findSuccessor(tree: BTWP, node: BTWP) {
   for (let idx = 0; idx < inOrderTraversalOrder.length; idx++) {
     const nodeFounded = inOrderTraversalOrder[idx];
     if (nodeFounded.value !== node.value) continue;
-    return inOrderTraversalOrder[idx + 1] ? inOrderTraversalOrder[idx + 1].value : null;
+    return inOrderTraversalOrder[idx + 1] ? inOrderTraversalOrder[idx + 1] : null;
   }
   return null;
 }
