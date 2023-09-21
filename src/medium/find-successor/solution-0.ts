@@ -5,8 +5,8 @@ type TreeInfo = {
   lastVisitedNode: BTWP | null;
 }
 
-// ?? approach
-// Complexity (worst-case): time O(n) | space O(n)
+// Recursive In Order Traverse Saving Last Visited approach
+// Complexity (worst-case): time O(n) | space O(1)
 function findSuccessor(tree: BTWP, node: number) {
   const treeInfo: TreeInfo = { nodeSucessor: null, lastVisitedNode: null};
   walkInOrder(tree, node, treeInfo);
