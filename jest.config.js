@@ -6,4 +6,8 @@ module.exports = {
   moduleNameMapper: {
     "common/(.*)": "<rootDir>/src/common/$1",
   },
+  testPathIgnorePatterns: [
+    "/node_modules/",
+    "/scripts/",
+  ],
 };
