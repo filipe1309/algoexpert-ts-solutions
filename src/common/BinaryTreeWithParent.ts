@@ -25,4 +25,14 @@ export default class BinaryTreeWithParent {
     }
     return nodes[0];
   }
+
+  static findNodeInTree(tree: BinaryTreeWithParent | null, nodeValue: number): BinaryTreeWithParent | null {
+    if (!tree) return null;
+    if (tree.value === nodeValue) return tree;
+    const left: BinaryTreeWithParent | null = this.findNodeInTree(tree.left, nodeValue);
+    if (left) return left;
+    const right: BinaryTreeWithParent | null = this.findNodeInTree(tree.right, nodeValue);
+    if (right) return right;
+    return null;
+  }
 }
