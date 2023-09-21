@@ -8,9 +8,7 @@ import BTWP from '../../common/BinaryTreeWithParent';
 describe('find-successor', () => {
   test.each(cases)('%# (%j)', ({ input, expected }) => {
     const binaryTreeWithParent = BTWP.flatTreeObjToBinaryTreeWithParent(input.tree.nodes);
-    console.log(binaryTreeWithParent);
     const result = mySolution1(binaryTreeWithParent, parseInt(input.node));
     expect(result).toEqual(expected);
-    // expect(true).toEqual(true);
   });
 });
