@@ -76,7 +76,7 @@ NAME=$(echo ${name} | sed 's/-/ /g')
 # capitalize first letter of each word of NAME, ex: valid subsequence => Valid Subsequence
 NAME=$(echo ${NAME} | perl -pe 's/(\w+)/\u$1/g')
 # select category if not provided ${cat}
-if [ -z ${category} ]; then
+if [[ -z ${category} ]]; then
   echo "Category:"
   case `select_opt "Arrays" "Binary Trees" "Binary Search Trees" "Dynamic Programming" "Famous Algorithms" "Graphs" "Greedy Algorithms" "Heaps" "Linked Lists" "Recursion" "Searching" "Sorting" "Stacks" "Strings" "Tries"` in
       0) category="Arrays";;
@@ -107,22 +107,32 @@ echo "# ${NAME}
 ---
 " >> src/${level}/${name}/README.md
 
+
+create_challenge_file() {
+  local level=$1
+  local name=$2
+  local filename=$3
+  local content=$4
+  echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/${filename}${RESET} file..."
+  touch src/${level}/${name}/${filename}
+  echo "$content" >> src/${level}/${name}/${filename}
+}
+
+
 # Create solution file
-echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/solution-0.ts${RESET} file..."
 CAMEL=$(echo ${name} | perl -pe 's/(^|-)(\w)/\u$2/g' | perl -nE 'say lcfirst')
-echo -e "// ?? approach
+content="// ?? approach
 // Complexity (worst-case): time O(??) | space O(??)
 function ${CAMEL}(array: number[]): number[] {
   return array;
 }
 
-export default ${CAMEL};" >> src/${level}/${name}/solution-0.ts
+export default ${CAMEL};"
+create_challenge_file ${level} ${name} "solution-0.ts" "$content"
 
 
 # Create test file
-echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/solution.spec.ts${RESET} file..."
-touch src/${level}/${name}/solution.spec.ts
-echo "import { describe, expect, test } from '@jest/globals';
+content="import { describe, expect, test } from '@jest/globals';
 import cases from './cases';
 import mySolution1 from \"./solution-0\";
 // import solution1 from \"./solution-1\";
@@ -139,16 +149,17 @@ describe('${name}', () => {
     const result = solutions.mySolution1(input);
     expect(result).toEqual(expected);
   });
-});" >> src/${level}/${name}/solution.spec.ts
+});"
+create_challenge_file ${level} ${name} "solution.spec.ts" "$content"
 
 # Create test cases file
-echo -e " 👉 Creating ${GRAY}${BOLD}src/${level}/${name}/cases.ts${RESET} file..."
-touch src/${level}/${name}/cases.ts
-echo "export default [
+content="export default [
   {
     input: [],
     expected: []
   },
-];" >> src/${level}/${name}/cases.ts
+];"
+create_challenge_file ${level} ${name} "cases.ts" "$content"
+
 echo -e "✅ ${GREEN}${BOLD}Done!${RESET}"
 
