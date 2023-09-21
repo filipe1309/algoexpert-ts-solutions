@@ -269,6 +269,21 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## :sparkles: Features
+
+- [x] **Automatic tests after every commit** - using Git Hooks and Jest
+- [x] **Automatic tests after every push** - using Github Actions and Jest
+- [x] **Makefile** - to help you run the tests, create new challenges and commit your solutions
+- [x] **Common folder** - to help you reuse code
+- [x] **Each challenge has its own folder** - to help you organize your solutions
+- [x] **Each challenge has its own test file** - to help you run the tests for a specific challenge
+- [x] **Each challenge has its own case test file** - to help you organize your test cases
+- [x] **Each challenge has its own README.md file** - to help you understand the challenge
+- [x] **Each challenge has its own solution file** - to help you write your solution
+- [x] **Easy to test your solution** - just create a new solution file and update the test file with your solution
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## :computer: Technologies
 
 - [Node.js](https://nodejs.org/en/)
