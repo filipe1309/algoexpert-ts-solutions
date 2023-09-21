@@ -1,6 +1,6 @@
 
-# <p align="center">AlgoExpert <font color="#3075c1">TS</font> Solutions</p>
 <a name="readme-top"></a>
+# <p align="center">AlgoExpert <font color="#3075c1">TS</font> Solutions</p>
 
 ![Github Action - Deploy Badge](https://github.com/filipe1309/algoexpert-solutions/actions/workflows/tests.yaml/badge.svg?event=push)
 ![TypeScript](https://img.shields.io/badge/Code-TypeScript-informational?style=flat-square&logo=typescript&color=3178C6)
@@ -400,3 +400,6 @@ Please make sure to update tests as appropriate. -->
 - [TypeScript + Jest](https://basarat.gitbook.io/typescript/intro-1/jest)
 - [Testes Unitários com Node.js, Jest e TypeScript](https://sharklabs.com.br/testes-unitarios-com-nodejs-jest-typescript/)
 - [What is Big O Notation Explained: Space and Time Complexity](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/)
+- [Utilizando Path Mapping no TypeScript](https://blog.rocketseat.com.br/path-mapping-typescript/)
+- [Paths Mapping](https://kulshekhar.github.io/ts-jest/docs/getting-started/paths-mapping/)
+- [Module Resolution](https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping)
