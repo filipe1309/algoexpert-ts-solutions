@@ -1,7 +1,7 @@
 import { describe, expect, test } from '@jest/globals';
 import cases from './cases';
 import mySolution1 from "./solution-0";
-import BTWP from '../../common/BinaryTreeWithParent';
+import BTWP from 'common/BinaryTreeWithParent';
 // import solution1 from "./solution-1";
 
 // Test: make test t=find-successor

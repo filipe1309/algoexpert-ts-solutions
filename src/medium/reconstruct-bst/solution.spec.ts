@@ -1,7 +1,7 @@
 import { describe, expect, test } from '@jest/globals';
 import solution from './solution';
 import cases from './cases';
-import BT from '../../common/BinaryTree';
+import BT from 'common/BinaryTree';
 
 
 describe('reconstruct-bst', () => {

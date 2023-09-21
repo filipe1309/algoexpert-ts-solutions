@@ -1,7 +1,7 @@
 import { describe, expect, test } from '@jest/globals';
 import BST from './solution';
 import cases from './cases';
-import BT from '../../common/BinaryTree';
+import BT from 'common/BinaryTree';
 
 describe('bst-construction', () => {
   test.each(cases)('%#', ({ input, expected }) => {

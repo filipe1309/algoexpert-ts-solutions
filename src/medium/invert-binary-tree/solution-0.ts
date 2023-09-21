@@ -1,4 +1,4 @@
-import BT from '../../common/BinaryTree';
+import BT from 'common/BinaryTree';
 
 // Insert Invert Second Tree approach
 // Complexity (worst-case): time O(n) | space O(n)
