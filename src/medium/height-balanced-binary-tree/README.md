@@ -58,3 +58,9 @@ unbalanced subtrees, and if you determine that the heights of the main two
 subtrees aren't more than `1` apart, then the entire tree is
 balanced.
 </details>
+
+<details>
+<summary>Optimal Space &amp; Time Complexity</summary>
+O(n) time | O(h) space - where n is the number of nodes in the Binary Tree and
+h is the height of the Binary Tree
+</details>
