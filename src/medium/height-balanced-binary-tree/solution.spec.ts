@@ -6,7 +6,7 @@ import solution1 from "./solution-1";
 
 const solutions = {
   mySolution1, // time O(n) | space O(h)
-  solution1, // time O(??) | space O(??)
+  solution1,   // time O(n) | space O(h)
   //solution2, // time O(??) | space O(??)
 };
 
