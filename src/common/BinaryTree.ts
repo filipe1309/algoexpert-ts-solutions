@@ -13,12 +13,17 @@ export default class BinaryTree {
     const nodes = flatTreeObj.map((node) => new BinaryTree(node.value));
     for (let i = 0; i < flatTreeObj.length; i++) {
       const node = flatTreeObj[i];
-      const left = node.left !== null ? nodes[node.left] : null;
-      const right = node.right !== null ? nodes[node.right] : null;
-      nodes[i].left = left;
-      nodes[i].right = right;
+      nodes[i].left = node.left ? this.getFlatNode(nodes, parseInt(node.left)) : null;
+      nodes[i].right = node.right ? this.getFlatNode(nodes, parseInt(node.right)) : null;
     }
     return nodes[0];
+  }
+
+  static getFlatNode(nodes: BinaryTree[], value:number): BinaryTree | null {
+    for (let i = 0; i < nodes.length; i++) {
+      if (nodes[i].value === value) return nodes[i];
+    }
+    return null;
   }
 
   static toFlat(bt: BinaryTree): any[] {
