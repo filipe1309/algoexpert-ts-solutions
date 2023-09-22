@@ -2,8 +2,10 @@
 import BT from '../../common/BinaryTree';
 type TreeInfo = { isHBBT: boolean }
 
-// ?? approach
-// Complexity (worst-case): time O(??) | space O(??)
+// DFS + Get Height approach
+// Complexity (worst-case): time O(n) | space O(h)
+// where n = number of nodes in the tree
+// and h = height of the tree
 function heightBalancedBinaryTree(tree: BT): boolean {
   const treeInfo = { isHBBT: true }
   getHeight(tree, treeInfo)
