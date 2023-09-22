@@ -4,9 +4,9 @@ import mySolution1 from "./solution-0";
 // import solution1 from "./solution-1";
 
 const solutions = {
-  mySolution1, // time O(n) | space O(1)
-  //solution1, // time O(n) | space O(n)
-  //solution2, // time O(h) | space O(1)
+  mySolution1, // time O(??) | space O(??)
+  //solution1, // time O(??) | space O(??)
+  //solution2, // time O(??) | space O(??)
 };
 
 // Test: make test t=${NAME}
