@@ -250,6 +250,25 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## :sparkles: Features
+
+- [x] **Automatic tests after every commit** - using Git Hooks and Jest
+- [x] **Automatic tests after every push** - using Github Actions and Jest
+- [x] **Common folder** - to help you reuse code
+- [x] **Each challenge has its own folder** - to help you organize your solutions
+- [x] **Each challenge has its own test file** - to help you run the tests for a specific challenge
+- [x] **Each challenge has its own case test file** - to help you organize your test cases
+- [x] **Each challenge has its own README.md file** - to help you understand the challenge
+- [x] **Each challenge has its own solution file** - to help you write your solution
+- [x] **Easy to test your solution** - just create a new solution file and update the test file with your solution
+- [x] **Makefile** - to help you run the tests, create new challenges and commit your solutions
+- [x] **Easy to commit your solution** - just run `make commit` and it will commit with the message `feat(CHALLENGE_NAME): add solution {SOLUTION_NUMBER}`
+- [x] **Easy to create new challenges** - just run `make new` and it will create the folder, files and README.md file for you
+- [x] **Easy to run the tests** - just run `make test` and it will run all tests
+- [x] **Easy to debug in VSCode** - there is a `launch.json` file with a debug configuration for the current open challenge tab in VSCode
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## :bulb: Study Method
 
 <mark>My method</mark> for solving the challenges is:
@@ -266,25 +285,6 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 11. **Repeat** steps 4 to 10 until I'm satisfied with the solution
 12. Watch the solution **video**
 13. **Implement** other solutions from the video or refactor my solution based on the video
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## :sparkles: Features
-
-- [x] **Automatic tests after every commit** - using Git Hooks and Jest
-- [x] **Automatic tests after every push** - using Github Actions and Jest
-- [x] **Common folder** - to help you reuse code
-- [x] **Each challenge has its own folder** - to help you organize your solutions
-- [x] **Each challenge has its own test file** - to help you run the tests for a specific challenge
-- [x] **Each challenge has its own case test file** - to help you organize your test cases
-- [x] **Each challenge has its own README.md file** - to help you understand the challenge
-- [x] **Each challenge has its own solution file** - to help you write your solution
-- [x] **Easy to test your solution** - just create a new solution file and update the test file with your solution
-- [x] **Makefile** - to help you run the tests, create new challenges and commit your solutions
-- [x] **Easy to commit your solution** - just run `make commit` and it will commit with the message `feat(CHALLENGE_NAME): add solution-{SOLUTION_NUMBER}`
-- [x] **Easy to create new challenges** - just run `make new` and it will create the folder, files and README.md file for you
-- [x] **Easy to run the tests** - just run `make test` and it will run all tests
-- [x] **Easy to debug in VSCode** - there is a `launch.json` file with a debug configuration for the current open challenge tab in VSCode
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -370,7 +370,7 @@ make commit [m=COMMIT_MESSAGE]
 > :memo: **Example:**
 > `make commit m="feat: add two number sum solution"`
 > if you don't pass the `m` argument, it will commit with the message 
-> `feat(CHALLENGE_NAME): add solution-{SOLUTION_NUMBER}`
+> `feat(CHALLENGE_NAME): add solution {SOLUTION_NUMBER}`
 ---
 
 Help command:

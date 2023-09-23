@@ -29,6 +29,8 @@ NAME_SNAKE_CASE=$(echo ${CHALLENGE_PATH} | cut -d'/' -f2)
 
 # if no message provided, set default message
 if [ -z ${message} ]; then 
+  # convert dolution name from solution-0.ts to solution 0
+  SOLUTION_NAME=$(echo ${SOLUTION_NAME} | sed 's/-/ /g' | sed 's/.ts//g')
   message="feat(${NAME_SNAKE_CASE}): add ${SOLUTION_NAME}"
 fi
 
