@@ -4,4 +4,4 @@ function ${NAME}(array: number[]): number[] {
   return array;
 }
 
-export default ${NAME};
+export { ${NAME} as ${CATEGORY} };

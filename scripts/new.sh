@@ -70,6 +70,9 @@ fi
 echo -e " 👉 Creating ${GRAY}${BOLD}src/${LEVEL_LOWERCASE}/${NAME_SNAKE}${NC} directory..."
 mkdir src/${LEVEL_LOWERCASE}/${NAME_SNAKE}
 
+echo -e " 👉 Creating ${GRAY}${BOLD}src/${LEVEL_LOWERCASE}/${NAME_SNAKE}/solutions${NC} directory..."
+mkdir src/${LEVEL_LOWERCASE}/${NAME_SNAKE}/solutions
+
 create_challenge_file() {
   local FILENAME=$1
   local LEVEL=$2
@@ -119,7 +122,10 @@ create_challenge_file "README.md" ${LEVEL_LOWERCASE} ${NAME_SNAKE} "${NAME_CAP}"
 
 # Create solution file
 NAME_CAMEL=$(echo ${NAME_SNAKE} | perl -pe 's/(^|-)(\w)/\u$2/g' | perl -nE 'say lcfirst')
-create_challenge_file "solution-0.ts" ${LEVEL_LOWERCASE} ${NAME_SNAKE} ${NAME_CAMEL}
+create_challenge_file "solutions/solution-0.ts" ${LEVEL_LOWERCASE} ${NAME_SNAKE} ${NAME_CAMEL} "solution0"
+
+# Create solution index file
+create_challenge_file "solutions/index.ts" ${LEVEL_LOWERCASE} ${NAME_SNAKE} ${NAME_CAMEL} "${CATEGORY_CAP}" "export * from './solution-0';"
 
 # Create test file
 create_challenge_file "solution.spec.ts" ${LEVEL_LOWERCASE} ${NAME_SNAKE} ${NAME_SNAKE}
