@@ -7,8 +7,8 @@ clear
 source scripts/menu.sh
 source scripts/colors.sh
 
-# Read arguments
-# read arguments from command line
+########################## Read arguments ##########################
+
 for argument in "$@"
 do
   key=$(echo $argument | cut -f1 -d=)
@@ -56,6 +56,8 @@ echo -e "✅ ${GREEN}${BOLD}Confirmed!${NC}"
 
 echo ""
 
+########################## Create challenge files ##########################
+
 # "📝 Creating new challenge ${NAME_SNAKE} in ${LEVEL_LOWERCASE} level..."
 echo -e "📝 Creating new challenge ${GREEN}${BOLD}${NAME_SNAKE}${NC} in ${GREEN}${BOLD}${LEVEL_LOWERCASE}${NC} level..."
 
@@ -69,10 +71,10 @@ echo -e " 👉 Creating ${GRAY}${BOLD}src/${LEVEL_LOWERCASE}/${NAME_SNAKE}${NC} 
 mkdir src/${LEVEL_LOWERCASE}/${NAME_SNAKE}
 
 create_challenge_file() {
-  local LEVEL=$1
-  local NAME_SNAKE=$2
-  local NAME=$3
-  local FILENAME=$4
+  local FILENAME=$1
+  local LEVEL=$2
+  local NAME_SNAKE=$3
+  local NAME=$4
   local CATEGORY=$5
   local CONTENT=$6
   # if CONTENT is empty, read CONTENT from template file
@@ -113,17 +115,17 @@ CATEGORY_CAP=$(echo ${CATEGORY} | perl -pe 's/(\w+)/\u$1/g')
 NAME=$(echo ${NAME_SNAKE} | sed 's/-/ /g')
 # capitalize first letter of each word of NAME, ex: valid subsequence => Valid Subsequence
 NAME_CAP=$(echo ${NAME} | perl -pe 's/(\w+)/\u$1/g')
-create_challenge_file ${LEVEL_LOWERCASE} ${NAME_SNAKE} "${NAME_CAP}" "README.md" "${CATEGORY_CAP}"
+create_challenge_file "README.md" ${LEVEL_LOWERCASE} ${NAME_SNAKE} "${NAME_CAP}" "${CATEGORY_CAP}"
 
 # Create solution file
 NAME_CAMEL=$(echo ${NAME_SNAKE} | perl -pe 's/(^|-)(\w)/\u$2/g' | perl -nE 'say lcfirst')
-create_challenge_file ${LEVEL_LOWERCASE} ${NAME_SNAKE} ${NAME_CAMEL} "solution-0.ts"
+create_challenge_file "solution-0.ts" ${LEVEL_LOWERCASE} ${NAME_SNAKE} ${NAME_CAMEL}
 
 # Create test file
-create_challenge_file ${LEVEL_LOWERCASE} ${NAME_SNAKE} ${NAME_SNAKE} "solution.spec.ts"
+create_challenge_file "solution.spec.ts" ${LEVEL_LOWERCASE} ${NAME_SNAKE} ${NAME_SNAKE}
 
 # Create test cases file
-create_challenge_file ${LEVEL_LOWERCASE} ${NAME_SNAKE} ${NAME_SNAKE} "cases.ts"
+create_challenge_file "cases.ts" ${LEVEL_LOWERCASE} ${NAME_SNAKE} ${NAME_SNAKE}
 
 echo -e "✅ ${GREEN}${BOLD}Done!${NC}"
 
