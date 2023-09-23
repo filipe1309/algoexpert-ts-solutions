@@ -1,4 +1,3 @@
-
 class TreeInfo { 
   isBalanced: boolean; 
   height: number;
@@ -8,8 +7,7 @@ class TreeInfo {
   }
 }
 
-
-// DFS + Get Height approach
+// DFS + TreeInfo Obj approach
 // Complexity (worst-case): time O(n) | space O(h)
 // where n = number of nodes in the tree
 // and h = height of the tree

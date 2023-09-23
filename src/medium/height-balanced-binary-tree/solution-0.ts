@@ -1,5 +1,3 @@
-
-import BT from '../../common/BinaryTree';
 type TreeInfo = { isHBBT: boolean }
 
 // DFS + Get Height approach
