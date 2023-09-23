@@ -273,7 +273,6 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 
 - [x] **Automatic tests after every commit** - using Git Hooks and Jest
 - [x] **Automatic tests after every push** - using Github Actions and Jest
-- [x] **Makefile** - to help you run the tests, create new challenges and commit your solutions
 - [x] **Common folder** - to help you reuse code
 - [x] **Each challenge has its own folder** - to help you organize your solutions
 - [x] **Each challenge has its own test file** - to help you run the tests for a specific challenge
@@ -281,6 +280,11 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 - [x] **Each challenge has its own README.md file** - to help you understand the challenge
 - [x] **Each challenge has its own solution file** - to help you write your solution
 - [x] **Easy to test your solution** - just create a new solution file and update the test file with your solution
+- [x] **Makefile** - to help you run the tests, create new challenges and commit your solutions
+- [x] **Easy to commit your solution** - just run `make commit` and it will commit with the message `feat(CHALLENGE_NAME): add solution-{SOLUTION_NUMBER}`
+- [x] **Easy to create new challenges** - just run `make new` and it will create the folder, files and README.md file for you
+- [x] **Easy to run the tests** - just run `make test` and it will run all tests
+- [x] **Easy to debug in VSCode** - there is a `launch.json` file with a debug configuration for the current open challenge tab in VSCode
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -366,8 +370,7 @@ make commit [m=COMMIT_MESSAGE]
 > :memo: **Example:**
 > `make commit m="feat: add two number sum solution"`
 > if you don't pass the `m` argument, it will commit with the message 
-> `feat(CHALLENGE_NAME): add my solution`
-
+> `feat(CHALLENGE_NAME): add solution-{SOLUTION_NUMBER}`
 ---
 
 Help command:
@@ -418,3 +421,5 @@ Please make sure to update tests as appropriate. -->
 - [Utilizando Path Mapping no TypeScript](https://blog.rocketseat.com.br/path-mapping-typescript/)
 - [Paths Mapping](https://kulshekhar.github.io/ts-jest/docs/getting-started/paths-mapping/)
 - [Module Resolution](https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
