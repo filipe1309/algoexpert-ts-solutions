@@ -3,11 +3,12 @@ import cases from './cases';
 import BT from 'common/BinaryTree';
 import mySolution1 from "./solution-0";
 import solution1 from "./solution-1";
+import solution2 from "./solution-2";
 
 const solutions = {
   mySolution1, // time O(n) | space O(h)
   solution1,   // time O(n) | space O(h)
-  //solution2, // time O(??) | space O(??)
+  solution2,   // time O(n) | space O(h)
 };
 
 // Test: make test t=merge-binary-trees
