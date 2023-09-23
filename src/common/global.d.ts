@@ -20,3 +20,10 @@ declare type BinaryTreeWithParent = {
 };
 
 declare type BTWP = BinaryTreeWithParent;
+
+declare interface FlatTree {
+  id: string;
+  left: string | null;
+  right: string | null;
+  value: number;
+}
