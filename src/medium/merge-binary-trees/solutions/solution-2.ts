@@ -32,4 +32,4 @@ function mergeBinaryTrees(tree1: BinaryTree | null, tree2: BinaryTree | null): B
   return tree1;
 }
 
-export default mergeBinaryTrees;
+export { mergeBinaryTrees as solution2 };

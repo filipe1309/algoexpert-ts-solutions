@@ -18,4 +18,4 @@ function genMergedTree(tree1: BinaryTree, tree2: BinaryTree | null): BinaryTree 
   return tree1;
 }
 
-export default mergeBinaryTrees;
+export { mergeBinaryTrees as solution0 };
