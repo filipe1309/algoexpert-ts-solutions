@@ -61,7 +61,7 @@ FULL_LINE=$(grep -n "${NAME_SNAKE_CASE}" README.md)
 if [[ ${FULL_LINE} == *"[x]"* ]]; then
   echo -e "${GREEN}${BOLD}✅ README checkbox already checked${NC}";
 else
-  echo -e "${GREEN}${BOLD}✅ README checkbox not checked${NC}";
+  echo -e "${YELLOW}${BOLD}🟡 README checkbox not checked${NC}";
   CHECKBOX_LINE_NUMBER=$(echo "${FULL_LINE}" | cut -d':' -f1)
   echo -e "📝 Pushing changes to ${GREEN}${BOLD}${NAME}${NC} in ${GREEN}${BOLD}${LEVEL}${NC} level in README..."
   echo -e "👉 Updating \"${BOLD}${FULL_LINE}${NC}\", at ${BOLD}${CHECKBOX_LINE_NUMBER}${NC} line"

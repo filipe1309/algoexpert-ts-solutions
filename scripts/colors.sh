@@ -10,6 +10,8 @@ GREEN='\033[0;32m'
 GREEN_LIGHT='\033[1;32m'
 BLUE='\033[0;34m'
 BLUE_LIGHT='\033[1;34m'
+YELLOW='\033[1;33m'
+
 
 # Formatting
 
