@@ -263,8 +263,9 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 - [x] **Easy to test your solution** - just create a new solution file and update the test file with your solution
 - [x] **Makefile** - to help you run the tests, create new challenges and commit your solutions
 - [x] **Easy to commit your solution** - just run `make commit` and it will commit with the message `feat(CHALLENGE_NAME): add solution {SOLUTION_NUMBER}`
-- [x] **Easy to create new challenges** - just run `make new` and it will create the folder, files and README.md file for you
+- [x] **Easy to create new challenges** - just run `make new` and it will create the folder, files and README.md file for you, using templates
 - [x] **Easy to run the tests** - just run `make test` and it will run all tests
+- [x] **You can customize the templates** - just update the `scripts/templates` folder
 - [x] **Easy to debug in VSCode** - there is a `launch.json` file with a debug configuration for the current open challenge tab in VSCode
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -347,11 +348,9 @@ Create a new challenge folder and files:
 make new [n=CHALLENGE_NAME] [l=CHALLENGE_LEVEL] [c=CHALLENGE_CATEGORY]
 ```
 > :memo: **Example:**  
-> `make new` (fill the prompts)  
-> OR  
-> `make new n=two-number-sum l=easy c=arrays`  
+> `make new` (fill the prompts) OR `make new n=two-number-sum l=easy c=arrays`  
 >
-> > Levels: `easy`, `medium`, `hard`, `very-hard`  
+> Levels: `easy`, `medium`, `hard`, `very-hard`  
 
 This will create:  
 - a folder (`src/easy/two-number-sum`)  
@@ -368,7 +367,7 @@ Commit your solutions:
 make commit [m=COMMIT_MESSAGE]
 ```
 > :memo: **Example:**
-> `make commit m="feat: add two number sum solution"`
+> `make commit m="feat: add two number sum solution"`  
 > if you don't pass the `m` argument, it will commit with the message 
 > `feat(CHALLENGE_NAME): add solution {SOLUTION_NUMBER}`
 ---
