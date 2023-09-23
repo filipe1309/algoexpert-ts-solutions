@@ -62,7 +62,7 @@ else
   echo -e "${GREEN}${BOLD}✅ README checkbox not checked${NC}";
   CHECKBOX_LINE_NUMBER=$(echo "${FULL_LINE}" | cut -d':' -f1)
   echo -e "📝 Pushing changes to ${GREEN}${BOLD}${NAME}${NC} in ${GREEN}${BOLD}${LEVEL}${NC} level in README..."
-  echo -e "👉 Updating \"${BOLD}${FULL_LINE}${NORMAL}\", at ${BOLD}${CHECKBOX_LINE_NUMBER}${NORMAL} line"
+  echo -e "👉 Updating \"${BOLD}${FULL_LINE}${NC}\", at ${BOLD}${CHECKBOX_LINE_NUMBER}${NC} line"
   # request confirm before update README, y as default with enter
   read -p "Are you sure you want to update README? [Y/n] " -n 1 -r;
   echo "";

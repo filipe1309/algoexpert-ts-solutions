@@ -10,11 +10,10 @@ GREEN='\033[0;32m'
 GREEN_LIGHT='\033[1;32m'
 BLUE='\033[0;34m'
 BLUE_LIGHT='\033[1;34m'
-NC='\033[0m' # No Color
 
 # Formatting
 
 BOLD='\033[1m'
-NORMAL='\033[0m'
-RESET='\033[0m'
 ITALIC='\033[3m'
+
+NC='\033[0m' # No Color
