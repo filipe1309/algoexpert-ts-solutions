@@ -4,7 +4,7 @@
 > Category: ${CATEGORY}
 ---
 
-
+...
 
 **Sample Input**
 ```ts
@@ -15,3 +15,10 @@
 ```ts
 
 ```
+
+## Hints
+
+<details>
+<summary>Hint 1</summary>
+...
+</details>
