@@ -1,5 +1,5 @@
 // DFS approach
-// Complexity (worst-case): time O(??) | space O(??)
+// Complexity (worst-case): time O(n) | space O(h)
 function symmetricalTree(tree: BinaryTree): boolean {
   return dfs(tree.left, tree.right)
 }
