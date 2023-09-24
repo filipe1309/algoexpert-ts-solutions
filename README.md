@@ -89,7 +89,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 - [x] [Find Successor](./src/medium/find-successor)
 - [x] [Height Balanced Binary Tree](./src/medium/height-balanced-binary-tree)
 - [x] [Merge Binary Trees](./src/medium/merge-binary-trees)
-- [ ] [Symmetrical Tree](./src/medium/symmetrical-tree)
+- [x] [Symmetrical Tree](./src/medium/symmetrical-tree)
 - [ ] [Split Binary Tree](./src/medium/split-binary-tree)
 - [ ] [Max Subset Sum No Adjacent](./src/medium/max-subset-sum-no-adjacent)
 - [ ] [Number Of Ways To Make Change](./src/medium/number-of-ways-to-make-change)
