@@ -37,7 +37,34 @@ tree =     1
 
 <details>
 <summary>Hint 1</summary>
-...
+Try first calculating the sum of the entire Binary Tree. What information does
+this give you towards solving the problem?
+</details>
+
+<details>
+<summary>Hint 2</summary>
+If the sum of the entire Binary Tree is odd, then there is no possible
+solution, because the values are all integers. Otherwise, the solution could
+be that sum divided by two, or potentially there is still no solution. What
+does the scenario look like where the solution is the sum divided by two?
+</details>
+
+<details>
+<summary>Hint 3</summary>
+There is a solution if there is a subtree that has a sum equal to the the
+total Binary Tree sum divided by two. In this case, removing the incoming
+edge to that node would have to create another Binary Tree of equal sum.  
+</details>
+
+<details>
+<summary>Hint 4</summary>
+To prevent recalculating the same subtree sums, try using a post-order
+traversal of the Binary Tree. This allows you to calculate the sums of the
+smallest subtrees first, then send that information back up to the parents to
+quickly calculate their sums.
+There is a solution if there is a subtree that has a sum equal to the the
+total Binary Tree sum divided by two. In this case, removing the incoming
+edge to that node would have to create another Binary Tree of equal sum.
 </details>
 
 <details>
