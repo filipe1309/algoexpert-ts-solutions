@@ -34,6 +34,11 @@ run:
 new:
 	./scripts/new.sh name="${n}" level="${l}" category="${c}"
 
+# create new solution
+# example: make new-solution [n=valid-subsequence] [l=easy]
+new-solution:
+	./scripts/new-solution.sh name="${n}" level="${l}"
+
 # commit changes
 # example: make commit [m="feat: add two number sum solution"]
 commit:
@@ -46,6 +51,7 @@ help:
 	@echo -e "  make ${BOLD}test${NC} ${ITALIC}[t=<challenge-name-in-snake-case>]${NC} ${GRAY_DARKER}(runs all tests or specific test)${NC}"
 	@echo -e "  make ${BOLD}test-changed${NC} ${GRAY_DARKER}(runs changed tests)${NC}"
 	@echo -e "  make ${BOLD}new${NC} ${ITALIC}[n="<challenge-name-in-snake-case>"] [l=<level>] [c="<category>"]${NC} ${GRAY_DARKER}(creates new challenge, levels: (easy, medium, hard, very-hard))${NC}"
+	@echo -e "  make ${BOLD}new-solution${NC} ${ITALIC}[n="<challenge-name-in-snake-case>"] [l=<level>]${NC} ${GRAY_DARKER}(creates new solution, levels: (easy, medium, hard, very-hard))${NC}"
 	@echo -e "  make ${BOLD}commit${NC} ${GRAY_DARKER}(commits changes and updates README.md)${NC}"
 	@echo -e "  make ${BOLD}help${NC}"
 	

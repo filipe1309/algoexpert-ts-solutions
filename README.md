@@ -341,9 +341,9 @@ make test-changed
 
 ## :wrench: Extras
 
-I have also created a `Makefile` command to help you create new challenges.
+I have also created a `Makefile` with some extra commands.
 
-Create a new challenge folder and files:
+### Create a new challenge folder and files:
 ```sh
 make new [n=CHALLENGE_NAME] [l=CHALLENGE_LEVEL] [c=CHALLENGE_CATEGORY]
 ```
@@ -360,9 +360,7 @@ This will create:
 - a `README.md` file  
 
 
-And finally, I have created a `Makefile` command to help you commit your solutions.
-
-Commit your solutions:
+### Commit your solutions:
 ```sh
 make commit [m=COMMIT_MESSAGE]
 ```
@@ -370,6 +368,20 @@ make commit [m=COMMIT_MESSAGE]
 > `make commit m="feat: add two number sum solution"`  
 > if you don't pass the `m` argument, it will commit with the message 
 > `feat(CHALLENGE_NAME): add solution {SOLUTION_NUMBER}`
+> SOLUTION_NUMBER is the number of the updated solution file from git status
+
+### Create new solution:
+```sh
+make new-solution [n=CHALLENGE_NAME_SNAKE] [l=CHALLENGE_LEVEL_LOWER]
+```
+> :memo: **Example:**
+> `make new-solution n=two-number-sum l=easy`
+
+> This will create a new solution file `solution-{SOLUTION_NUMBER}.ts` and update the test file.
+> If `solution-0.ts` already exists, it will create `solution-1.ts` and update index.ts file and the test file.
+> And so on...
+> SOLUTION_NUMBER is the number of the new solution file from solution folder
+
 ---
 
 Help command:
