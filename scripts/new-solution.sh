@@ -46,8 +46,12 @@ fi
 # if challenge level is empty, exit
 if [ -z ${LEVEL_LOWERCASE} ]; then echo "❌ Please provide a level (easy, medium, hard, very-hard)"; exit 1; fi
 
+# read new solution number
+NEW_SOLUTION_NUMBER=$(wc -l < src/${LEVEL_LOWERCASE}/${NAME_SNAKE}/solutions/index.ts | tr -d '[:space:]')
+LAST_SOLUTION_NUMBER=$(($NEW_SOLUTION_NUMBER - 1))
+
 # Confirm with Yy or Enter
-echo -e "👉 You are about to create a new solution for ${GREEN}${BOLD}${NAME_SNAKE}${NC} challenge in ${GREEN}${BOLD}${LEVEL_LOWERCASE}${NC} level."
+echo -e "👉 You are about to create a new solution (#${NEW_SOLUTION_NUMBER}) for ${GREEN}${BOLD}${NAME_SNAKE}${NC} challenge in ${GREEN}${BOLD}${LEVEL_LOWERCASE}${NC} level."
 echo -e "👉 Is this correct? (Y/n)"
 read -p "👉 " confirm
 if [[ ${confirm} != "Y" && ${confirm} != "y" && ${confirm} != "" ]]; then echo -e "${RED}${BOLD}❌ Aborted!${NC}"; exit 1; fi
@@ -83,10 +87,6 @@ create_challenge_file() {
   touch src/${LEVEL}/${NAME_SNAKE}/${FILENAME}
   echo "$CONTENT" >> src/${LEVEL}/${NAME_SNAKE}/${FILENAME}
 }
-
-# read new solution number
-NEW_SOLUTION_NUMBER=$(ls src/${LEVEL_LOWERCASE}/${NAME_SNAKE}/solutions/index.ts | wc -l | tr -d '[:space:]')
-LAST_SOLUTION_NUMBER=$(($NEW_SOLUTION_NUMBER - 1))
 
 # Create new solution file
 NAME_CAMEL=$(echo ${NAME_SNAKE} | perl -pe 's/(^|-)(\w)/\u$2/g' | perl -nE 'say lcfirst')
