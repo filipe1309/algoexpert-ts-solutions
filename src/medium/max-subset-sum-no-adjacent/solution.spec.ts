@@ -1,7 +1,7 @@
 import { describe, expect, test } from '@jest/globals';
 import cases from './cases';
 import {
-  solution0,   // time O(??) | space O(??)
+  solution0,   // time O(n) | space O(n)
 } from "./solutions";
 
 // Test: make test t=max-subset-sum-no-adjacent
