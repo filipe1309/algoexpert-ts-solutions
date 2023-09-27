@@ -23,6 +23,16 @@ array = [75, 105, 120, 75, 90, 135]
 
 <details>
 <summary>Hint 1</summary>
+Try building an array of the same length as the input array. At each index in this new array, store the maximum sum that can be generated using no adjacent numbers located between index 0 and the current index.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+...
+</details>
+
+<details>
+<summary>Hint 3</summary>
 ...
 </details>
 

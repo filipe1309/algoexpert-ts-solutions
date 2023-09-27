@@ -1,4 +1,4 @@
-// ?? approach
+// Adj Recursive approach
 // Complexity (worst-case): time O(n) | space O(n)
 function maxSubsetSumNoAdjacent(array: number[]): number {
   if (array.length === 0) return 0;
