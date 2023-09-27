@@ -28,15 +28,17 @@ Try building an array of the same length as the input array. At each index in th
 
 <details>
 <summary>Hint 2</summary>
-...
+Can you come up with a formula that relates the max sum at index i to the max 
+sums at indices i - 1 and i - 2?
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+Do you really need to store the entire array mentioned in Hint #1, or can you 
+somehow store just the max sums that you need at any point in time?
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(n) time | O(1) space - where n is the length of the input array
 </details>
