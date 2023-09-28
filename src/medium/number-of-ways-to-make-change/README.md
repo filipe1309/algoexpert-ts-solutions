@@ -26,10 +26,15 @@ denoms = [1, 5]
 
 <details>
 <summary>Hint 1</summary>
-...
+Try building an array of the number of ways to make change for all amounts between 0 and n inclusive. Note that there is only one way to make change for 0: that is to not use any coins.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+Build up the array mentioned in Hint #1 one coin denomination at a time. In other words, find the number of ways to make change for all amounts between 0 and n with only one denomination, then with two, etc., until you use all denominations.
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(nd) time | O(n) space - where n is the target amount and d is the number of coin denominations
 </details>
