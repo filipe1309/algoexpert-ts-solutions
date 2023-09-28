@@ -92,7 +92,7 @@ This repository contains my solutions for the challenges from [AlgoExpert](https
 - [x] [Symmetrical Tree](./src/medium/symmetrical-tree)
 - [x] [Split Binary Tree](./src/medium/split-binary-tree)
 - [x] [Max Subset Sum No Adjacent](./src/medium/max-subset-sum-no-adjacent)
-- [ ] [Number Of Ways To Make Change](./src/medium/number-of-ways-to-make-change)
+- [x] [Number Of Ways To Make Change](./src/medium/number-of-ways-to-make-change)
 - [ ] [Min Number Of Coins For Change](./src/medium/min-number-of-coins-for-change)
 - [ ] [Levenshtein Distance](./src/medium/levenshtein-distance)
 - [ ] [Number Of Ways To Traverse Graph](./src/medium/number-of-ways-to-traverse-graph)
