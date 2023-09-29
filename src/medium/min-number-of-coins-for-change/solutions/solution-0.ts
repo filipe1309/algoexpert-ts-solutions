@@ -1,27 +1,18 @@
-// ?? approach
+// Array of Coins approach
 // Complexity (worst-case): O(nd) time | O(n) space
 function minNumberOfCoinsForChange(n: number, denoms: number[]): number {
-  if (!n) return 0;
-  const ways = Array(n + 1).fill(-1);
-  ways[0] = 0;
-  denoms.sort((a, b) => a - b);
+  const numOfCoins = Array(n + 1).fill(Infinity);
+  numOfCoins[0] = 0;
   for (let denom of denoms) {
-    for (let wayIdx = 1; wayIdx < ways.length; wayIdx++) {
-      if (wayIdx >= denom) {
-          if (isDiffAvailable(ways, wayIdx, denom) && isNewAmountLessThanCurrent(ways, wayIdx, denom))
-          ways[wayIdx] = 1 + ways[wayIdx - denom];
+    for (let amount = 1; amount < numOfCoins.length; amount++) {
+      if (denom <= amount) {
+          numOfCoins[amount] = Math.min(
+            numOfCoins[amount], 1 + numOfCoins[amount - denom]
+          );
       }
     }
   }
-  return ways[n] > 0? ways[n] : -1;
-}
-
-function isDiffAvailable(ways: number[], wayIdx: number, denom: number): boolean {
-  return (ways[wayIdx - denom] > 0) || (wayIdx - denom === 0);
-}
-
-function isNewAmountLessThanCurrent(ways: number[], wayIdx: number, denom: number): boolean {
-  return (1 + ways[wayIdx - denom]) < ways[wayIdx] || ways[wayIdx] <= 0
+  return numOfCoins[n] !== Infinity ? numOfCoins[n] : -1;
 }
 
 export { minNumberOfCoinsForChange as solution0 };
