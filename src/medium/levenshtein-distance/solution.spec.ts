@@ -1,7 +1,7 @@
 import { describe, expect, test } from '@jest/globals';
 import cases from './cases';
 import {
-  solution0, // O(??) time | O(??) space
+  solution0, // O(3^n) time | O(n) space
 } from "./solutions";
 
 // Test: make test t=levenshtein-distance

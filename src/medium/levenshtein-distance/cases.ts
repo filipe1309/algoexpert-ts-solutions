@@ -55,20 +55,20 @@ export default [
     },
     expected: 1
   },
-  // {
-  //   input: {
-  //     str1: "abcdefghij",
-  //     str2: "1234567890"
-  //   },
-  //   expected: 10
-  // },
-  // {
-  //   input: {
-  //     str1: "abcdefghij",
-  //     str2: "a234567890"
-  //   },
-  //   expected: 9
-  // },
+  {
+    input: {
+      str1: "abcdefghij",
+      str2: "1234567890"
+    },
+    expected: 10
+  },
+  {
+    input: {
+      str1: "abcdefghij",
+      str2: "a234567890"
+    },
+    expected: 9
+  },
   {
     input: {
       str1: "biting",
@@ -90,13 +90,13 @@ export default [
     },
     expected: 7
   },
-  // {
-  //   input: {
-  //     str1: "abbbbbbbbb",
-  //     str2: "bbbbbbbbba"
-  //   },
-  //   expected: 2
-  // },
+  {
+    input: {
+      str1: "abbbbbbbbb",
+      str2: "bbbbbbbbba"
+    },
+    expected: 2
+  },
   {
     input: {
       str1: "xabc",

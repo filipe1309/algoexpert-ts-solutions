@@ -1,15 +1,22 @@
-// Simple & Recursive But Very Slow For Big Strings approach
-// Complexity (worst-case): O(??) time | O(??) space
+// Simple & Recursive v2 approach
+// Complexity (worst-case): O(n*m) time | O(min(n, m)) space
+//   n = str1.length
+//   m = str2.length
 function levenshteinDistance(str1: string, str2: string): number {
-  return lev(str1, str2, str1.length, str2.length) + 1;
+  return lev(str1, str2, str1.length - 1, str2.length - 1);
 }
 
-function lev(str1: string, str2: string, str1Idx: number, str2Idx: number): number {
-  if (Math.min(str1Idx, str2Idx) < 0) return Math.max(str1Idx, str2Idx);
-  const case1 = lev(str1, str2, str1Idx - 1, str2Idx) + 1;
-  const case2 = lev(str1, str2, str1Idx, str2Idx - 1) + 1;
-  const case3 = lev(str1, str2, str1Idx - 1, str2Idx - 1) + (str1.at(str1Idx) !== str2.at(str2Idx) ? 1 : 0);
-  return Math.min(case1, case2, case3);
+function lev(str1: string, str2: string, i: number, j: number): number {
+  if (i < 0) return j + 1;
+  if (j < 0) return i + 1;
+
+  if (str1[i] === str2[j]) return lev(str1, str2, i - 1, j - 1);
+
+  return ( 1 + Math.min(
+      lev(str1, str2, i, j - 1), // insert
+      lev(str1, str2, i - 1, j), // remove
+      lev(str1, str2, i - 1, j - 1) // replace
+  ));
 }
 
 export { levenshteinDistance as solution0 };
