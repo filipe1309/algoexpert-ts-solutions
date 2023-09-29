@@ -420,6 +420,7 @@ Please make sure to update tests as appropriate.
 - [Utilizando Path Mapping no TypeScript](https://blog.rocketseat.com.br/path-mapping-typescript/)
 - [Paths Mapping](https://kulshekhar.github.io/ts-jest/docs/getting-started/paths-mapping/)
 - [Module Resolution](https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping)
+- [Understanding the Levenshtein Distance Equation for Beginners](https://medium.com/@ethannam/understanding-the-levenshtein-distance-equation-for-beginners-c4285a5604f0)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
