@@ -9,11 +9,13 @@
 
 ## 💬 About
 
-This repository contains my solutions for the challenges from [AlgoExpert](https://www.algoexpert.io/).
+This repository contains some solutions for the challenges from [AlgoExpert](https://www.algoexpert.io/) Coding Questions.
 
-> All challenges and tests are in [src](./src)/level-name/challenge-name.  
-> After every commit, the tests are run by a Githook.  
-> After every push, the tests are run by a [Github Action](https://github.com/filipe1309/algoexpert-ts-solutions/blob/main/.github/workflows/tests.yaml).  
+> :memo: **Note:**  
+> I've not finished all challenges yet, and I'm constantly updating this 
+> repository with new solutions, new structures, new tests, etc. So, if you want
+> to see the most recent changes, check the last challenge that are marked as
+> done in the challenge list below.
 
 [Improve this about section]: # 
 
@@ -391,13 +393,13 @@ make help
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- 
-
-## Contributing
+## :handshake: Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate. -->
+Please make sure to update tests as appropriate.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :memo: License
 
