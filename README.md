@@ -14,8 +14,8 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 > :memo: **Note:**  
 > I've not finished all challenges yet, and I'm constantly updating this 
 > repository with new solutions, new structures, new tests, etc. So, if you want
-> to see the most recent changes, check the last challenge that are marked as
-> done in the challenge list below.
+> to see the most recent changes, check the last challenge that is marked as
+> completed in the challenge List section below.
 
 [Improve this about section]: # 
 
@@ -266,6 +266,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] **Makefile** - to help you run the tests, create new challenges and commit your solutions
 - [x] **Easy to commit your solution** - just run `make commit` and it will commit with the message `feat(CHALLENGE_NAME): add solution {SOLUTION_NUMBER}`
 - [x] **Easy to create new challenges** - just run `make new` and it will create the folder, files and README.md file for you, using templates
+- [x] **Easy to create new solutions** - just run `make new-solution` and it will create the solution file for you, using templates
 - [x] **Easy to run the tests** - just run `make test` and it will run all tests
 - [x] **You can customize the templates** - just update the `scripts/templates` folder
 - [x] **Easy to debug in VSCode** - there is a `launch.json` file with a debug configuration for the current open challenge tab in VSCode
@@ -341,6 +342,8 @@ Run changed tests:
 make test-changed
 ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## :wrench: Extras
 
 I have also created a `Makefile` with some extra commands.
@@ -368,9 +371,8 @@ make commit [m=COMMIT_MESSAGE]
 ```
 > :memo: **Example:**
 > `make commit m="feat: add two number sum solution"`  
-> if you don't pass the `m` argument, it will commit with the message 
-> `feat(CHALLENGE_NAME): add solution {SOLUTION_NUMBER}`
-> SOLUTION_NUMBER is the number of the updated solution file from git status
+> if you don't pass the `m` argument, it will commit with the message  
+> `feat(CHALLENGE_NAME): add solution {SOLUTION_NUMBER}`  
 
 ### Create new solution:
 ```sh
@@ -379,10 +381,10 @@ make new-solution [n=CHALLENGE_NAME_SNAKE] [l=CHALLENGE_LEVEL_LOWER]
 > :memo: **Example:**
 > `make new-solution n=two-number-sum l=easy`
 
-> This will create a new solution file `solution-{SOLUTION_NUMBER}.ts` and update the test file.
+This will create a new solution file `solution-{SOLUTION_NUMBER}.ts` and update the test file.
+
 > If `solution-0.ts` already exists, it will create `solution-1.ts` and update index.ts file and the test file.
-> And so on...
-> SOLUTION_NUMBER is the number of the new solution file from solution folder
+> And so on...  
 
 ---
 
