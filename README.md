@@ -97,7 +97,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [Number Of Ways To Make Change](./src/medium/number-of-ways-to-make-change)
 - [x] [Min Number Of Coins For Change](./src/medium/min-number-of-coins-for-change)
 - [x] [Levenshtein Distance](./src/medium/levenshtein-distance)
-- [ ] [Number Of Ways To Traverse Graph](./src/medium/number-of-ways-to-traverse-graph)
+- [x] [Number Of Ways To Traverse Graph](./src/medium/number-of-ways-to-traverse-graph)
 - [ ] [Kadane's Algorithm](./src/medium/kadanes-algorithm)
 - [ ] [Stable internships](./src/medium/stable-internships)
 - [ ] [Union Find](./src/medium/union-find)
