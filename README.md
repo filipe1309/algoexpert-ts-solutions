@@ -15,7 +15,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 > I've not finished all challenges yet, and I'm constantly updating this 
 > repository with new solutions, new structures, new tests, etc. So, if you want
 > to see the most recent changes, check the last challenge that is marked as
-> completed in the challenge List section below.
+> completed in the challenge list section below.
 
 [Improve this about section]: # 
 
