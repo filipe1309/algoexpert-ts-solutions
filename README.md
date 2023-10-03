@@ -98,7 +98,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [Min Number Of Coins For Change](./src/medium/min-number-of-coins-for-change)
 - [x] [Levenshtein Distance](./src/medium/levenshtein-distance)
 - [x] [Number Of Ways To Traverse Graph](./src/medium/number-of-ways-to-traverse-graph)
-- [ ] [Kadane's Algorithm](./src/medium/kadanes-algorithm)
+- [x] [Kadane's Algorithm](./src/medium/kadanes-algorithm)
 - [ ] [Stable internships](./src/medium/stable-internships)
 - [ ] [Union Find](./src/medium/union-find)
 - [ ] [Single Cycle Check](./src/medium/single-cycle-check)
