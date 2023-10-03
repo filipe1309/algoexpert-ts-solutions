@@ -273,6 +273,18 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+## :construction: Roadmap
+
+- [ ] Auto discover last challenge completed when executing `make new-solution` command
+- [ ] Update solution been tested when executing `make new-solution` command
+- [ ] Replicate function assignature from `solution-0.ts` to new file when executing `make new-solution` command
+- [ ] After creating a new challenge, open all new files in VSCode
+- [ ] Update all challenges with the new structure after finishing the challenge list
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 ## :bulb: Study Method
 
 <mark>My method</mark> for solving the challenges is:
