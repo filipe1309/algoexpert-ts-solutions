@@ -1,8 +1,10 @@
 # Kadane's Algorithm
 
-> Source: https://www.algoexpert.io/questions/kadane's-algorithm  
-> Difficulty: Medium  
-> Category: Famous Algorithms
+| Source | https://www.algoexpert.io/questions/kadane's-algorithm |
+|---|---|
+| Difficulty | Medium |
+| Category | Famous Algorithms |
+
 ---
 
 Write a function that takes in a non-empty array of integers and returns the 
