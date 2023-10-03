@@ -44,25 +44,41 @@ height = 3
 
 <details>
 <summary>Hint 1</summary>
-...
+Think recursively. How many positions in the graph can access the bottom right
+corner of the graph? In other words, what positions do you need to reach
+before you can reach the bottom right corner?
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+The number of ways to reach any position in the graph is equal to the number
+of ways to reach the position directly above it plus the number of ways to
+reach the position directly to its left. This is because you can only travel
+down and right.
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+Using the information in Hints #1 and #2, can you come up with an efficient
+way to solve this problem that doesn't repeatedly perform the same work? What
+does a dynamic-programming implementation look like?
 </details>
 
 <details>
 <summary>Hint 4</summary>
-...
+To efficiency solve this problem, simply loop through the entire graph, column
+by column, row by row, and calculate the number of ways to reach each
+position. If you're on the top or left edge of the graph, there's only one way
+to reach your position. If you're anywhere else in the graph, the number of
+ways to reach your position is the number of ways to reach the position
+directly above it plus the number of ways to reach the position directly to
+its left (which you've already calculated and should be storing). Every time
+you calculate the number of ways to reach a position, store the answer so that
+you can use it later in the calculation of other positions.
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(n + m) time | O(1) space - where n is the width of the graph and m is the
+height
 </details>
