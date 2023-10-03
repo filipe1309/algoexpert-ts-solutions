@@ -26,20 +26,32 @@ array = [3, 5, -9, 1, 3, -2, 3, 4, 7, 2, -9, 6, 3, 1, -5, 4];
 
 <details>
 <summary>Hint 1</summary>
-...
+This problem seems fairly simple until you run into negative numbers, some of 
+which are so big in absolute value that they essentially break an otherwise good 
+subarray into two subarrays, and some of which are small enough that there 
+exists a subarray containing them whose numbers sum to maximum sum that you're 
+looking for. How can you determine which group a negative number belongs to?
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+Realize that at any given index in the input array, the maximum sum for a 
+subarray ending at that index is either the maximum sum for a subarray ending at 
+the previous index plus the number at that index, or just the number at that 
+index. Thus, for each index in the array, you can calculate the maximum sum of a 
+subarray ending at that index, and this can be done in one simple pass through 
+the input array.
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+How can you alter the pass through the input array mentioned in Hint #2 so as to 
+obtain the actual answer to the problem, that is the maximum sum of any subarray 
+in the input array? You should be able to accomplish everything in one loop 
+through the input array.
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(n) time | O(1) space - where n is the length of the input array
 </details>
