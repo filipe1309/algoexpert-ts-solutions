@@ -433,6 +433,8 @@ Please make sure to update tests as appropriate.
 - [Paths Mapping](https://kulshekhar.github.io/ts-jest/docs/getting-started/paths-mapping/)
 - [Module Resolution](https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping)
 - [Understanding the Levenshtein Distance Equation for Beginners](https://medium.com/@ethannam/understanding-the-levenshtein-distance-equation-for-beginners-c4285a5604f0)
+- [Stable Marriage Problem - Numberphile](https://www.youtube.com/watch?v=Qcv1IqHWAzg&ab_channel=Numberphile)
+- [Stable Marriage Problem (the math bit)](https://www.youtube.com/watch?v=LtTV6rIxhdo&ab_channel=Numberphile2)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
