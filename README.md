@@ -21,8 +21,10 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 
 ## :rocket: Challenge List
 
-### 😎 [Easy](./src/easy) (31)
-
+<table><tr><th><a href="./src/easy">😎 Easy (31)</a></th><th><a href="./src/medium">😅 Medium (73)</a></th><th><a href="./src/hard">😰 Hard (54)</a></th><th><a href="./src/very-hard">😱 Very Hard (37)</a></th></tr>
+<tr>
+<td>
+  
 - [x] [Two Number Sum](./src/easy/two-number-sum)
 - [x] [Validate Subsequence](./src/easy/validate-subsequence)
 - [x] [Sorted Squared Array](./src/easy/sorted-squared-array)
@@ -58,10 +60,9 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [Generate Document](./src/easy/generate-document)
 - [x] [First Non-Repeating Character](./src/easy/first-non-repeating-character)
 - [x] [Semordnilap](./src/easy/semordnilap)
-
 </details>
-
-### 😅 [Medium](./src/medium) (73)
+</td>
+<td>
 
 - [x] [Three Number Sum](./src/medium/three-number-sum)
 - [x] [Smallest Difference](./src/medium/smallest-difference)
@@ -139,10 +140,9 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] [Minimum Characters For Words](./src/medium/minimum-characters-for-words)
 - [ ] [One Edit](./src/medium/one-edit)
 - [ ] [Suffix Trie Construction](./src/medium/suffix-trie-construction)
-
 </details>
-
-### 😰 [Hard](./src/hard) (54)
+</td>
+<td>
 
 - [ ] [Four Number Sum](./src/hard/four-number-sum)
 - [ ] [Subarray Sort](./src/hard/subarray-sort)
@@ -201,10 +201,9 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] [Underscorify Substring](./src/hard/underscorify-substring)
 - [ ] [Pattern Matcher](./src/hard/pattern-matcher)
 - [ ] [Multi String Search](./src/hard/multi-string-search)
-
 </details>
-
-### 😱 [Very Hard](./src/very-hard) (37)
+</td>
+<td>
 
 - [ ] [Apartment Hunting](./src/very-hard/apartment-hunting)
 - [ ] [Calendar Matching](./src/very-hard/calendar-matching)
@@ -249,7 +248,8 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] [Longest Balanced Substring](./src/very-hard/longest-balanced-substring)
 
 </details>
-
+</td>
+</table>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :sparkles: Features
