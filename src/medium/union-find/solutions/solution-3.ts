@@ -1,5 +1,5 @@
-// Parents & Ranks - Union Optmiization approach
-// Complexity (worst-case): createSet O(1) time | O(1) space, find O(n) time | O(1) space, union O(logn) time | O(1) space
+// Parents & Ranks - Union/Find Optmiization approach
+// Complexity (worst-case): createSet O(1) time | O(1) space, find O(α(n)) time | O(1) space, union O(α(n)) time | O(1) space
 class UnionFind {
   // Add an index signature to allow string keys
   [key: string]: any;
@@ -21,12 +21,12 @@ class UnionFind {
   find(value: number) {
     if(!(value in this.parents)) return null;
 
-    // Find the root of the set
-    let currentParent = value;
-    while (currentParent !== this.parents[currentParent]) {
-      currentParent = this.parents[currentParent]
+    if (value !== this.parents[value]) {
+      // Path compression
+      this.parents[value] = this.find(this.parents[value])!;
     }
-    return currentParent;
+
+    return this.parents[value];
   }
 
   union(valueOne: number, valueTwo: number) {
@@ -46,4 +46,4 @@ class UnionFind {
     return null;
   }
 }
-export { UnionFind as solution2 };
+export { UnionFind as solution3 };

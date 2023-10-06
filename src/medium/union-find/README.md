@@ -53,20 +53,32 @@ find(20): 5
 
 <details>
 <summary>Hint 1</summary>
-...
+  Disjoint sets traditionally use a tree-like data structure for each set, with
+  the root node being the "representative" node returned by <span>find</span>.
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+<p>
+  When combining two trees with <span>union</span>, make sure to keep the height
+  of the combined tree as small as possible in order to keep a logarithmic
+  time complexity.
+</p>
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+<p>
+  The larger the tree is, the slower the time complexity will be. This can
+  be improved by making all nodes in the trees point directly to the root,
+  keeping a minimal height. A good time to make these updates is while running
+  the <span>find</span> method. This is known as path compression.
+</p>
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+createSet: O(1) time | O(1) space - where n is the number of values
+union: O(α(n)) time | O(1) space - where n is the number of values and α(n) is the inverse Ackermann function
+find: O(α(n)) time | O(1) space - where n is the number of values and α(n) is the inverse Ackermann function
 </details>
