@@ -288,38 +288,50 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 ## :bulb: Study Method
 
 <mark>My method</mark> for solving the challenges is:
-1. **Read** the challenge description
-2. **Draw** a solution
-3. **Write the solution** in TypeScript without looking at the solution hints
-4. Run the **tests**
-5. **Refactor** the solution
-6. **Repeat** steps 4 and 5 until all tests pass
-7. Evaluate the **complexity** of the solution
-8. Verify the solution **hints**
-9. **Compare** my solution with the solution hints
-10. Try to **improve** my solution or create a new one based on the solution hints
-11. **Repeat** steps 4 to 10 until I'm satisfied with the solution
-12. Watch the solution **video**
-13. **Implement** other solutions from the video or refactor my solution based on the video
+1. 1st Step
+    1. **Read** the challenge description
+    2. **Draw** a solution
+    3. **Write the solution** in TypeScript without looking at the solution hints
+    4. Run the **tests**
+    5. **Refactor** the solution
+    6. **Repeat** steps 4 and 5 until all tests pass
+    7. Evaluate the **complexity** of the solution
+2. 2dn Step
+    1. Verify the solution **hints**
+    2. **Compare** my solution with the solution hints
+    3. Try to **improve** my solution or create a new one based on the solution hints
+    4. **Repeat** steps 4 to 10 until I'm satisfied with the solution
+3. 3rd Step
+    1. Watch the solution **video**
+    2. **Implement** other solutions from the video or refactor my solution based on the video
 
 ```mermaid
-graph LR
+flowchart LR
+    START((Start)) --> one
+    subgraph one[1st Step]
     A[Read] --> B[Draw]
     B --> C[Code]
     C --> D[Tests]
     D --> C
-    %% E --> D
     D --> I[Complexity]
+    end
+    subgraph two[2nd Step]
     I --> J[Hints]
     J --> K[Compare]
     K --> L[Refactor]
     L --> M[Tests]
     M --> L 
+    end
+    subgraph three[3rd Step]
     M --> N[Video]
-    N --> O[Implement]
-    O --> P[Refactor]
+    N --> O[Code]
+    O --> P[Code/Refactor]
     P --> Q[Tests]
     Q --> P
+    end
+    one --> two
+    two --> three
+    three --> End((End))
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
