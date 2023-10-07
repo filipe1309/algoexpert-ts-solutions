@@ -302,6 +302,26 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 12. Watch the solution **video**
 13. **Implement** other solutions from the video or refactor my solution based on the video
 
+```mermaid
+graph LR
+    A[Read] --> B[Draw]
+    B --> C[Code]
+    C --> D[Tests]
+    D --> C
+    %% E --> D
+    D --> I[Complexity]
+    I --> J[Hints]
+    J --> K[Compare]
+    K --> L[Refactor]
+    L --> M[Tests]
+    M --> L 
+    M --> N[Video]
+    N --> O[Implement]
+    O --> P[Refactor]
+    P --> Q[Tests]
+    Q --> P
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :computer: Technologies
