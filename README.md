@@ -23,7 +23,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 
 <table><tr><th><a href="./src/easy">😎 Easy (31)</a></th><th><a href="./src/medium">😅 Medium (73)</a></th><th><a href="./src/hard">😰 Hard (54)</a></th><th><a href="./src/very-hard">😱 Very Hard (37)</a></th></tr>
 <tr>
-<td>
+<td valign="top">
   
 - [x] [Two Number Sum](./src/easy/two-number-sum)
 - [x] [Validate Subsequence](./src/easy/validate-subsequence)
@@ -62,7 +62,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [Semordnilap](./src/easy/semordnilap)
 </details>
 </td>
-<td>
+<td valign="top">
 
 - [x] [Three Number Sum](./src/medium/three-number-sum)
 - [x] [Smallest Difference](./src/medium/smallest-difference)
@@ -142,7 +142,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] [Suffix Trie Construction](./src/medium/suffix-trie-construction)
 </details>
 </td>
-<td>
+<td valign="top">
 
 - [ ] [Four Number Sum](./src/hard/four-number-sum)
 - [ ] [Subarray Sort](./src/hard/subarray-sort)
@@ -203,7 +203,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] [Multi String Search](./src/hard/multi-string-search)
 </details>
 </td>
-<td>
+<td valign="top">
 
 - [ ] [Apartment Hunting](./src/very-hard/apartment-hunting)
 - [ ] [Calendar Matching](./src/very-hard/calendar-matching)
