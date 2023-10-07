@@ -102,7 +102,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [Kadane's Algorithm](./src/medium/kadanes-algorithm)
 - [x] [Stable internships](./src/medium/stable-internships)
 - [x] [Union Find](./src/medium/union-find)
-- [ ] [Single Cycle Check](./src/medium/single-cycle-check)
+- [x] [Single Cycle Check](./src/medium/single-cycle-check)
 - [ ] [Breadth-first Search](./src/medium/breadth-first-search)
 - [ ] [River Sizes](./src/medium/river-sizes)
 - [ ] [Youngest Common Ancestor](./src/medium/youngest-common-ancestor)
