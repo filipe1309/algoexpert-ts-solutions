@@ -1,4 +1,4 @@
-// Cycle starting from 0 approach
+// Cycle starting from 0 && Set -Inf in Array approach
 // Complexity (worst-case): O(n) time | O(1) space
 function singleCycleCheck(array: number[]): boolean {
   let i = 0;

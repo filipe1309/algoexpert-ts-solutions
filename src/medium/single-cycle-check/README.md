@@ -44,20 +44,20 @@ flowchart LR
 
 <details>
 <summary>Hint 1</summary>
-...
+In order to check if the input array has a single cycle, you have to jump through all of the elements in the array. Could you keep a counter, jump through elements in the array, and stop once you've jumped through as many elements as are contained in the array?
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+Assume the input array has length n. If you start at index 0 and jump through n elements, what are the simplest conditions that you can check to see if the array doesn't have a single cycle?
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+Given Hint #2, there are 2 conditions that need to be met for the input array to have a single cycle. First, the starting element (in this case, the element at index 0) cannot be jumped through more than once, at the very beginning, so long as you haven't jumped through all of the other elements in the array. Second, the (n + 1)th element you jump through, where n is the length of the array, must be the first element you visited: the element at index 0 in this case.
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(n) time | O(1) space - where n is the length of the input array
 </details>
