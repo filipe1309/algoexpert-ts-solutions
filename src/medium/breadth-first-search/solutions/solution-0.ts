@@ -17,13 +17,12 @@ class Node {
   // v: number of vertices (nodes)
   // e: number of edges (connections)
   breadthFirstSearch(array: string[]) {
-    let node: Node | undefined = this
-    const queue: Node[] = [];
+    const queue: Node[] = [this];
 
-    while (node) {
+    while (queue.length > 0) {
+      const node = queue.shift()!;
       array.push(node.name);
       queue.push(...node.children)  
-      node = queue.shift();
     }    
     return array;
   }
