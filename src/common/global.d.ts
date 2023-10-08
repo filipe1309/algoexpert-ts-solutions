@@ -27,3 +27,17 @@ declare interface FlatTree {
   right: string | null;
   value: number;
 }
+
+
+interface TreeArray {
+  name: string;
+  children: TreeArray[]
+  addChild(name: string): TreeArray;
+  breadthFirstSearch(array: string[]): string[];
+}
+
+type FlatTreeArray = {
+  id: string;
+  value: string;
+  children: string[];
+}
