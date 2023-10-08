@@ -18,12 +18,11 @@ class Node {
   // e: number of edges (connections)
   breadthFirstSearch(array: string[]) {
     const queue: Node[] = [this];
-
-    while (queue.length > 0) {
+    while (queue.length) {
       const node = queue.shift()!;
       array.push(node.name);
       queue.push(...node.children)  
-    }    
+    }
     return array;
   }
 }
