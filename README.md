@@ -104,7 +104,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Union Find`](./src/medium/union-find)
 - [x] [`Single Cycle Check`](./src/medium/single-cycle-check)
 - [x] [`Breadth-first Search`](./src/medium/breadth-first-search)
-- [ ] [`River Sizes`](./src/medium/river-sizes)
+- [x] [`River Sizes`](./src/medium/river-sizes)
 - [ ] [`Youngest Common Ancestor`](./src/medium/youngest-common-ancestor)
 - [ ] [`Remove Islands`](./src/medium/remove-islands)
 - [ ] [`Cycle In Graph`](./src/medium/cycle-in-graph)
