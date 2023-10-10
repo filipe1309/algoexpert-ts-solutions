@@ -2,6 +2,7 @@ import { describe, expect, test } from '@jest/globals';
 import cases from './cases';
 import {
   solution0, // O(wh) time | O(wh) space
+  solution1, // O(wh) time | O(wh) space
 } from "./solutions";
 
 // Test: make test t=river-sizes
