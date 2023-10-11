@@ -105,7 +105,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Single Cycle Check`](./src/medium/single-cycle-check)
 - [x] [`Breadth-first Search`](./src/medium/breadth-first-search)
 - [x] [`River Sizes`](./src/medium/river-sizes)
-- [ ] [`Youngest Common Ancestor`](./src/medium/youngest-common-ancestor)
+- [x] [`Youngest Common Ancestor`](./src/medium/youngest-common-ancestor)
 - [ ] [`Remove Islands`](./src/medium/remove-islands)
 - [ ] [`Cycle In Graph`](./src/medium/cycle-in-graph)
 - [ ] [`Minimum Passes Of Matrix`](./src/medium/minimum-passes-of-matrix)
