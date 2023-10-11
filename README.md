@@ -288,50 +288,59 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 ## :bulb: Study Method
 
 <mark>My method</mark> for solving the challenges is:
+
+0. Preparation
+    1. **Create** the challenge folder and files (using the `make new` command)
 1. 1st Step
     1. **Read** the challenge description
     2. **Draw** a solution
     3. **Write the solution** in TypeScript without looking at the solution hints
-    4. Run the **tests**
+    4. Run the **tests** (using the `make test-changed` command)
     5. **Refactor** the solution
     6. **Repeat** steps 4 and 5 until all tests pass
     7. Evaluate the **complexity** of the solution
+    8. **Commit** the solution (using the `make commit` command)
 2. 2dn Step
     1. Verify the solution **hints**
     2. **Compare** my solution with the solution hints
-    3. Try to **improve** my solution or create a new one based on the solution hints
+    3. Try to **improve** my solution or create a new one based on the solution hints (using the `make new-solution` command)
     4. **Repeat** steps 4 to 10 until I'm satisfied with the solution
+    5. **Commit** the solution (using the `make commit` command)
 3. 3rd Step
     1. Watch the solution **video**
     2. **Implement** other solutions from the video or refactor my solution based on the video
+    3. **Commit** the solution (using the `make commit` command)
 
 ```mermaid
 flowchart LR
-    START((Start)) --> one
+    START((Preparation)) --> one
     subgraph one[1st Step]
     A[Read] --> B[Draw]
     B --> C[Code]
     C --> D[Tests]
     D --> C
     D --> I[Complexity]
+    I --> R[Commit]
     end
     subgraph two[2nd Step]
-    I --> J[Hints]
+    R --> J[Hints]
     J --> K[Compare]
     K --> L[Refactor]
     L --> M[Tests]
     M --> L 
+    M --> S[Commit]
     end
     subgraph three[3rd Step]
-    M --> N[Video]
+    S --> N[Video]
     N --> O[Code]
     O --> P[Code/Refactor]
     P --> Q[Tests]
     Q --> P
+    Q --> T[Commit]
     end
-    one --> two
-    two --> three
-    three --> End((End))
+    one -.-> two
+    two -.-> three
+    three --> End(((End)))
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
