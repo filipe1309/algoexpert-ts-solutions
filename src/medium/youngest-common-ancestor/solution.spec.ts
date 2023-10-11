@@ -3,6 +3,7 @@ import cases from './cases';
 import AncestralTree from 'common/AncestralTree';
 import {
   solution0, // O(n^2) time | O(n) space
+  solution1, // O(n) time | O(n) space
 } from "./solutions";
 
 // Test: make test t=youngest-common-ancestor
@@ -14,7 +15,7 @@ describe('youngest-common-ancestor', () => {
       descendantTwo: input.descendantTwo
     }
     AncestralTree.toAT(input.ancestralTree.nodes, resultObj);
-    const result = solution0(
+    const result = solution1(
       resultObj.topAncestor as AncestralTree,
       resultObj.descendantOne as AncestralTree,
       resultObj.descendantTwo  as AncestralTree
