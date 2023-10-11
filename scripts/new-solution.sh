@@ -44,11 +44,9 @@ fi
 LEVEL_LOWERCASE_FOLDER=$(echo ${LAST_CHALLENGE_FOLDER} | cut -f2 -d/)
 # confirm if challenge level folder is correct if not provided ${LEVEL_LOWERCASE}
 if [ -z ${LEVEL_LOWERCASE} ]; then 
-  echo -e "👉 Challenge level folder is ${BOLD}${LEVEL_LOWERCASE_FOLDER}${NC}. Is this correct? (Y/n)"
+  echo -e "👉 Challenge level is ${BOLD}${LEVEL_LOWERCASE_FOLDER}${NC}. Is this correct? (Y/n)"
   read -p "👉 " confirm
-  if [[ ${confirm} != "Y" && ${confirm} != "y" && ${confirm} != "" ]]; then echo -e "${RED}${BOLD}❌ Aborted!${NC}"; exit 1; fi
-  echo -e "✅ ${GREEN}${BOLD}Confirmed!${NC}"
-  LEVEL_LOWERCASE=${LEVEL_LOWERCASE_FOLDER}
+  if [[ ${confirm} == "Y" || ${confirm} == "y" || ${confirm} == "" ]]; then LEVEL_LOWERCASE=${LEVEL_LOWERCASE_FOLDER}; fi
 fi
 
 # read challenge level if not provided ${LEVEL_LOWERCASE}
