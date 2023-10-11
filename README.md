@@ -270,13 +270,13 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] **Easy to run the tests** - just run `make test` and it will run all tests
 - [x] **You can customize the templates** - just update the `scripts/templates` folder
 - [x] **Easy to debug in VSCode** - there is a `launch.json` file with a debug configuration for the current open challenge tab in VSCode
+- [x] **Auto discover last challenge completed** when executing `make new-solution` command
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## :construction: Roadmap
 
-- [ ] Auto discover last challenge completed when executing `make new-solution` command
 - [ ] Update solution been tested when executing `make new-solution` command
 - [ ] Replicate function assignature from `solution-0.ts` to new file when executing `make new-solution` command
 - [ ] After creating a new challenge, open all new files in VSCode
@@ -423,7 +423,8 @@ make commit [m=COMMIT_MESSAGE]
 make new-solution [n=CHALLENGE_NAME_SNAKE] [l=CHALLENGE_LEVEL_LOWER]
 ```
 > :memo: **Example:**
-> `make new-solution n=two-number-sum l=easy`
+> `make new-solution [l=easy] [n=two-number-sum]`
+> OR `make new-solution` (fill the prompts)
 
 This will create a new solution file `solution-{SOLUTION_NUMBER}.ts` and update the test file.
 
