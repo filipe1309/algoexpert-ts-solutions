@@ -47,15 +47,23 @@ node B
 
 <details>
 <summary>Hint 1</summary>
-...
+You could try to simultaneously iterate through the ancestors of both input descendants 
+until you find a common ancestor; however, if one of the descendants has more ancestors 
+than the other (i.e., is lower in the ancestral tree), you won't find the youngest 
+common ancestor. How can you get around this problem?
 </details>
 
 <details>
-<summary>Hint 1</summary>
-...
+<summary>Hint 2</summary>
+Start by finding the two input descendants' depths in the ancestral tree. If one 
+of them is deeper, iterate up through its ancestors until you reach the depth of 
+the higher descendant. Then, iterate through both descendants' ancestors in tandem 
+until you find the first common ancestor. Note that at this point, one of the descendants 
+will be the ancestor of the lower descendant that is at the same level as the higher 
+descendant.
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(d) time | O(1) space - where d is the depth (height) of the ancestral tree
 </details>
