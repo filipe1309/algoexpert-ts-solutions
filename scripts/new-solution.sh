@@ -25,14 +25,14 @@ done
 
 # read challenge name if not provided ${NAME_SNAKE}
 if [ -z ${NAME_SNAKE} ]; then 
-  NAME_SNAKE_FOLDER=$(echo ${LAST_CHALLENGE_FOLDER} | cut -f3 -d/)
+  NAME_SNAKE_LAST_CHALLENGE_FOLDER=$(echo ${LAST_CHALLENGE_FOLDER} | cut -f3 -d/)
 
   echo -e "Type challenge ${BOLD}name${NC} in ${BOLD}snake-case${NC} ${GRAY_DARKER}(ex: valid-subsequence)${NC}";
   echo -e "${BOLD}${ITALIC}OR${NC}";
   echo -e "Paste challenge ${BOLD}URL${NC} ${GRAY_DARKER}(ex: https://www.algoexpert.io/questions/valid-subsequence)${NC}";
-  read -p "👉 [$NAME_SNAKE_FOLDER]: " NAME_SNAKE
+  read -p "👉 [$NAME_SNAKE_LAST_CHALLENGE_FOLDER]: " NAME_SNAKE
   # if challenge name is empty, use last challenge name
-  if [ -z ${NAME_SNAKE} ]; then NAME_SNAKE=${NAME_SNAKE_FOLDER}; fi
+  if [ -z ${NAME_SNAKE} ]; then NAME_SNAKE=${NAME_SNAKE_LAST_CHALLENGE_FOLDER}; fi
 fi
 # if challenge name is empty, exit
 if [ -z ${NAME_SNAKE} ]; then echo "❌ Please provide a challenge name"; exit 1; fi
@@ -41,12 +41,13 @@ if [[ ${NAME_SNAKE} == *"https://www.algoexpert.io/questions/"* ]]; then
   NAME_SNAKE=$(echo ${NAME_SNAKE} | sed 's/https:\/\/www.algoexpert.io\/questions\///g')
 fi
 
-LEVEL_LOWERCASE_FOLDER=$(echo ${LAST_CHALLENGE_FOLDER} | cut -f2 -d/)
+
 # confirm if challenge level folder is correct if not provided ${LEVEL_LOWERCASE}
 if [ -z ${LEVEL_LOWERCASE} ]; then 
-  echo -e "👉 Challenge level is ${BOLD}${LEVEL_LOWERCASE_FOLDER}${NC}. Is this correct? (Y/n)"
+  LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER=$(echo ${LAST_CHALLENGE_FOLDER} | cut -f2 -d/)
+  echo -e "👉 Challenge level is ${BOLD}${LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER}${NC}. Is this correct? (Y/n)"
   read -p "👉 " confirm
-  if [[ ${confirm} == "Y" || ${confirm} == "y" || ${confirm} == "" ]]; then LEVEL_LOWERCASE=${LEVEL_LOWERCASE_FOLDER}; fi
+  if [[ ${confirm} == "Y" || ${confirm} == "y" || ${confirm} == "" ]]; then LEVEL_LOWERCASE=${LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER}; fi
 fi
 
 # read challenge level if not provided ${LEVEL_LOWERCASE}
