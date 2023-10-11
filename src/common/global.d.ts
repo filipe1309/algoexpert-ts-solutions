@@ -41,3 +41,15 @@ type FlatTreeArray = {
   value: string;
   children: string[];
 }
+
+interface AncestralTree {
+  name: string;
+  ancestor: AncestralTree | null;
+}
+
+type ResultAncestralTree = {
+  topAncestor?: string | AncestralTree,
+  descendantOne?: string | AncestralTree,
+  descendantTwo?: string | AncestralTree,
+  ancestralTree?: AncestralTree
+}
