@@ -272,16 +272,17 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] **Easy to debug in VSCode** - there is a `launch.json` file with a debug configuration for the current open challenge tab in VSCode
 - [x] **Auto discover last challenge completed** to create new solution when executing `make new-solution` command
 - [x] **Auto discover next challenge to be completed** to create new challenge when executing `make new` command
+- [x] **Auto update solution been tested** when executing `make new-solution` command
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## :construction: Roadmap
 
-- [ ] Update solution been tested when executing `make new-solution` command
 - [ ] Replicate function assignature from `solution-0.ts` to new file when executing `make new-solution` command
 - [ ] After creating a new challenge, open all new files in VSCode
 - [ ] Update all challenges with the new structure after finishing the challenge list
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
