@@ -1,11 +1,11 @@
 // Keep Non Island approach
-// Complexity (worst-case): O(n*m) time | O(n*m) space
-// where n = matrix.length and m = matrix[0].length
+// Complexity (worst-case): O(w*h) time | O(w*h) space
+// where w is the width of the matrix and h is the height of the matrix
 function removeIslands(matrix: number[][]): number[][] {
   const result = matrix.map((row) => row.map((_) => 0));
   for (let row = 0; row < matrix.length; row++) {
     for (let col = 0; col < matrix[0].length; col++) {
-      if (matrix[row][col] && isInBorder(row, col, matrix)) 
+      if (matrix[row][col] === 1 && isInBorder(row, col, matrix)) 
         copyNonIsland(matrix, result, row, col);
     }
   }
