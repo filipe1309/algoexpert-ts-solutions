@@ -29,15 +29,15 @@ run:
 	make test
 
 # create new challenge
-# example: make new [n=valid-subsequence] [l=easy] [c=arrays]
-# example 2: make new [n="Invert Binary Tree"] [l=medium] [c="Binary Trees"]
+# example: make new [c=valid-subsequence] [l=easy] [ct=arrays]
+# example 2: make new [c="Invert Binary Tree"] [l=medium] [ct="Binary Trees"]
 new:
-	./scripts/new.sh name="${n}" level="${l}" category="${c}"
+	./scripts/new.sh name="${c}" level="${l}" category="${ct}"
 
 # create new solution
-# example: make new-solution [n=valid-subsequence] [l=easy]
+# example: make new-solution [c=valid-subsequence] [l=easy]
 new-solution:
-	./scripts/new-solution.sh name="${n}" level="${l}"
+	./scripts/new-solution.sh name="${c}" level="${l}"
 
 # commit changes
 # example: make commit [m="feat: add two number sum solution"]
@@ -50,8 +50,8 @@ help:
 	@echo -e "  make ${BOLD}install${NC} ${GRAY_DARKER}(installs dependencies)${NC}"
 	@echo -e "  make ${BOLD}test${NC} ${ITALIC}[t=<challenge-name-in-snake-case>]${NC} ${GRAY_DARKER}(runs all tests or specific test)${NC}"
 	@echo -e "  make ${BOLD}test-changed${NC} ${GRAY_DARKER}(runs changed tests)${NC}"
-	@echo -e "  make ${BOLD}new${NC} ${ITALIC}[n="<challenge-name-in-snake-case>"] [l=<level>] [c="<category>"]${NC} ${GRAY_DARKER}(creates new challenge, levels: (easy, medium, hard, very-hard))${NC}"
-	@echo -e "  make ${BOLD}new-solution${NC} ${ITALIC}[n="<challenge-name-in-snake-case>"] [l=<level>]${NC} ${GRAY_DARKER}(creates new solution, levels: (easy, medium, hard, very-hard))${NC}"
+	@echo -e "  make ${BOLD}new${NC} ${ITALIC}[c=<challenge-name-in-snake-case>] [l=<level>] [ct=<category>]${NC} ${GRAY_DARKER}(creates new challenge, levels: (easy, medium, hard, very-hard))${NC}"
+	@echo -e "  make ${BOLD}new-solution${NC} ${ITALIC}[c=<challenge-name-in-snake-case>] [l=<level>]${NC} ${GRAY_DARKER}(creates new solution, levels: (easy, medium, hard, very-hard))${NC}"
 	@echo -e "  make ${BOLD}commit${NC} ${GRAY_DARKER}(commits changes and updates README.md)${NC}"
 	@echo -e "  make ${BOLD}help${NC}"
 	
