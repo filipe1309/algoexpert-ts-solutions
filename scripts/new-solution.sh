@@ -120,8 +120,8 @@ LAST_IMPORT_LINE_NUMBER=$(grep -n "from \"./solutions\";" src/${LEVEL_LOWERCASE}
 LAST_IMPORT_LINE_NUMBER=$(($LAST_IMPORT_LINE_NUMBER - 1))
 # add "solution-{NEW_SOLUTION_NUMBER}," after last import statement
 sed -i '' "${LAST_IMPORT_LINE_NUMBER}s/$/\n  solution${NEW_SOLUTION_NUMBER}, \/\/ O(??) time | O(??) space/" src/${LEVEL_LOWERCASE}/${NAME_SNAKE}/solution.spec.ts
-
-
+# replace "solutionLAST_SOLUTION_NUMBER(" with "solutionNEW_SOLUTION_NUMBER("
+sed -i '' "s/solution${LAST_SOLUTION_NUMBER}(/solution${NEW_SOLUTION_NUMBER}(/g" src/${LEVEL_LOWERCASE}/${NAME_SNAKE}/solution.spec.ts
 
 
 
