@@ -141,7 +141,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Youngest Common Ancestor`](./src/medium/youngest-common-ancestor)
 - [x] [`Remove Islands`](./src/medium/remove-islands)
 - [x] [`Cycle In Graph`](./src/medium/cycle-in-graph)
-- [ ] [`Minimum Passes Of Matrix`](./src/medium/minimum-passes-of-matrix)
+- [x] [`Minimum Passes Of Matrix`](./src/medium/minimum-passes-of-matrix)
 - [ ] [`Two-Colorable`](./src/medium/two-colorable)
 - [ ] [`Task Assignment`](./src/medium/task-assignment)
 - [ ] [`Valid Starting City`](./src/medium/valid-starting-city)
