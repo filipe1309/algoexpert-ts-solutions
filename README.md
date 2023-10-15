@@ -32,7 +32,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Non-Constructible Change`](./src/easy/non-constructible-change)
 
 <details>
-  <summary>More...</summary>
+  <summary valign="bottom">More...</summary>
 
 - [x] [`Transpose Matrix`](./src/easy/transpose-matrix)
 - [x] [`Find Closest Value In BST`](./src/easy/find-closest-value-in-bst)
@@ -70,7 +70,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Monotonic Array`](./src/medium/monotonic-array)
 - [x] [`Spiral Traverse`](./src/medium/spiral-traverse)
 <details>
-  <summary>More...</summary>
+  <summary valign="bottom">More...</summary>
 
 - [x] [`Longest Peak`](./src/medium/longest-peak)
 - [x] [`Array Of Products`](./src/medium/array-of-products)
@@ -150,7 +150,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] [`Min Rewards`](./src/hard/min-rewards)
 - [ ] [`Zigzag Traverse`](./src/hard/zigzag-traverse)
 <details>
-  <summary>More...</summary>
+  <summary valign="bottom">More...</summary>
 
 - [ ] [`Longest Subarray With Sum`](./src/hard/longest-subarray-with-sum)
 - [ ] [`Knight Connection`](./src/hard/knight-connection)
@@ -212,7 +212,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] [`Line Through Points`](./src/very-hard/line-through-points)
 
 <details>
-  <summary>More...</summary>
+  <summary valign="bottom">More...</summary>
 
 - [ ] [`Right Smaller Than`](./src/very-hard/right-smaller-than)
 - [ ] [`Iterative In-order Traversal`](./src/very-hard/iterative-in-order-traversal)
