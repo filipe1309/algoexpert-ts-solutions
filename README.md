@@ -21,9 +21,16 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 
 ## :rocket: Challenge List
 
-<table><tr><th><a href="./src/easy">😎 Easy (31)</a></th><th><a href="./src/medium">😅 Medium (73)</a></th><th><a href="./src/hard">😰 Hard (54)</a></th><th><a href="./src/very-hard">😱 Very Hard (37)</a></th></tr>
-<tr>
-<td valign="top">
+<table>
+  <tr>
+    <th><a href="./src/easy">😎 Easy (31)</a></th>
+    <th><a href="./src/medium">😅 Medium (73)</a></th>
+    <th><a href="./src/hard">😰 Hard (54)</a></th>
+    <th><a href="./src/very-hard">😱 Very Hard (37)</a></th>
+  </tr>
+  
+  <tr valign="top">
+    <td><ul>
   
 - [x] [`Two Number Sum`](./src/easy/two-number-sum)
 - [x] [`Validate Subsequence`](./src/easy/validate-subsequence)
@@ -31,8 +38,39 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Tournament Winner`](./src/easy/tournament-winner)
 - [x] [`Non-Constructible Change`](./src/easy/non-constructible-change)
 
-<details>
-  <summary valign="bottom">More...</summary>
+    </ul></td>
+    <td><ul>
+
+- [x] [`Three Number Sum`](./src/medium/three-number-sum)
+- [x] [`Smallest Difference`](./src/medium/smallest-difference)
+- [x] [`Move Element To End`](./src/medium/move-element-to-end)
+- [x] [`Monotonic Array`](./src/medium/monotonic-array)
+- [x] [`Spiral Traverse`](./src/medium/spiral-traverse)
+
+    </ul></td>
+    <td><ul>
+
+- [ ] [`Four Number Sum`](./src/hard/four-number-sum)
+- [ ] [`Subarray Sort`](./src/hard/subarray-sort)
+- [ ] [`Largest Range`](./src/hard/largest-range)
+- [ ] [`Min Rewards`](./src/hard/min-rewards)
+- [ ] [`Zigzag Traverse`](./src/hard/zigzag-traverse)
+
+    </ul></td>
+    <td><ul>
+  
+- [ ] [`Apartment Hunting`](./src/very-hard/apartment-hunting)
+- [ ] [`Calendar Matching`](./src/very-hard/calendar-matching)
+- [ ] [`Waterfall Streams`](./src/very-hard/waterfall-streams)
+- [ ] [`Minimum Area Rectangle`](./src/very-hard/minimum-area-rectangle)
+- [ ] [`Line Through Points`](./src/very-hard/line-through-points)
+
+    </ul></td>
+  </tr>
+  <tr valign="top">
+    <td>
+      <details>
+        <summary>More...</summary><ul>
 
 - [x] [`Transpose Matrix`](./src/easy/transpose-matrix)
 - [x] [`Find Closest Value In BST`](./src/easy/find-closest-value-in-bst)
@@ -60,17 +98,12 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Generate Document`](./src/easy/generate-document)
 - [x] [`First Non-Repeating Character`](./src/easy/first-non-repeating-character)
 - [x] [`Semordnilap`](./src/easy/semordnilap)
-</details>
-</td>
-<td valign="top">
 
-- [x] [`Three Number Sum`](./src/medium/three-number-sum)
-- [x] [`Smallest Difference`](./src/medium/smallest-difference)
-- [x] [`Move Element To End`](./src/medium/move-element-to-end)
-- [x] [`Monotonic Array`](./src/medium/monotonic-array)
-- [x] [`Spiral Traverse`](./src/medium/spiral-traverse)
-<details>
-  <summary valign="bottom">More...</summary>
+    </ul></details>
+    </td>
+    <td>
+      <details>
+        <summary>More...</summary><ul>
 
 - [x] [`Longest Peak`](./src/medium/longest-peak)
 - [x] [`Array Of Products`](./src/medium/array-of-products)
@@ -140,17 +173,12 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] [`Minimum Characters For Words`](./src/medium/minimum-characters-for-words)
 - [ ] [`One Edit`](./src/medium/one-edit)
 - [ ] [`Suffix Trie Construction`](./src/medium/suffix-trie-construction)
-</details>
-</td>
-<td valign="top">
 
-- [ ] [`Four Number Sum`](./src/hard/four-number-sum)
-- [ ] [`Subarray Sort`](./src/hard/subarray-sort)
-- [ ] [`Largest Range`](./src/hard/largest-range)
-- [ ] [`Min Rewards`](./src/hard/min-rewards)
-- [ ] [`Zigzag Traverse`](./src/hard/zigzag-traverse)
-<details>
-  <summary valign="bottom">More...</summary>
+    </ul></details>
+    </td>
+    <td>
+      <details>
+        <summary>More...</summary><ul>
 
 - [ ] [`Longest Subarray With Sum`](./src/hard/longest-subarray-with-sum)
 - [ ] [`Knight Connection`](./src/hard/knight-connection)
@@ -201,18 +229,12 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] [`Underscorify Substring`](./src/hard/underscorify-substring)
 - [ ] [`Pattern Matcher`](./src/hard/pattern-matcher)
 - [ ] [`Multi String Search`](./src/hard/multi-string-search)
-</details>
-</td>
-<td valign="top">
 
-- [ ] [`Apartment Hunting`](./src/very-hard/apartment-hunting)
-- [ ] [`Calendar Matching`](./src/very-hard/calendar-matching)
-- [ ] [`Waterfall Streams`](./src/very-hard/waterfall-streams)
-- [ ] [`Minimum Area Rectangle`](./src/very-hard/minimum-area-rectangle)
-- [ ] [`Line Through Points`](./src/very-hard/line-through-points)
-
-<details>
-  <summary valign="bottom">More...</summary>
+    </ul></details>
+    </td>
+    <td>
+      <details>
+        <summary>More...</summary><ul>
 
 - [ ] [`Right Smaller Than`](./src/very-hard/right-smaller-than)
 - [ ] [`Iterative In-order Traversal`](./src/very-hard/iterative-in-order-traversal)
@@ -247,9 +269,11 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] [`Smallest Substring Containing`](./src/very-hard/smallest-substring-containing)
 - [ ] [`Longest Balanced Substring`](./src/very-hard/longest-balanced-substring)
 
-</details>
-</td>
+    </ul></details>
+    </td>
+  </tr>
 </table>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :sparkles: Features
