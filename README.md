@@ -30,7 +30,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
   </tr>
   
   <tr valign="top">
-    <td><ul>
+    <td>
   
 - [x] [`Two Number Sum`](./src/easy/two-number-sum)
 - [x] [`Validate Subsequence`](./src/easy/validate-subsequence)
@@ -38,7 +38,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Tournament Winner`](./src/easy/tournament-winner)
 - [x] [`Non-Constructible Change`](./src/easy/non-constructible-change)
 
-    </ul></td>
+    </td>
     <td><ul>
 
 - [x] [`Three Number Sum`](./src/medium/three-number-sum)
