@@ -1,5 +1,5 @@
-// Recursive Queue of Paths approach
-// Complexity (worst-case): O(n^2) time | O(n) space
+// Recursive Queue of Paths + DFS approach
+// Complexity (worst-case): O(v + e) time | O(v) space
 function cycleInGraph(edges: number[][]): boolean {
   const queue: number[] = []
   for (let vertice = 0; vertice < edges.length; vertice++) {

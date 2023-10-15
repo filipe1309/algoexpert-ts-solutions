@@ -56,25 +56,40 @@ true // There are multiple cycles in this graph:
 
 <details>
 <summary>Hint 1</summary>
-...
+There are multiple ways to solve this problem, and they all make use of a depth-first-search
+traversal.
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+When traversing a graph using depth-first-search, a back edge us an edge from a node
+to one of its ancestors in the depth-first-search tree, and a back edge denotes the
+presence of a cycle. How can you determine if a graph has any back edges?
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+To find back edges, you'll need to keep track of which nodes you've already visited 
+and which nodes are ancestors of the current node in the depth-first-search tree. 
+There are a few ways to do this, but one approach is to recursively traverse the 
+graph and to keep track of which nodes have been visited in general and which nodes 
+have been visited in the current recursion stack; you can do so with two separate 
+data structures. If you reach a node that has an edge to a node that's already in 
+the recursion stack, then you've detected a back edge, and there's a cycle in the graph.
 </details>
 
 <details>
 <summary>Hint 4</summary>
-...
+Similar to the previous hint, you can also detect a back edge by performing a 3-color 
+depth-first search. Each node is colored white to start; recursively traverse through 
+the graph, coloring the current node grey and then calling the recursive traversal 
+function on all of its neighbors. After traversing all the neighbors, color the current 
+node black to signify that it's "done." If you ever find an edge to a node that's 
+grey, you've found a back edge, and there's a cycle in the graph.
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(v + e) time | O(v) space - where v is the number of vertices of the input graph and
+e is the number of edges of the input graph
 </details>
