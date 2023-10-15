@@ -5,7 +5,7 @@ const dir = [
   [0, 1]
 ]
 
-
+// BF Set Of Changed approach
 // Complexity (worst-case): O(w * h) time | O(w * h) space
 function minimumPassesOfMatrix(matrix: number[][]): number {
   let changed: Set<string>;
