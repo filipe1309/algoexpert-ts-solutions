@@ -492,6 +492,7 @@ Please make sure to update tests as appropriate.
 ## :clap: Acknowledgments
 
 - [AlgoExpert](https://www.algoexpert.io/)
+- [New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
 - [ShubcoGen Template™](https://github.com/filipe1309/shubcogen-template)
 - [Git Hooks without extra dependencies like Husky in Node.js project](https://dev.to/azu/git-hooks-without-extra-dependencies-like-husky-in-node-js-project-jjp)
 - [TypeScript + Jest](https://basarat.gitbook.io/typescript/intro-1/jest)
