@@ -15,5 +15,4 @@ function twoColorable(edges: number[][]): boolean {
   return true;
 }
 
-
 export { twoColorable as solution0 };
