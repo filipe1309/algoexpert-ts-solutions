@@ -186,6 +186,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] [`Same BSTs`](./src/hard/same-bsts)
 - [ ] [`Validate Three Nodes`](./src/hard/validate-three-nodes)
 - [ ] [`Repair BST`](./src/hard/repair-bst)
+- [ ] [`Sum BSTs`](./src/hard/sum-bsts)
 - [ ] [`Max Path Sum In Binary Tree`](./src/hard/max-path-sum-in-binary-tree)
 - [ ] [`Find Nodes Distance K`](./src/hard/find-nodes-distance-k)
 - [ ] [`Max Sum Increasing Subsequence`](./src/hard/max-sum-increasing-subsequence)
@@ -202,6 +203,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] [`Dijkstra's Algorithm`](./src/hard/dijkstras-algorithm)
 - [ ] [`Topological Sort`](./src/hard/topological-sort)
 - [ ] [`Kruskal's Algorithm`](./src/hard/kruskals-algorithm)
+- [ ] [`Prim's Algorithm`](./src/hard/prims-algorithm)
 - [ ] [`Boggle Board`](./src/hard/boggle-board)
 - [ ] [`Largest Island`](./src/hard/largest-island)
 - [ ] [`Continuous Median`](./src/hard/continuous-median)
@@ -229,6 +231,8 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] [`Underscorify Substring`](./src/hard/underscorify-substring)
 - [ ] [`Pattern Matcher`](./src/hard/pattern-matcher)
 - [ ] [`Multi String Search`](./src/hard/multi-string-search)
+- [ ] [`Longest Most Frequent Prefix`](./src/hard/longest-most-frequent-prefix)
+- [ ] [`Shortest Unique Prefixes`](./src/hard/shortest-unique-prefixes)
 
     </ul></details>
     </td>
@@ -268,6 +272,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] [`Largest Park`](./src/very-hard/largest-park)
 - [ ] [`Smallest Substring Containing`](./src/very-hard/smallest-substring-containing)
 - [ ] [`Longest Balanced Substring`](./src/very-hard/longest-balanced-substring)
+- [ ] [`Strings Made Up Of Strings`](./src/very-hard/strings-made-up-of-strings)
 
     </ul></details>
     </td>
