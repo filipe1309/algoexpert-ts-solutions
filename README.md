@@ -25,8 +25,8 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
   <tr>
     <th><a href="./src/easy">😎 Easy (31)</a></th>
     <th><a href="./src/medium">😅 Medium (73)</a></th>
-    <th><a href="./src/hard">😰 Hard (54)</a></th>
-    <th><a href="./src/very-hard">😱 Very Hard (37)</a></th>
+    <th><a href="./src/hard">😰 Hard (58)</a></th>
+    <th><a href="./src/very-hard">😱 Very Hard (38)</a></th>
   </tr>
   
   <tr valign="top">
@@ -311,6 +311,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] Replicate function assignature from `solution-0.ts` to new file when executing `make new-solution` command
 - [ ] After creating a new challenge, open all new files in VSCode
 - [ ] Update all challenges with the new structure after finishing the challenge list
+- [ ] Auto update number of challenges completed in each level after finishing each challenge when executing `make commit` command
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
