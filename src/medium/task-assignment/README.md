@@ -51,25 +51,35 @@ tasks = [1, 3, 5, 3, 1, 4]
 
 <details>
 <summary>Hint 1</summary>
-...
+Start by considering which pairs of tasks will lead to the `longest` possible time
+to complete all tasks.
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+The amount of time it'll take to complete all tasks will be dictated by the pair
+of tasks that has the longest total duration. This means that you'll want to avoid
+pairing long tasks together.
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+Since the pair of tasks with the longest total duration is the time it takes for us
+to finish all tasks, we want to minimize this pair's duration. To do this, we can
+simply pair the shortest-duration task with the longest-duration task and repeat
+the process with all other tasks.
 </details>
 
 <details>
 <summary>Hint 4</summary>
-...
+Start by sorting the tasks array in ascending order. Then, pair the shortest-duration
+task with the longest-duration task, and add that pair to some output array, Repeat
+this process until you've paired all tasks. This will lead to an optimal pairing,
+because your pair of tasks with the longest duration will have the shortest dutarion
+that it can possibly have.
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(nlog(n)) time | O(n) space - where n is the number of tasks
 </details>

@@ -2,12 +2,13 @@ import { describe, expect, test } from '@jest/globals';
 import cases from './cases';
 import {
   solution0, // O(n*logn) time | O(n) space
+  solution1, // O(n*logn) time | O(n) space
 } from "./solutions";
 
 // Test: make test t=task-assignment
 describe('task-assignment', () => {
   test.each(cases)('%# (%j)', ({ input, expected }) => {
-    let result = solution0(input.k, input.tasks);
+    let result = solution1(input.k, input.tasks);
     console.log({ result, expected });
     // sort expected
     expected.map((answer) => answer.sort());

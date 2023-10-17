@@ -6,7 +6,7 @@ function taskAssignment(k: number, tasks: number[]) {
   // convert to positions
   tasksSorted = tasksSorted.map((v) => { 
     const idx = tasks.indexOf(v); 
-    tasks[idx] = -1; 
+    tasks[idx] = -1; // mark as visited to avoid duplicates
     return idx
   })
   // create pairs of positions from sorted tasks
