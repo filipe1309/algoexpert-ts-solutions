@@ -143,7 +143,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Cycle In Graph`](./src/medium/cycle-in-graph)
 - [x] [`Minimum Passes Of Matrix`](./src/medium/minimum-passes-of-matrix)
 - [x] [`Two-Colorable`](./src/medium/two-colorable)
-- [ ] [`Task Assignment`](./src/medium/task-assignment)
+- [x] [`Task Assignment`](./src/medium/task-assignment)
 - [ ] [`Valid Starting City`](./src/medium/valid-starting-city)
 - [ ] [`Min Heap Construction`](./src/medium/min-heap-construction)
 - [ ] [`Linked List Construction`](./src/medium/linked-list-construction)
