@@ -47,20 +47,24 @@ false
 
 <details>
 <summary>Hint 1</summary>
-...
+Try starting by choosing a random node and assigning it a color. From here,
+can you tell what colors any other nodes must have?
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+From a given node, assign each sibling node the opposite color, then continue
+through the graph using BFS or DFS.
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+If you ever encounter a sibling that is already marked as the wrong color, then
+there cannot be a solution.
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(v + e) time | O(v) space - where v is the number of vertices and e is the number 
+of edges of the graph
 </details>
