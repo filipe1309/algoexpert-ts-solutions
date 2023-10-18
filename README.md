@@ -144,7 +144,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Minimum Passes Of Matrix`](./src/medium/minimum-passes-of-matrix)
 - [x] [`Two-Colorable`](./src/medium/two-colorable)
 - [x] [`Task Assignment`](./src/medium/task-assignment)
-- [ ] [`Valid Starting City`](./src/medium/valid-starting-city)
+- [x] [`Valid Starting City`](./src/medium/valid-starting-city)
 - [ ] [`Min Heap Construction`](./src/medium/min-heap-construction)
 - [ ] [`Linked List Construction`](./src/medium/linked-list-construction)
 - [ ] [`Remove Kth Node From End`](./src/medium/remove-kth-node-from-end)
