@@ -8,7 +8,7 @@ import {
 // Test: make test t=valid-starting-city
 describe('valid-starting-city', () => {
   test.each(cases)('%# (%j)', ({ input: { distances, fuel, mpg }, expected }) => {
-    const result = solution0(distances, fuel, mpg);
+    const result = solution1(distances, fuel, mpg);
     expect(result).toEqual(expected);
   });
 });

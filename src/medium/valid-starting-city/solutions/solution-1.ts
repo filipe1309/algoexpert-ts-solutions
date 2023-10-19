@@ -4,19 +4,18 @@
 // Complexity (worst-case): O(n) time | O(1) space
 function validStartingCity(distances: number[], fuel: number[], mpg: number) {
   let validStartingCityIdx = 0;
-  let milesLeft = 0;
-  let currFuel = 0;
-  for (let i = 0; i < distances.length; i++) {
-    // Calculate the miles left after each city.
-    let nextFuel = currFuel + fuel[i]*mpg - distances[i];
-    distances[i] = currFuel;
-    currFuel = nextFuel;
+  let milesRemaining = 0;
+  let milesRemainingAtValidStartingCity = 0;
 
-    // Update the valid starting city index and miles accumulated if the current
-    // city has less miles left than the current valid starting city.
-    if (milesLeft > distances[i]) {
+  for (let i = 1; i < distances.length; i++) {
+    // Calculate the miles left after each city.
+    milesRemaining += fuel[i - 1] * mpg - distances[i - 1];
+
+    // If the miles left is less than the miles left at the current valid
+    // starting city, update the valid starting city.
+    if (milesRemaining < milesRemainingAtValidStartingCity) {
+      milesRemainingAtValidStartingCity = milesRemaining;
       validStartingCityIdx = i;
-      milesLeft = distances[i];
     }
   }
 
