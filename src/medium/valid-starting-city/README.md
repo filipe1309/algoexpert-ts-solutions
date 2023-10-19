@@ -47,25 +47,38 @@ mpg = 10
 
 <details>
 <summary>Hint 1</summary>
-...
+Try the brute-force approach to this problem by treating each city as the starting
+city and simulating traveling from it to all other cities.
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+Start at each city, and see if you can return back to the city in question without
+running out of gas. If you find a city that you can return to after starting at it
+without running out of gas, then it must be the valid starting city, because there
+is always exactly one valid starting city.
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+You can solve this problem in `O(n)` time. Try use the fact that the amount of gas
+is exactly enough to travel around the road once to help you.
 </details>
 
 <details>
 <summary>Hint 4</summary>
-...
+Using the fact stated in Hint #3 and the knowledge that there is always
+exactly one valid starting city, you can solve this problem in a single pass
+of all cities. Keep track of how much gas you have as you enter a city (before
+you fill up at that city); you'll enter the first city with 0 gas. The city
+that you enter with the least amount of gas in your tank must be the valid
+starting city. This is because you'll never have less gas at another city than
+you do when you enter this city, no matter what city you start at. This means
+that that this is the valid starting city. See the Conceptual Overview section
+of this question's video explanation for a more in-depth explanation.
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(n) time | O(1) space - where n is the number of cities
 </details>
