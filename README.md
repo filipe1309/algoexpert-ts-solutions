@@ -145,7 +145,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Two-Colorable`](./src/medium/two-colorable)
 - [x] [`Task Assignment`](./src/medium/task-assignment)
 - [x] [`Valid Starting City`](./src/medium/valid-starting-city)
-- [ ] [`Min Heap Construction`](./src/medium/min-heap-construction)
+- [x] [`Min Heap Construction`](./src/medium/min-heap-construction)
 - [ ] [`Linked List Construction`](./src/medium/linked-list-construction)
 - [ ] [`Remove Kth Node From End`](./src/medium/remove-kth-node-from-end)
 - [ ] [`Sum of Linked Lists`](./src/medium/sum-of-linked-lists)
