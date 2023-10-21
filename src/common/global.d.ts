@@ -53,3 +53,9 @@ type ResultAncestralTree = {
   descendantTwo?: string | AncestralTree,
   ancestralTree?: AncestralTree
 }
+
+interface Node {
+  value: number;
+  prev: Node | null;
+  next: Node | null;
+}

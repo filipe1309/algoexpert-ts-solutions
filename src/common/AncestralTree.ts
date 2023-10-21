@@ -2,7 +2,6 @@
 export default class AncestralTree {
   name: string;
   ancestor: AncestralTree | null;
-  // decendants: AncestralTree[] = [];
 
   constructor(name: string) {
     this.name = name;
@@ -18,25 +17,7 @@ export default class AncestralTree {
       if (nodes[i].name === resultObj.topAncestor) resultObj.topAncestor = nodes[i];
       if (nodes[i].name === resultObj.descendantOne) resultObj.descendantOne = nodes[i];
       if (nodes[i].name === resultObj.descendantTwo) resultObj.descendantTwo = nodes[i];
-      // if (ancestor) ancestor.decendants.push(nodes[i]);
     }
     resultObj.ancestralTree = nodes[0];
   }
-
-  // addAsAncestor(descendants: string[]) {
-  //   for (const descendant of descendants) {
-  //     const child = new AncestralTree(descendant);
-  //     child.ancestor = this;
-  //   }
-  //   return this;
-  // }
-
-  // addAsDescendant(descendants: string[]) {
-  //   for (const descendant of descendants) {
-  //     const child = new AncestralTree(descendant);
-  //     this.decendants.push(child);
-  //     child.ancestor = this;
-  //   }
-  //   return this;
-  // }
 }
