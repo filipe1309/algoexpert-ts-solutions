@@ -37,20 +37,25 @@ insert(87): [6, 7, 8, 24, 8, 24, 24, 391, 76, 56, 12, 41, 48, 87]
 
 <details>
 <summary>Hint 1</summary>
-...
+For the buildHeap(), remove(), and insert() methods of the Heap, you will need to use the siftDown() and siftUp() methods. These two methods should essentially allow you to take any node in the heap and move it either down or up in the heap until it's in its final, appropriate position. This can be done by comparing the node in question to its child nodes in the case of siftDown() or to its parent node in the case of siftUp().
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+In an array-based Heap, you can easily access a node's children nodes and parent node by using the nodes' indices. If a node is located at index i, then its children nodes are located at indices 2 * i + 1 and 2 * i + 2, and its parent node is located at index Math.floor((i - 1) / 2).
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+To implement the buildHeap() method, you can either sift every node in the input array down to its final, correct position, or you can sift every node in the input array up to its final, correct position. What are the runtime implications of both approaches? Which methods (siftDown() or siftUp()) will insert() and remove() utilize? What about peek()?
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+BuildHeap: O(n) time | O(1) space - where n is the length of the input array  
+SiftDown: O(log(n)) time | O(1) space - where n is the length of the heap  
+SiftUp: O(log(n)) time | O(1) space - where n is the length of the heap  
+Peek: O(1) | O(1)  
+Remove: O(log(n)) time | O(1) space - where n is the length of the heap  
+Insert: O(log(n)) time | O(1) space - where n is the length of the heap
 </details>

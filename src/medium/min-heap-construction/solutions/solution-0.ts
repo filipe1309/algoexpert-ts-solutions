@@ -10,7 +10,9 @@ export class MinHeap {
 
   // Complexity (worst-case): O(n) time | O(1) space
   buildHeap(array: number[]) {
-    const firstParentIdx = Math.floor((array.length -2) / 2);
+    // first parent is the last parent
+    const firstParentIdx = Math.floor((array.length - 2) / 2);
+    // we start from the first parent and go down to the root
     for (let currentIdx = firstParentIdx; currentIdx >= 0; currentIdx--) {
       this.siftDown(currentIdx, array.length -1, array);
     }
@@ -21,16 +23,20 @@ export class MinHeap {
   // Complexity (worst-case): O(logn) time | O(1) space
   siftDown(currentIdx: number, endIdx: number, heap: number[]) {
     let childOneIdx = 2 * currentIdx + 1;
+    let idxToWap = 0;
+    // if childOneIdx is greater than endIdx, then it doesn't have children
     while (childOneIdx <= endIdx) {
       let childTwoIdx = 2 * currentIdx + 2 <= endIdx ? 2 * currentIdx + 2 : -1;
-      let idxToWap;
+      
+      // if we have a second child and it's less than the first child
       if (childTwoIdx !== -1 && heap[childTwoIdx] < heap[childOneIdx]) {
         idxToWap = childTwoIdx;
-      }
-      else idxToWap = childOneIdx;
-      if (heap[idxToWap!] < heap[currentIdx]) {
-        this.swap(currentIdx, idxToWap!, heap);
-        currentIdx = idxToWap!;
+      } else idxToWap = childOneIdx;
+
+      // if the child is less than the currentIdx, then we swap
+      if (heap[idxToWap] < heap[currentIdx]) {
+        this.swap(currentIdx, idxToWap, heap);
+        currentIdx = idxToWap;
         childOneIdx = 2 * currentIdx + 1;
       }
       else break;
