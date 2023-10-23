@@ -54,8 +54,15 @@ type ResultAncestralTree = {
   ancestralTree?: AncestralTree
 }
 
-interface Node {
+interface Dll {
   value: number;
-  prev: Node | null;
-  next: Node | null;
+  prev: Dll | null;
+  next: Dll | null;
+}
+
+type FlatDll = {
+  id: string;
+  prev: number | null;
+  next: number | null;
+  value: number;
 }
