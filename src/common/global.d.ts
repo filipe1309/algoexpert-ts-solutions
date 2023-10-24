@@ -54,15 +54,33 @@ type ResultAncestralTree = {
   ancestralTree?: AncestralTree
 }
 
-interface Dll {
-  value: number;
-  prev: Dll | null;
-  next: Dll | null;
-}
-
 type FlatDll = {
-  id: string;
+  id?: string;
   prev: number | null;
   next: number | null;
   value: number;
 }
+
+interface DllNode {
+  value: number;
+  prev: DllNode | null;
+  next: DllNode | null;
+}
+
+interface Dll {
+  tail: DllNode | null;
+  head: DllNode | null;
+  insertBefore(node: DllNode, nodeToInsert: DllNode): void;
+  insertAfter(node: DllNode, nodeToInsert: DllNode): void;
+  insertAtPosition(position: number, nodeToInsert: DllNode): void;
+  setHead(node: DllNode): void;
+  setTail(node: DllNode): void;
+  removeNodesWithValue(value: number): void;
+  remove(node: DllNode): void;
+  containsNodeWithValue(value: number): boolean;
+}
+
+declare type DoublyLinkedList = Dll;
+
+
+
