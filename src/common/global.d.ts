@@ -82,5 +82,8 @@ interface Dll {
 
 declare type DoublyLinkedList = Dll;
 
-
+interface LinkedList {
+  value: number;
+  next: LinkedList | null;
+}
 
