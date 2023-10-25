@@ -12,7 +12,6 @@ describe('remove-kth-node-from-end', () => {
     let result = LinkedList.fromFlatArray(input.linkedList.nodes);
     solution1(result, input.k);
     let resultArray = LinkedList.toFlatArray(result as LinkedList);
-    console.log({resultArray, expected: expected.nodes});
     expect(resultArray).toEqual(expected.nodes);
   });
 });
