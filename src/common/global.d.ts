@@ -87,3 +87,10 @@ interface LinkedList {
   next: LinkedList | null;
 }
 
+type FlatLinkedList = {
+  id?: string;
+  next: string | null;
+  value: number;
+}
+
+
