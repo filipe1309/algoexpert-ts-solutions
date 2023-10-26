@@ -2,7 +2,7 @@ import { describe, expect, test } from '@jest/globals';
 import cases from './cases';
 import { LinkedList } from 'common/LinkedList';
 import {
-  solution0, // O(??) time | O(??) space
+  solution0, // O(max(n, m)) time | O(max(n, m)) space
 } from "./solutions";
 
 // Test: make test t=sum-of-linked-lists
@@ -12,7 +12,6 @@ describe('sum-of-linked-lists', () => {
     let linkedListTwo = LinkedList.fromFlatArray(input.linkedListTwo.nodes);
     const result = solution0(linkedListOne, linkedListTwo);
     let resultArray = LinkedList.toFlatArray(result as LinkedList);
-    console.log({result, resultArray, expected: expected.nodes})
     expect(resultArray).toEqual(expected.nodes);
   });
 });
