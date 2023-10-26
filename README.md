@@ -148,7 +148,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Min Heap Construction`](./src/medium/min-heap-construction)
 - [x] [`Linked List Construction`](./src/medium/linked-list-construction)
 - [x] [`Remove Kth Node From End`](./src/medium/remove-kth-node-from-end)
-- [ ] [`Sum of Linked Lists`](./src/medium/sum-of-linked-lists)
+- [x] [`Sum of Linked Lists`](./src/medium/sum-of-linked-lists)
 - [ ] [`Merging Linked Lists`](./src/medium/merging-linked-lists)
 - [ ] [`Permutations`](./src/medium/permutations)
 - [ ] [`Powerset`](./src/medium/powerset)
