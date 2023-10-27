@@ -6,9 +6,7 @@ function mergingLinkedLists(linkedListOne: LinkedList, linkedListTwo: LinkedList
 
   while (currNode) { listOneSet.add(currNode.value); currNode = currNode.next; }
   currNode = linkedListTwo;
-  // console.log(listOneSet);
   while (currNode) {
-    // console.log(currNode);
     if (listOneSet.has(currNode.value)) return currNode;
     currNode = currNode.next;
   }
