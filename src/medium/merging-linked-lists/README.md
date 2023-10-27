@@ -30,17 +30,21 @@ linkedListTwo = 8 -> 7 -> 1 -> 4
 
 <details>
 <summary>Hint 1</summary>
-...
+All of the nodes after the intersection point of two Linked Lists will be the same.
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+If the two Linked Lists are of different lengths, then none of the extra nodes of
+the longer list at the beginning can be the intersection point, since the ends must
+be the same.
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+The length of the first list + the distance of the second head from the intersection
+point will be equal to the length of the second list + the distance of the first head
+from the intersection point. This can be prove using the information from hints 1 and 2.
 </details>
 
 <details>
