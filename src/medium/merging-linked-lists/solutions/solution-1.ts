@@ -1,4 +1,4 @@
-// Make Lists the Same && Find The Intersection Size approach
+// Make Lists the Same Length && Find The Intersection approach
 // Complexity (worst-case): O(n + m) time | O(1) space
 // where n is the number of nodes in the first linked list
 // and m is the number of nodes in the second linked list
