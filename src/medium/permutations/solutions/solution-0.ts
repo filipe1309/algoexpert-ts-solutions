@@ -1,10 +1,9 @@
 // Recursive Fix First && Add Second Variations && So On approach
 // Complexity (worst-case): O(n^2*n!) time | O(n*n!) space
 function permutations(array: number[]): number[][] | [] {
+  if (array.length === 0) return [];
   let result: number[][] = [];
-  for (let i = 0; i < array.length; i++) {
-    permutationHelper([array[i]], array, result);
-  }
+  permutationHelper([], array, result);
   return result;
 }
 
