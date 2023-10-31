@@ -151,7 +151,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Sum of Linked Lists`](./src/medium/sum-of-linked-lists)
 - [x] [`Merging Linked Lists`](./src/medium/merging-linked-lists)
 - [x] [`Permutations`](./src/medium/permutations)
-- [ ] [`Powerset`](./src/medium/powerset)
+- [x] [`Powerset`](./src/medium/powerset)
 - [ ] [`Phone Number Mnemonics`](./src/medium/phone-number-mnemonics)
 - [ ] [`Staircase Traversal`](./src/medium/staircase-traversal)
 - [ ] [`Blackjack Probability`](./src/medium/blackjack-probability)
