@@ -3,9 +3,10 @@
 function powerset(array: number[]) {
   let subsets: number[][] = [[]];
   for (let elem of array) {
-    const currSubSet = subsets.map((a) => a.slice());
-    currSubSet.map(s => s.push(elem));
-    subsets.push(...currSubSet);
+    let length = subsets.length;
+    for (let i = 0; i < length; i++) {
+      subsets.push(subsets[i].concat(elem));
+    }
   }
   return subsets;
 }
