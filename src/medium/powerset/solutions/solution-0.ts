@@ -1,4 +1,4 @@
-// Permutations approach
+// Permutations (Too complex) approach
 // Complexity (worst-case): O(n^2*n!) time | O(n*n!) space
 function powerset(array: number[]) {
   const resultSet = new Set<string>();

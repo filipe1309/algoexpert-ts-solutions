@@ -35,20 +35,23 @@ array = [1, 2, 3]
 
 <details>
 <summary>Hint 1</summary>
-...
+Think about the base cases. What is the powerset of an empty set? What is the
+powerset of a set of length 1?
 </details>
 
 <details>
 <summary>Hint2</summary>
-...
+If you were to take the input set X and add an element to it, how would the resulting
+powerset change?
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+Can you solve this problem recursively? Can you solve it iteratively? What are the
+advantages and disadvantages of using either approach?
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(n*2^n) time | O(n*2^n) space - where n is the length of the input array
 </details>
