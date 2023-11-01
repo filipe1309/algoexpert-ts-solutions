@@ -24,44 +24,56 @@ do
 done
 
 # read challenge name if not provided ${NAME_SNAKE}
+# if [ -z ${NAME_SNAKE} ]; then 
+#   NAME_SNAKE_LAST_CHALLENGE_FOLDER=$(echo ${LAST_CHALLENGE_FOLDER} | cut -f3 -d/)
+
+#   echo -e "Type challenge ${BOLD}name${NC} in ${BOLD}snake-case${NC} ${GRAY_DARKER}(ex: valid-subsequence)${NC}";
+#   echo -e "${BOLD}${ITALIC}OR${NC}";
+#   echo -e "Paste challenge ${BOLD}URL${NC} ${GRAY_DARKER}(ex: https://www.algoexpert.io/questions/valid-subsequence)${NC}";
+#   read -p "👉 [$NAME_SNAKE_LAST_CHALLENGE_FOLDER]: " NAME_SNAKE
+#   # if challenge name is empty, use last challenge name
+#   if [ -z ${NAME_SNAKE} ]; then NAME_SNAKE=${NAME_SNAKE_LAST_CHALLENGE_FOLDER}; fi
+# fi
+# # if challenge name is empty, exit
+# if [ -z ${NAME_SNAKE} ]; then echo "❌ Please provide a challenge name"; exit 1; fi
+# # if name is a url instead of a name, extract name from url
+# if [[ ${NAME_SNAKE} == *"https://www.algoexpert.io/questions/"* ]]; then
+#   NAME_SNAKE=$(echo ${NAME_SNAKE} | sed 's/https:\/\/www.algoexpert.io\/questions\///g')
+# fi
+
+# if challenge name is empty, use last challenge name
 if [ -z ${NAME_SNAKE} ]; then 
   NAME_SNAKE_LAST_CHALLENGE_FOLDER=$(echo ${LAST_CHALLENGE_FOLDER} | cut -f3 -d/)
-
-  echo -e "Type challenge ${BOLD}name${NC} in ${BOLD}snake-case${NC} ${GRAY_DARKER}(ex: valid-subsequence)${NC}";
-  echo -e "${BOLD}${ITALIC}OR${NC}";
-  echo -e "Paste challenge ${BOLD}URL${NC} ${GRAY_DARKER}(ex: https://www.algoexpert.io/questions/valid-subsequence)${NC}";
-  read -p "👉 [$NAME_SNAKE_LAST_CHALLENGE_FOLDER]: " NAME_SNAKE
-  # if challenge name is empty, use last challenge name
-  if [ -z ${NAME_SNAKE} ]; then NAME_SNAKE=${NAME_SNAKE_LAST_CHALLENGE_FOLDER}; fi
-fi
-# if challenge name is empty, exit
-if [ -z ${NAME_SNAKE} ]; then echo "❌ Please provide a challenge name"; exit 1; fi
-# if name is a url instead of a name, extract name from url
-if [[ ${NAME_SNAKE} == *"https://www.algoexpert.io/questions/"* ]]; then
-  NAME_SNAKE=$(echo ${NAME_SNAKE} | sed 's/https:\/\/www.algoexpert.io\/questions\///g')
+  NAME_SNAKE=${NAME_SNAKE_LAST_CHALLENGE_FOLDER};
 fi
 
 
 # confirm if challenge level folder is correct if not provided ${LEVEL_LOWERCASE}
+# if [ -z ${LEVEL_LOWERCASE} ]; then 
+#   LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER=$(echo ${LAST_CHALLENGE_FOLDER} | cut -f2 -d/)
+#   echo -e "👉 Challenge level is ${BOLD}${LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER}${NC}. Is this correct? (Y/n)"
+#   read -p "👉 " confirm
+#   if [[ ${confirm} == "Y" || ${confirm} == "y" || ${confirm} == "" ]]; then LEVEL_LOWERCASE=${LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER}; fi
+# fi
+
+# if challenge level is empty, use last challenge level
 if [ -z ${LEVEL_LOWERCASE} ]; then 
   LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER=$(echo ${LAST_CHALLENGE_FOLDER} | cut -f2 -d/)
-  echo -e "👉 Challenge level is ${BOLD}${LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER}${NC}. Is this correct? (Y/n)"
-  read -p "👉 " confirm
-  if [[ ${confirm} == "Y" || ${confirm} == "y" || ${confirm} == "" ]]; then LEVEL_LOWERCASE=${LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER}; fi
+  LEVEL_LOWERCASE=${LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER};
 fi
 
 # read challenge level if not provided ${LEVEL_LOWERCASE}
-if [ -z ${LEVEL_LOWERCASE} ]; then 
-  echo "Challenge level:"
-  case `select_opt "😎 easy" "😅 medium" "😰 hard" "😱 very-hard"` in
-      0) LEVEL_LOWERCASE="easy";;
-      1) LEVEL_LOWERCASE="medium";;
-      2) LEVEL_LOWERCASE="hard";;
-      3) LEVEL_LOWERCASE="very-hard";;
-  esac
-fi
+# if [ -z ${LEVEL_LOWERCASE} ]; then 
+#   echo "Challenge level:"
+#   case `select_opt "😎 easy" "😅 medium" "😰 hard" "😱 very-hard"` in
+#       0) LEVEL_LOWERCASE="easy";;
+#       1) LEVEL_LOWERCASE="medium";;
+#       2) LEVEL_LOWERCASE="hard";;
+#       3) LEVEL_LOWERCASE="very-hard";;
+#   esac
+# fi
 # if challenge level is empty, exit
-if [ -z ${LEVEL_LOWERCASE} ]; then echo "❌ Please provide a level (easy, medium, hard, very-hard)"; exit 1; fi
+# if [ -z ${LEVEL_LOWERCASE} ]; then echo "❌ Please provide a level (easy, medium, hard, very-hard)"; exit 1; fi
 
 # read new solution number
 NEW_SOLUTION_NUMBER=$(wc -l < src/${LEVEL_LOWERCASE}/${NAME_SNAKE}/solutions/index.ts | tr -d '[:space:]')

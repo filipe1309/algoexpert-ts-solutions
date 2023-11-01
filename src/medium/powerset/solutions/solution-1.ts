@@ -1,4 +1,4 @@
-// Iterative approach
+// Iterative Loop Through Subsets approach
 // Complexity (worst-case): O(n*2^n) time | O(n*2^n) space
 function powerset(array: number[]) {
   let subsets: number[][] = [[]];
