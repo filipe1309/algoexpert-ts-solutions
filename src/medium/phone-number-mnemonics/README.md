@@ -3,7 +3,7 @@
 | Source | https://www.algoexpert.io/questions/phone-number-mnemonics |
 |---|---|
 | Difficulty | Medium |
-| Category | Recursion |
+| Category | <details><summary>Click to view 👁️</summary>Recursion</details> |
 
 If you open the keypad of your mobile phone, it'll likely look like this:
 
@@ -77,20 +77,28 @@ phoneNumber = "1905"
 
 <details>
 <summary>Hint 1</summary>
-...
+The first thing you'll need to do is create a mapping from digits to letters. You 
+can do this by creating a hash table mapping all string digits to lists of their 
+respective characters.
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+This problem can be solved fairly easily using recursion. Try generating all characters 
+for the first digit in the phone number one at a time, and for each character, recursively 
+performing the same action on the the next digit, and then on the digit after that, 
+and so on and so forth until you've done so for all digits in the phone number.
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+You can recursively generate characters one digit at a time and store the intermediate 
+results in a array. Once you've reached the last digit in the phone number, you can 
+add the currently generated mnemonic (stored in the previously mentioned array) to 
+a final array that stores all the results.
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(4^n * n) time | O(4^n * n) space - where n is the length of the phone number
 </details>
