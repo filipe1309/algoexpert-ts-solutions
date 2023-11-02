@@ -3,7 +3,7 @@
 | Source | https://www.algoexpert.io/questions/${NAME_SNAKE} |
 |---|---|
 | Difficulty | ${LEVEL} |
-| Category | ${CATEGORY} |
+| Category | <details><summary>Click to view 👁️</summary>${CATEGORY}</details> |
 
 ...
 
