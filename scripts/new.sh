@@ -31,10 +31,10 @@ if [ -z ${NAME_SNAKE} ]; then
   # extract challenge name from next challenge line ex: # -[][`RemoveIslands`](./src/medium/remove-islands) => remove-islands
   NAME_SNAKE_NEXT_CHALLENGE=$(echo ${NAME_SNAKE_NEXT_CHALLENGE} | cut -f4 -d/ | sed 's/)//g')
 
-  echo -e "Type challenge ${BOLD}name${NC} in ${BOLD}snake-case${NC} ${GRAY_DARKER}(ex: valid-subsequence)${NC}"; 
-  echo -e "${BOLD}${ITALIC}OR${NC}";
-  echo -e "Paste challenge ${BOLD}URL${NC} ${GRAY_DARKER}(ex: https://www.algoexpert.io/questions/valid-subsequence)${NC}";
-  read -p "👉 [$NAME_SNAKE_NEXT_CHALLENGE]: " NAME_SNAKE
+  # echo -e "Type challenge ${BOLD}name${NC} in ${BOLD}snake-case${NC} ${GRAY_DARKER}(ex: valid-subsequence)${NC}"; 
+  # echo -e "${BOLD}${ITALIC}OR${NC}";
+  # echo -e "Paste challenge ${BOLD}URL${NC} ${GRAY_DARKER}(ex: https://www.algoexpert.io/questions/valid-subsequence)${NC}";
+  # read -p "👉 [$NAME_SNAKE_NEXT_CHALLENGE]: " NAME_SNAKE
   # if challenge name is empty, use last challenge name
   if [ -z ${NAME_SNAKE} ]; then NAME_SNAKE=${NAME_SNAKE_NEXT_CHALLENGE}; fi
 fi
@@ -47,9 +47,10 @@ fi
 # confirm if challenge level folder is correct if not provided ${LEVEL_LOWERCASE}
 if [ -z ${LEVEL_LOWERCASE} ]; then 
   LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER=$(echo ${LAST_CHALLENGE_FOLDER} | cut -f2 -d/)
-  echo -e "👉 Challenge level is ${BOLD}${LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER}${NC}. Is this correct? (Y/n)"
-  read -p "👉 " confirm
-  if [[ ${confirm} == "Y" || ${confirm} == "y" || ${confirm} == "" ]]; then LEVEL_LOWERCASE=${LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER}; fi
+  # echo -e "👉 Challenge level is ${BOLD}${LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER}${NC}. Is this correct? (Y/n)"
+  # read -p "👉 " confirm
+  # if [[ ${confirm} == "Y" || ${confirm} == "y" || ${confirm} == "" ]]; then LEVEL_LOWERCASE=${LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER}; fi
+  LEVEL_LOWERCASE=${LEVEL_LOWERCASE_LAST_CHALLENGE_FOLDER};
 fi
 # read challenge level if not provided ${LEVEL_LOWERCASE}
 if [ -z ${LEVEL_LOWERCASE} ]; then 
@@ -67,11 +68,13 @@ if [ -z ${LEVEL_LOWERCASE} ]; then echo "❌ Please provide a level (easy, mediu
 # get category from last challenge src/LEVEL/LAST_CHALLENGE/README.md line 6 "| Category | CATEGORY_NAME |"
 if [[ -z ${CATEGORY} ]]; then
   CATEGORY=$(cat ${LAST_CHALLENGE_FOLDER}/README.md | sed -n 6p | cut -f3 -d\|)
+  # remove html tags <details><summary>Click to view 👁️</summary>NAME</details> and "Click to view 👁️" text
+  CATEGORY=$(echo ${CATEGORY} | sed 's/<[^>]*>//g' | sed 's/Click to view 👁️//g' | sed 's/ //g')
   # confirm if category is correct
-  echo -e "👉 Challenge category is ${BOLD}${CATEGORY}${NC}. Is this correct? (Y/n)"
-  read -p "👉 " confirm
-  if [[ ${confirm} != "Y" && ${confirm} != "y" && ${confirm} != "" ]]; then CATEGORY="";
-  else echo -e "✅ ${GREEN}${BOLD}Confirmed!${NC}"; fi
+  # echo -e "👉 Challenge category is ${BOLD}${CATEGORY}${NC}. Is this correct? (Y/n)"
+  # read -p "👉 " confirm
+  # if [[ ${confirm} != "Y" && ${confirm} != "y" && ${confirm} != "" ]]; then CATEGORY="";
+  # else echo -e "✅ ${GREEN}${BOLD}Confirmed!${NC}"; fi
 fi
 # Create README file
 # select category if not provided ${cat}
