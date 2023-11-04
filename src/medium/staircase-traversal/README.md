@@ -36,20 +36,32 @@ maxSteps = 2
 
 <details>
 <summary>Hint 1</summary>
-...
+If you can advance `2` steps at a time, how many ways can you reach
+a staircase of height `1` and of height `2`? Think
+recursively.
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+Continuing from Hint #1, if you know the number of ways to climb a staircase
+of height `1` and of height `2`, how many ways are there
+to climb a staircase of height `3` (assuming the same max steps of
+`2`)?
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+The number of ways to climb a staircase of height `k` with a max
+number of steps `s` is:
+`numWays[k - 1] + numWays[k - 2] + ... + numWays[k - s]`. This is
+because if you can advance between `1` and `s` steps,
+then from each step `k - 1, k - 2, ..., k - s`, you can directly
+advance to the top of a staircase of height `k`. By adding the
+number of ways to reach all steps that you can directly advance to the top
+step from, you determine how many ways there are to reach the top step.
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(n) time | O(n) space - where n is the height of the staircase
 </details>
