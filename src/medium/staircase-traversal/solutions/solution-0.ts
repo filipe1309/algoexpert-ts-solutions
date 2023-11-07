@@ -1,5 +1,5 @@
 // Tree Traversal && Array Of Sums approach
-// Complexity (worst-case): O(n^k) time | O(n) space
+// Complexity (worst-case): O(k^kn) time | O(n) space
 // where n = height, k = maxSteps
 function staircaseTraversal(height: number, maxSteps: number) {
   return sTHelper([], height, maxSteps)
