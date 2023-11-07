@@ -1,5 +1,5 @@
 // Recursive Fib MaxStepsSize approach
-// Complexity (worst-case): O(k^n) time | O(n) space
+// Complexity (worst-case): O(k ^ n) time | O(n) space
 // where n = height, k = maxSteps
 function staircaseTraversal(height: number, maxSteps: number) {
   return numberOfWaysToTop(height, maxSteps)
