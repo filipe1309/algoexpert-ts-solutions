@@ -312,6 +312,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] After creating a new challenge, open all new files in VSCode
 - [ ] Update all challenges with the new structure after finishing the challenge list
 - [ ] Auto update number of challenges completed in each level after finishing each challenge when executing `make commit` command
+- [ ] Move root config files to a `.config` folder
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
