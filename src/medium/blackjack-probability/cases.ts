@@ -68,13 +68,13 @@ export default [
     },
     expected: 0.195
   },
-  // {
-  //   input: {
-  //     "target": 100,
-  //     "startingHand": 20
-  //   },
-  //   expected: 0.273
-  // },
+  {
+    input: {
+      "target": 100,
+      "startingHand": 20
+    },
+    expected: 0.273
+  },
   {
     input: {
       "target": 100,
