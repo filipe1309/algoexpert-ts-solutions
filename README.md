@@ -313,6 +313,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [ ] Update all challenges with the new structure after finishing the challenge list
 - [ ] Auto update number of challenges completed in each level after finishing each challenge when executing `make commit` command
 - [ ] Move root config files to a `.config` folder
+- [ ] Create a `docs` folder with a `README.md` file with some tips and tricks
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
