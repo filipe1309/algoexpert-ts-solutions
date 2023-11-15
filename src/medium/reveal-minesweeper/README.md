@@ -92,20 +92,24 @@ column = 4
 
 <details>
 <summary>Hint 1</summary>
-...
+While the input is a 2D array, this problem can also be thought of as a graph problem.
+Each cell is a node, each with up to 8 edges to their adjacent cells.
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+If the player clicks on a cell with no adjacent mines, it is as if they clicked on
+all of the hidden cells adjacent to that cell as well. Try solving this recursively,
+running the function again on those adjacents cells.
 </details>
 
 <details>
 <summary>Hint 3</summary>
-...
+Doing DFS or BFS through all of the adjacent cells without mines will be the most
+efficient way to find and revel them all.
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(w * h) time | O(w * h) space - where w and h are the width and height of the input board
 </details>
