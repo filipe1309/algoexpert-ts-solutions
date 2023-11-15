@@ -155,7 +155,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Phone Number Mnemonics`](./src/medium/phone-number-mnemonics)
 - [x] [`Staircase Traversal`](./src/medium/staircase-traversal)
 - [x] [`Blackjack Probability`](./src/medium/blackjack-probability)
-- [ ] [`Reveal Minesweeper`](./src/medium/reveal-minesweeper)
+- [x] [`Reveal Minesweeper`](./src/medium/reveal-minesweeper)
 - [ ] [`Search In Sorted Matrix`](./src/medium/search-in-sorted-matrix)
 - [ ] [`Three Number Sort`](./src/medium/three-number-sort)
 - [ ] [`Min Max Stack Construction`](./src/medium/min-max-stack-construction)
