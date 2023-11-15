@@ -24,7 +24,7 @@ The board will always contain only strings, and each string will be one of
 the following:
 
 - `"M"`: A mine that has not been clicked on.
-- `"X"`: A mine that has been clicked on., indicating a lost game.
+- `"X"`: A mine that has been clicked on, indicating a lost game.
 - `"H"`: A cell with no mine, but whose content is still hidden to the player.
 - `"0-8"`: A cell with no mine, with an integer from 0 to 8
 representing the number of adjacent mines. Note that this is a
@@ -51,7 +51,7 @@ board = [
   ["M", "M"],
   ["H", "H"],
   ["H", "H"]
-]   
+]
 row = 2
 column = 0
 ```
@@ -72,7 +72,7 @@ board = [
   ["H", "1", "M", "H", "1"],
   ["H", "H", "H", "H", "H"],
   ["H", "H", "H", "H", "H"]
-]   
+]
 row = 3
 column = 4
 
