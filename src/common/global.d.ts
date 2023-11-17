@@ -93,4 +93,7 @@ type FlatLinkedList = {
   value: number;
 }
 
+type RangeMatrix = [number, number];
+
+
 
