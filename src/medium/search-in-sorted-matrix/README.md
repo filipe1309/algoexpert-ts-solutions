@@ -33,15 +33,23 @@ target = 44
 
 <details>
 <summary>Hint 1</summary>
-...
+Pick any number in the matrix and compare it to the target number. If this number
+is bigger than the target number, what does that tell you about all of the other
+numbers in this number's row and this number's column? What about if this number
+is smaller than the target number?
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+Try starting at the top right corner of the matrix, comparing the number there to
+the target number, and using whatever you gathered from Hint #1 to figure out
+what number to compare next if the top right number isn't equal to the target
+number. Continue until you find the target number or until you get past the extremities
+of the matrix.
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(n + m) time | O(1) space - where n is the length of the matrix's rows and m is
+the length of the matrix's columns
 </details>
