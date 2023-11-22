@@ -157,7 +157,7 @@ This repository contains some solutions for the challenges from [AlgoExpert](htt
 - [x] [`Blackjack Probability`](./src/medium/blackjack-probability)
 - [x] [`Reveal Minesweeper`](./src/medium/reveal-minesweeper)
 - [x] [`Search In Sorted Matrix`](./src/medium/search-in-sorted-matrix)
-- [ ] [`Three Number Sort`](./src/medium/three-number-sort)
+- [x] [`Three Number Sort`](./src/medium/three-number-sort)
 - [ ] [`Min Max Stack Construction`](./src/medium/min-max-stack-construction)
 - [ ] [`Balanced Brackets`](./src/medium/balanced-brackets)
 - [ ] [`Sunset Views`](./src/medium/sunset-views)
