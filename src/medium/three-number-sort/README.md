@@ -38,25 +38,29 @@ order = [0, 1, -1]
 
 <details>
 <summary>Hint 1</summary>
-...
+What advantages does knowing the three values contained in the array give you, and 
+how can you use that to solve this problem?
 </details>
 
 <details>
 <summary>Hint 2</summary>
-...
+Try counting how many times each of the three values appears in the input array.
+Once you have these counts, you can repopulate the input array as need to be.
 </details>
 
 <details>
-<summary>Hint 3</summary>
-...
+<summary>Hint 3</summary> 
+Putting aside the first two hints, try conceptually splitting the original array
+into three subarrays and moving elements of each unique value into the correct subarray.
+You'll need to keep track of the respective starting indices of these subarrays.
 </details>
 
 <details>
 <summary>Hint 4</summary>
-...
+Going off of Hint #3, you can solve this problem either with two passes through the input array or with a single pass. If you do two passes through the array, you'll specifically be positioning the first ordered element during the first pass and the third ordered element during the second pass. You'll be swapping elements from the left side of the array whenever you encounter the first element, and you'll be swapping elements from the right side of the array whenever you encounter the third element. You'll have to keep track of where you last placed a first element or a third element. With a single pass through the array, you'll have to implement both of these strategies and a little more all at once.
 </details>
 
 <details>
 <summary>Optimal Space &amp; Time Complexity</summary>
-O(??) time | O(??) space - where ?? is ...
+O(n) time | O(1) space - where n is the length of the array
 </details>
