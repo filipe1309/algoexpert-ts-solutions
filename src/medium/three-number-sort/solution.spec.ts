@@ -4,12 +4,13 @@ import {
   solution0, // O(n^2) time | O(1) space
   solution1, // O(n) time | O(1) space
   solution2, // O(n) time | O(1) space
+  solution3, // O(n) time | O(1) space
 } from "./solutions";
 
 // Test: make test t=three-number-sort
 describe('three-number-sort', () => {
   test.each(cases)('%# (%j)', ({ input, expected }) => {
-    const result = solution2(input.array, input.order);
+    const result = solution3(input.array, input.order);
     expect(result).toEqual(expected);
   });
 });
